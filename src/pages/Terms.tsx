@@ -139,10 +139,10 @@ const Terms = () => {
                     For questions about these Terms of Service, please contact us
                     at{" "}
                     <a
-                      href="mailto:legal@flownox.com"
+                      href="mailto:info@flownox.com"
                       className="text-cyan hover:underline"
                     >
-                      legal@flownox.com
+                      info@flownox.com
                     </a>
                     .
                   </p>

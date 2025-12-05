@@ -100,10 +100,10 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">Email</h4>
                     <a
-                      href="mailto:hello@flownox.com"
+                      href="mailto:info@flownox.com"
                       className="text-muted-foreground hover:text-cyan transition-colors"
                     >
-                      hello@flownox.com
+                      info@flownox.com
                     </a>
                   </div>
                 </div>
@@ -115,10 +115,10 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">Phone</h4>
                     <a
-                      href="tel:+1234567890"
+                      href="tel:+353896564733"
                       className="text-muted-foreground hover:text-cyan transition-colors"
                     >
-                      +1 (234) 567-890
+                      +353 89 656 4733
                     </a>
                   </div>
                 </div>
@@ -229,7 +229,7 @@ const Contact = () => {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="you@company.com"
+                      placeholder="info@flownox.com"
                       className="h-12"
                     />
                   </div>

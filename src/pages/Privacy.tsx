@@ -110,10 +110,10 @@ const Privacy = () => {
                     If you have questions about this Privacy Policy, please
                     contact us at{" "}
                     <a
-                      href="mailto:privacy@flownox.com"
+                      href="mailto:info@flownox.com"
                       className="text-cyan hover:underline"
                     >
-                      privacy@flownox.com
+                      info@flownox.com
                     </a>
                     .
                   </p>
