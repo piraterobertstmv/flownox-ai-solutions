@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Linkedin, Twitter } from "lucide-react";
+import { Mail, Linkedin } from "lucide-react";
 
 const footerLinks = {
   company: [
@@ -31,7 +31,6 @@ export function Footer() {
                 alt="Flownox Logo"
                 className="h-10 w-auto object-contain"
               />
-              <span className="text-xl font-display font-bold">Flownox</span>
             </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed mb-6">
               Custom AI automation systems that turn your daily workflows into a
@@ -39,14 +38,9 @@ export function Footer() {
             </p>
             <div className="flex items-center gap-3">
               <a
-                href="#"
-                className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
+                href="https://www.linkedin.com/company/automia-cloud/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors"
                 aria-label="LinkedIn"
               >

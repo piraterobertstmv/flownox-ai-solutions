@@ -30,9 +30,6 @@ export function Navbar() {
               alt="Flownox Logo"
               className="h-10 w-auto object-contain"
             />
-            <span className="text-xl font-display font-bold text-foreground">
-              Flownox
-            </span>
           </Link>
 
           {/* Desktop Navigation */}
