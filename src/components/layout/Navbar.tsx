@@ -56,7 +56,13 @@ export function Navbar() {
               <Link to="/contact">Contact</Link>
             </Button>
             <Button variant="accent" size="default" asChild>
-              <Link to="/contact">Book Demo</Link>
+              <a
+                href="https://api.leadconnectorhq.com/widget/bookings/book-flownox-meeting"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Book Demo
+              </a>
             </Button>
           </div>
 
@@ -107,9 +113,14 @@ export function Navbar() {
                     </Link>
                   </Button>
                   <Button variant="accent" className="w-full" asChild>
-                    <Link to="/contact" onClick={() => setIsOpen(false)}>
+                    <a
+                      href="https://api.leadconnectorhq.com/widget/bookings/book-flownox-meeting"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => setIsOpen(false)}
+                    >
                       Book Demo
-                    </Link>
+                    </a>
                   </Button>
                 </div>
               </div>

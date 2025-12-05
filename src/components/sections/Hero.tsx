@@ -67,10 +67,14 @@ export function Hero() {
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <Button variant="hero" size="xl" asChild>
-              <Link to="/contact">
+              <a
+                href="https://api.leadconnectorhq.com/widget/bookings/book-flownox-meeting"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Book a Free Demo
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
               <Link to="/services">Explore Services</Link>

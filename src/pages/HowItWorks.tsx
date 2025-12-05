@@ -27,7 +27,7 @@ const processSteps = [
       "Bottleneck identification",
       "ROI opportunity analysis",
     ],
-    duration: "1-2 weeks",
+    duration: "Week 0",
   },
   {
     icon: Wrench,
@@ -42,7 +42,7 @@ const processSteps = [
       "Integration development",
       "Quality assurance testing",
     ],
-    duration: "2-4 weeks",
+    duration: "Week 1",
   },
   {
     icon: Rocket,
@@ -57,7 +57,7 @@ const processSteps = [
       "Documentation delivery",
       "Go-live support",
     ],
-    duration: "1-2 weeks",
+    duration: " Week 2",
   },
   {
     icon: LineChart,
