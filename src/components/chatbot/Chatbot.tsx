@@ -73,7 +73,14 @@ export function Chatbot() {
   useEffect(() => {
     if (isOpen) {
       inputRef.current?.focus();
+      // Prevent body scroll on mobile when chat is open
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
     }
+    return () => {
+      document.body.style.overflow = "";
+    };
   }, [isOpen]);
 
   const detectBookingIntent = (text: string): boolean => {
@@ -297,7 +304,7 @@ Now answer the user's question following ALL the rules above.`;
                       ? "Escribe tu mensaje..."
                       : "Type your message..."
                   }
-                  className="flex-1 h-9 sm:h-10 px-3 sm:px-4 rounded-lg border border-input bg-background text-foreground text-[13px] sm:text-sm focus:outline-none focus:ring-2 focus:ring-cyan"
+                  className="flex-1 h-10 px-3 sm:px-4 rounded-lg border border-input bg-background text-foreground text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-cyan"
                   disabled={isLoading}
                 />
                 <Button
@@ -305,9 +312,9 @@ Now answer the user's question following ALL the rules above.`;
                   variant="accent"
                   size="icon"
                   disabled={isLoading || !input.trim()}
-                  className="h-9 w-9 sm:h-10 sm:w-10 shrink-0"
+                  className="h-10 w-10 shrink-0"
                 >
-                  <Send className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                  <Send className="w-4 h-4" />
                 </Button>
               </div>
             </form>
