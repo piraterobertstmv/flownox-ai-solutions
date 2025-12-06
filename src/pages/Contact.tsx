@@ -9,7 +9,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 
 // Web3Forms access key - Get yours free at https://web3forms.com
-const WEB3FORMS_ACCESS_KEY = "YOUR_ACCESS_KEY_HERE";
+const WEB3FORMS_ACCESS_KEY = "aa3d2776-b282-4dff-af73-ede2b125eb06";
 
 const Contact = () => {
   const { t, i18n } = useTranslation();
