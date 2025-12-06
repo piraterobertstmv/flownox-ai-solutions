@@ -181,12 +181,12 @@ Now answer the user's question following ALL the rules above.`;
         animate={{ scale: 1 }}
         transition={{ delay: 1, type: "spring", stiffness: 200 }}
         onClick={() => setIsOpen(true)}
-        className={`fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-gradient-primary shadow-glow flex items-center justify-center hover:scale-110 transition-transform ${
+        className={`fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gradient-primary shadow-glow flex items-center justify-center hover:scale-110 transition-transform ${
           isOpen ? "hidden" : ""
         }`}
         aria-label="Open chat"
       >
-        <MessageCircle className="w-6 h-6 text-navy" />
+        <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6 text-navy" />
       </motion.button>
 
       {/* Chat Window */}
@@ -197,13 +197,13 @@ Now answer the user's question following ALL the rules above.`;
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
             transition={{ duration: 0.2 }}
-            className="fixed bottom-6 right-6 z-50 w-[380px] max-w-[calc(100vw-48px)] h-[600px] max-h-[calc(100vh-100px)] bg-card border border-border rounded-2xl shadow-2xl flex flex-col overflow-hidden"
+            className="fixed inset-4 sm:inset-auto sm:bottom-6 sm:right-6 z-50 sm:w-[360px] sm:h-[500px] md:w-[380px] md:h-[550px] bg-card border border-border rounded-2xl shadow-2xl flex flex-col overflow-hidden"
           >
             {/* Header */}
-            <div className="flex items-center justify-between p-4 bg-navy text-primary-foreground border-b border-border">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-gradient-primary flex items-center justify-center">
-                  <Bot className="w-5 h-5 text-navy" />
+            <div className="flex items-center justify-between p-3 sm:p-4 bg-navy text-primary-foreground border-b border-border shrink-0">
+              <div className="flex items-center gap-2 sm:gap-3">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-primary flex items-center justify-center">
+                  <Bot className="w-4 h-4 sm:w-5 sm:h-5 text-navy" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-sm">FlowNoxy</h3>
@@ -222,7 +222,7 @@ Now answer the user's question following ALL the rules above.`;
             </div>
 
             {/* Messages */}
-            <div className="flex-1 overflow-y-auto p-4 space-y-4">
+            <div className="flex-1 overflow-y-auto p-3 sm:p-4 space-y-3 sm:space-y-4 min-h-0">
               {messages.map((message) => (
                 <div
                   key={message.id}
@@ -231,7 +231,7 @@ Now answer the user's question following ALL the rules above.`;
                   }`}
                 >
                   <div
-                    className={`max-w-[85%] p-3 rounded-2xl text-sm leading-relaxed ${
+                    className={`max-w-[85%] p-2.5 sm:p-3 rounded-2xl text-[13px] sm:text-sm leading-relaxed whitespace-pre-wrap ${
                       message.role === "user"
                         ? "bg-cyan text-navy rounded-br-md"
                         : "bg-secondary text-foreground rounded-bl-md"
@@ -244,8 +244,8 @@ Now answer the user's question following ALL the rules above.`;
 
               {isLoading && (
                 <div className="flex justify-start">
-                  <div className="bg-secondary text-foreground p-3 rounded-2xl rounded-bl-md">
-                    <Loader2 className="w-5 h-5 animate-spin text-cyan" />
+                  <div className="bg-secondary text-foreground p-2.5 sm:p-3 rounded-2xl rounded-bl-md">
+                    <Loader2 className="w-4 h-4 sm:w-5 sm:h-5 animate-spin text-cyan" />
                   </div>
                 </div>
               )}
@@ -254,20 +254,20 @@ Now answer the user's question following ALL the rules above.`;
             </div>
 
             {/* Book Demo Button */}
-            <div className="px-4 pb-2">
+            <div className="px-3 sm:px-4 pb-2 shrink-0">
               <Button
                 onClick={handleBookDemo}
                 variant="accent"
                 size="sm"
-                className="w-full"
+                className="w-full text-xs sm:text-sm"
               >
-                <Calendar className="w-4 h-4" />
+                <Calendar className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                 {isSpanish ? "Agendar Demo Gratis" : "Book Free Demo"}
               </Button>
             </div>
 
             {/* Input */}
-            <form onSubmit={handleSubmit} className="p-4 border-t border-border">
+            <form onSubmit={handleSubmit} className="p-3 sm:p-4 border-t border-border shrink-0">
               <div className="flex items-center gap-2">
                 <input
                   ref={inputRef}
@@ -279,7 +279,7 @@ Now answer the user's question following ALL the rules above.`;
                       ? "Escribe tu mensaje..."
                       : "Type your message..."
                   }
-                  className="flex-1 h-10 px-4 rounded-lg border border-input bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-cyan"
+                  className="flex-1 h-9 sm:h-10 px-3 sm:px-4 rounded-lg border border-input bg-background text-foreground text-[13px] sm:text-sm focus:outline-none focus:ring-2 focus:ring-cyan"
                   disabled={isLoading}
                 />
                 <Button
@@ -287,9 +287,9 @@ Now answer the user's question following ALL the rules above.`;
                   variant="accent"
                   size="icon"
                   disabled={isLoading || !input.trim()}
-                  className="h-10 w-10 shrink-0"
+                  className="h-9 w-9 sm:h-10 sm:w-10 shrink-0"
                 >
-                  <Send className="w-4 h-4" />
+                  <Send className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                 </Button>
               </div>
             </form>
