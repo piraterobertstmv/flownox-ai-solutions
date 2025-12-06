@@ -1,9 +1,12 @@
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles, Bot, Workflow } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 export function Hero() {
+  const { t } = useTranslation();
+
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-gradient-hero">
       {/* Background Elements */}
@@ -32,7 +35,7 @@ export function Hero() {
           >
             <Sparkles className="w-4 h-4 text-cyan" />
             <span className="text-sm text-primary-foreground/80">
-              AI-Powered Automation Agency
+              {t("hero.badge")}
             </span>
           </motion.div>
 
@@ -43,9 +46,9 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold text-primary-foreground leading-tight mb-6"
           >
-            <span className="text-gradient">Automate.</span> Scale.{" "}
+            <span className="text-gradient">{t("hero.headline1")}</span> {t("hero.headline2")}{" "}
             <br className="hidden sm:block" />
-            Save Time.
+            {t("hero.headline3")}
           </motion.h1>
 
           {/* Sub-headline */}
@@ -55,8 +58,7 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg sm:text-xl text-primary-foreground/70 max-w-2xl mx-auto mb-10 leading-relaxed"
           >
-            Custom AI automation systems that turn your daily workflows into a
-            smooth, 24/7-running engine. Stop wasting hours on repetitive tasks.
+            {t("hero.subheadline")}
           </motion.p>
 
           {/* CTA Buttons */}
@@ -72,12 +74,12 @@ export function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Book a Free Demo
+                {t("hero.bookDemo")}
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
-              <Link to="/services">Explore Services</Link>
+              <Link to="/services">{t("hero.exploreServices")}</Link>
             </Button>
           </motion.div>
 
@@ -89,9 +91,9 @@ export function Hero() {
             className="mt-16 grid grid-cols-3 gap-8 max-w-xl mx-auto"
           >
             {[
-              { value: "5-15", label: "Hours Saved/Week" },
-              { value: "24/7", label: "Automation Uptime" },
-              { value: "90%", label: "Error Reduction" },
+              { value: "5-15", label: t("hero.stats.hoursSaved") },
+              { value: "24/7", label: t("hero.stats.uptime") },
+              { value: "90%", label: t("hero.stats.errorReduction") },
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-2xl sm:text-3xl font-display font-bold text-cyan mb-1">

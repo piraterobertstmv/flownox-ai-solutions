@@ -1,34 +1,33 @@
 import { motion } from "framer-motion";
 import { Clock, ShieldCheck, TrendingUp, Zap } from "lucide-react";
-
-const benefits = [
-  {
-    icon: Clock,
-    title: "Save 5-15 Hours/Week",
-    description:
-      "Automate repetitive tasks and reclaim your time for high-value work.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Cut Manual Errors",
-    description:
-      "AI precision eliminates human mistakes in data entry and processing.",
-  },
-  {
-    icon: TrendingUp,
-    title: "Scale With Ease",
-    description:
-      "Handle 10x the workload without hiring additional staff.",
-  },
-  {
-    icon: Zap,
-    title: "Work 24/7",
-    description:
-      "Your automation never sleeps, serving customers around the clock.",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 export function ValueProps() {
+  const { t } = useTranslation();
+
+  const benefits = [
+    {
+      icon: Clock,
+      title: t("valueProps.items.time.title"),
+      description: t("valueProps.items.time.description"),
+    },
+    {
+      icon: ShieldCheck,
+      title: t("valueProps.items.reliability.title"),
+      description: t("valueProps.items.reliability.description"),
+    },
+    {
+      icon: TrendingUp,
+      title: t("valueProps.items.growth.title"),
+      description: t("valueProps.items.growth.description"),
+    },
+    {
+      icon: Zap,
+      title: t("valueProps.items.speed.title"),
+      description: t("valueProps.items.speed.description"),
+    },
+  ];
+
   return (
     <section className="py-20 lg:py-28 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -41,11 +40,10 @@ export function ValueProps() {
           className="text-center max-w-2xl mx-auto mb-16"
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">
-            Why Choose <span className="text-gradient">Flownox</span>?
+            {t("valueProps.title")} <span className="text-gradient">{t("valueProps.titleHighlight")}</span>?
           </h2>
           <p className="text-lg text-muted-foreground">
-            Transform your business operations with intelligent automation that
-            delivers real results.
+            {t("valueProps.subtitle")}
           </p>
         </motion.div>
 

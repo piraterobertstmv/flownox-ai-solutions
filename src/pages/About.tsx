@@ -9,37 +9,36 @@ import {
   Users,
   ArrowRight,
 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { CTA } from "@/components/sections/CTA";
 
-const values = [
-  {
-    icon: Target,
-    title: "Impact-Driven",
-    description:
-      "Every automation we build is designed to create measurable, meaningful impact on your business operations.",
-  },
-  {
-    icon: Heart,
-    title: "Human-Centered",
-    description:
-      "Technology should empower people, not replace them. We build tools that free humans to do their best work.",
-  },
-  {
-    icon: Lightbulb,
-    title: "Innovation",
-    description:
-      "We stay at the cutting edge of AI and automation technology to bring you the most effective solutions.",
-  },
-  {
-    icon: Users,
-    title: "Partnership",
-    description:
-      "We see ourselves as an extension of your team, invested in your success for the long term.",
-  },
-];
-
 const About = () => {
+  const { t } = useTranslation();
+
+  const values = [
+    {
+      icon: Target,
+      title: t("about.values.simplicity.title"),
+      description: t("about.values.simplicity.description"),
+    },
+    {
+      icon: Heart,
+      title: t("about.values.results.title"),
+      description: t("about.values.results.description"),
+    },
+    {
+      icon: Lightbulb,
+      title: t("about.values.partnership.title"),
+      description: t("about.values.partnership.description"),
+    },
+    {
+      icon: Users,
+      title: "Partnership",
+      description: "We see ourselves as an extension of your team, invested in your success for the long term.",
+    },
+  ];
+
   return (
     <Layout>
       {/* Hero */}
@@ -52,11 +51,10 @@ const About = () => {
             className="max-w-3xl mx-auto text-center"
           >
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-primary-foreground mb-6">
-              About <span className="text-gradient">Flownox</span>
+              {t("about.title")} <span className="text-gradient">{t("about.titleHighlight")}</span>
             </h1>
             <p className="text-lg sm:text-xl text-primary-foreground/70 leading-relaxed">
-              We're on a mission to make intelligent automation accessible to
-              every business, helping teams focus on what truly matters.
+              {t("about.subtitle")}
             </p>
           </motion.div>
         </div>
@@ -73,28 +71,12 @@ const About = () => {
               transition={{ duration: 0.5 }}
             >
               <h2 className="text-3xl sm:text-4xl font-display font-bold text-foreground mb-6">
-                Our Story
+                {t("about.story.title")}
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
-                <p>
-                  Flownox was born from a simple observation: businesses of all
-                  sizes spend countless hours on repetitive tasks that drain
-                  resources and limit growth. We saw teams buried in data entry,
-                  drowning in emails, and struggling to keep up with customer
-                  demands.
-                </p>
-                <p>
-                  We believed there had to be a better way. By combining
-                  cutting-edge AI technology with deep understanding of business
-                  workflows, we created automation solutions that actually work
-                  — not just in theory, but in the real, messy world of business
-                  operations.
-                </p>
-                <p>
-                  Today, Flownox helps businesses across industries reclaim
-                  their time, reduce errors, and scale their operations without
-                  proportionally scaling their headaches.
-                </p>
+                <p>{t("about.story.p1")}</p>
+                <p>{t("about.story.p2")}</p>
+                <p>{t("about.story.p3")}</p>
               </div>
             </motion.div>
 
@@ -112,14 +94,12 @@ const About = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-display font-bold text-primary-foreground">
-                      Our Mission
+                      {t("about.location.title")}
                     </h3>
                   </div>
                 </div>
                 <p className="text-primary-foreground/80 text-lg leading-relaxed">
-                  To democratize AI automation, making enterprise-level
-                  efficiency accessible to businesses of every size — so teams
-                  can focus on creativity, strategy, and human connection.
+                  {t("about.location.description")}
                 </p>
               </div>
             </motion.div>
@@ -127,36 +107,8 @@ const About = () => {
         </div>
       </section>
 
-      {/* Vision Section */}
-      <section className="py-20 bg-secondary/50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="max-w-3xl mx-auto text-center"
-          >
-            <h2 className="text-3xl sm:text-4xl font-display font-bold text-foreground mb-6">
-              Our Vision
-            </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              We envision a future where every business, regardless of size or
-              industry, has access to intelligent automation that handles the
-              mundane — freeing humans to do the meaningful work that only
-              humans can do.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              A world where small businesses compete on equal footing with
-              enterprises, where creativity isn't bottlenecked by administrative
-              tasks, and where work-life balance isn't a luxury but a reality.
-            </p>
-          </motion.div>
-        </div>
-      </section>
-
       {/* Values Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-secondary/50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -166,11 +118,8 @@ const About = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl sm:text-4xl font-display font-bold text-foreground mb-4">
-              Our Values
+              {t("about.values.title")}
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              The principles that guide everything we do at Flownox.
-            </p>
           </motion.div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -209,15 +158,14 @@ const About = () => {
             className="max-w-3xl mx-auto text-center"
           >
             <h2 className="text-3xl sm:text-4xl font-display font-bold mb-6">
-              Ready to Work Together?
+              {t("cta.badge")}
             </h2>
             <p className="text-lg text-primary-foreground/70 mb-8">
-              Let's discuss how Flownox can transform your business operations.
-              Our team is ready to help you automate, scale, and save time.
+              {t("cta.subtitle")}
             </p>
             <Button variant="hero" size="xl" asChild>
               <Link to="/contact">
-                Get in Touch
+                {t("nav.contact")}
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </Button>

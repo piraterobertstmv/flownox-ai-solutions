@@ -9,48 +9,45 @@ import {
   Workflow,
   ArrowRight,
 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 
-const services = [
-  {
-    icon: MessageSquare,
-    title: "AI Customer Support",
-    description:
-      "Intelligent chatbots that handle inquiries 24/7 with human-like responses.",
-  },
-  {
-    icon: Calendar,
-    title: "Appointment Booking",
-    description:
-      "Automated scheduling that syncs calendars and sends reminders.",
-  },
-  {
-    icon: Users,
-    title: "CRM Automation",
-    description:
-      "Streamline customer relationships with smart data management.",
-  },
-  {
-    icon: Receipt,
-    title: "Invoicing & Payments",
-    description:
-      "Automated billing workflows that reduce manual financial tasks.",
-  },
-  {
-    icon: Bot,
-    title: "Website AI Widgets",
-    description:
-      "Smart assistants embedded in your site to engage and convert visitors.",
-  },
-  {
-    icon: Workflow,
-    title: "Custom Workflows",
-    description:
-      "Tailored automation solutions designed for your unique processes.",
-  },
-];
-
 export function ServicesPreview() {
+  const { t } = useTranslation();
+
+  const services = [
+    {
+      icon: MessageSquare,
+      title: t("servicesPreview.services.support.title"),
+      description: t("servicesPreview.services.support.description"),
+    },
+    {
+      icon: Calendar,
+      title: t("servicesPreview.services.booking.title"),
+      description: t("servicesPreview.services.booking.description"),
+    },
+    {
+      icon: Users,
+      title: t("servicesPreview.services.crm.title"),
+      description: t("servicesPreview.services.crm.description"),
+    },
+    {
+      icon: Receipt,
+      title: t("servicesPreview.services.invoicing.title"),
+      description: t("servicesPreview.services.invoicing.description"),
+    },
+    {
+      icon: Bot,
+      title: "Website AI Widgets",
+      description: "Smart assistants embedded in your site to engage and convert visitors.",
+    },
+    {
+      icon: Workflow,
+      title: "Custom Workflows",
+      description: "Tailored automation solutions designed for your unique processes.",
+    },
+  ];
+
   return (
     <section className="py-20 lg:py-28 bg-secondary/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -63,11 +60,10 @@ export function ServicesPreview() {
           className="text-center max-w-2xl mx-auto mb-16"
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">
-            Our <span className="text-gradient">Services</span>
+            {t("servicesPreview.title")} <span className="text-gradient">{t("servicesPreview.titleHighlight")}</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Comprehensive AI automation solutions tailored to your business
-            needs.
+            {t("servicesPreview.subtitle")}
           </p>
         </motion.div>
 
@@ -105,7 +101,7 @@ export function ServicesPreview() {
         >
           <Button variant="default" size="lg" asChild>
             <Link to="/services">
-              View All Services
+              {t("servicesPreview.viewAll")}
               <ArrowRight className="w-4 h-4" />
             </Link>
           </Button>

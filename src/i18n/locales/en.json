@@ -1,0 +1,446 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "howItWorks": "How It Works",
+    "useCases": "Use Cases",
+    "about": "About",
+    "contact": "Contact",
+    "bookDemo": "Book Demo"
+  },
+  "hero": {
+    "badge": "AI-Powered Automation Agency",
+    "headline1": "Automate.",
+    "headline2": "Scale.",
+    "headline3": "Save Time.",
+    "subheadline": "Custom AI automation systems that turn your daily workflows into a smooth, 24/7-running engine. Stop wasting hours on repetitive tasks.",
+    "bookDemo": "Book a Free Demo",
+    "exploreServices": "Explore Services",
+    "stats": {
+      "hoursSaved": "Hours Saved/Week",
+      "uptime": "Automation Uptime",
+      "errorReduction": "Error Reduction"
+    }
+  },
+  "valueProps": {
+    "title": "Why Choose",
+    "titleHighlight": "Flownox",
+    "subtitle": "We don't just automate tasks — we transform how your business operates, saving you time and money while scaling your capabilities.",
+    "items": {
+      "time": {
+        "title": "Save 5-15 Hours/Week",
+        "description": "Reclaim valuable time by automating repetitive tasks. Focus on what truly matters — growing your business."
+      },
+      "reliability": {
+        "title": "24/7 Reliability",
+        "description": "Your automation works around the clock, never takes breaks, and maintains consistent quality every time."
+      },
+      "growth": {
+        "title": "Scale Without Limits",
+        "description": "Handle 10x the workload without hiring 10x the team. Grow efficiently with intelligent automation."
+      },
+      "speed": {
+        "title": "Rapid Implementation",
+        "description": "Go from concept to live automation in weeks, not months. Start seeing ROI faster than ever."
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "How It",
+    "titleHighlight": "Works",
+    "subtitle": "A simple, proven process to transform your operations with AI automation.",
+    "steps": {
+      "discover": {
+        "title": "Discover & Analyze",
+        "description": "We map your existing workflows, identify bottlenecks, and uncover automation opportunities."
+      },
+      "build": {
+        "title": "Build & Customize",
+        "description": "Our team designs and builds custom AI automation tailored to your specific needs."
+      },
+      "deploy": {
+        "title": "Deploy & Integrate",
+        "description": "Seamless integration with your existing tools and systems. Go live with confidence."
+      },
+      "monitor": {
+        "title": "Monitor & Optimize",
+        "description": "Continuous refinement and support to ensure peak performance and ROI."
+      }
+    }
+  },
+  "servicesPreview": {
+    "title": "Our",
+    "titleHighlight": "Services",
+    "subtitle": "End-to-end AI automation solutions designed to streamline every aspect of your business operations.",
+    "viewAll": "View All Services",
+    "services": {
+      "support": {
+        "title": "AI Customer Support",
+        "description": "24/7 intelligent chatbots that handle inquiries, resolve issues, and escalate when needed."
+      },
+      "booking": {
+        "title": "Smart Booking Systems",
+        "description": "Automated scheduling, reminders, and follow-ups that eliminate no-shows and double bookings."
+      },
+      "crm": {
+        "title": "CRM Automation",
+        "description": "Streamlined lead management, follow-ups, and customer journey automation."
+      },
+      "invoicing": {
+        "title": "Invoicing & Payments",
+        "description": "Automated invoicing, payment reminders, and reconciliation workflows."
+      }
+    }
+  },
+  "useCasesPreview": {
+    "title": "Success",
+    "titleHighlight": "Stories",
+    "subtitle": "See how businesses like yours have transformed their operations with Flownox automation.",
+    "viewAll": "View All Use Cases",
+    "results": "Results",
+    "timeSaved": "time saved on admin",
+    "cases": {
+      "clinic": {
+        "title": "Healthcare Clinic",
+        "description": "Automated patient scheduling, reminders, and follow-up care coordination."
+      },
+      "ecommerce": {
+        "title": "E-commerce Store",
+        "description": "Streamlined order processing, inventory updates, and customer communication."
+      },
+      "agency": {
+        "title": "Marketing Agency",
+        "description": "Automated client onboarding, reporting, and project management workflows."
+      }
+    }
+  },
+  "socialProof": {
+    "title": "Trusted by",
+    "titleHighlight": "Growing Businesses",
+    "subtitle": "Join the businesses that have transformed their operations with Flownox.",
+    "stats": {
+      "hoursSaved": "Hours Saved Weekly",
+      "satisfaction": "Client Satisfaction",
+      "uptime": "System Uptime",
+      "roi": "Average ROI"
+    }
+  },
+  "cta": {
+    "badge": "Ready to Transform Your Business?",
+    "title": "Start Automating Today",
+    "subtitle": "Book a free demo and discover how Flownox can save you hours every week while scaling your operations effortlessly.",
+    "bookDemo": "Book a Free Demo",
+    "learnMore": "Learn More"
+  },
+  "footer": {
+    "description": "Custom AI automation systems that turn your daily workflows into a smooth, 24/7-running engine.",
+    "company": "Company",
+    "resources": "Resources",
+    "legal": "Legal",
+    "aboutUs": "About Us",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "copyright": "All rights reserved.",
+    "tagline": "Built with AI. Powered by automation."
+  },
+  "contact": {
+    "title": "Book a",
+    "titleHighlight": "Demo",
+    "subtitle": "Ready to transform your workflows? Let's discuss how Flownox can help your business automate, scale, and save time.",
+    "getInTouch": "Get in Touch",
+    "getInTouchDescription": "Fill out the form and our team will get back to you within 24 hours. We're excited to learn about your automation needs.",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "locationValue": "Remote-first, serving clients globally",
+    "whatToExpect": "What to Expect",
+    "expectations": {
+      "call": "Free 30-minute discovery call",
+      "analysis": "Workflow analysis & recommendations",
+      "proposal": "Custom proposal within 48 hours",
+      "noPressure": "No obligation, no pressure"
+    },
+    "form": {
+      "title": "Book Your Free Demo",
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "company": "Company",
+      "companyPlaceholder": "Your company",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "serviceInterest": "Service Interest",
+      "selectService": "Select a service...",
+      "services": {
+        "aiSupport": "AI Customer Support",
+        "booking": "Appointment Booking",
+        "crm": "CRM & Workflow Automation",
+        "invoicing": "Invoicing & Payments",
+        "chatbot": "Website Chat & AI Widgets",
+        "custom": "Custom Automation",
+        "other": "Other / Not Sure"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your automation needs...",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "privacyNote": "By submitting this form, you agree to our",
+      "privacyLink": "Privacy Policy"
+    },
+    "toast": {
+      "title": "Message sent!",
+      "description": "We'll get back to you within 24 hours."
+    }
+  },
+  "about": {
+    "title": "About",
+    "titleHighlight": "Flownox",
+    "subtitle": "We're on a mission to help small businesses and solopreneurs work smarter, not harder, through intelligent automation.",
+    "story": {
+      "title": "Our Story",
+      "p1": "Flownox was born from a simple observation: small business owners spend too much time on repetitive tasks that could be automated.",
+      "p2": "We saw entrepreneurs drowning in emails, struggling to keep up with customer inquiries, and losing hours every week to administrative work. We knew there had to be a better way.",
+      "p3": "Today, we help businesses of all sizes implement AI-powered automation that saves time, reduces errors, and allows teams to focus on what they do best — growing their business."
+    },
+    "values": {
+      "title": "Our Values",
+      "simplicity": {
+        "title": "Simplicity First",
+        "description": "We believe powerful technology should be easy to use. Our solutions are designed for simplicity without sacrificing capability."
+      },
+      "results": {
+        "title": "Results-Driven",
+        "description": "We measure our success by your success. Every automation we build is designed to deliver measurable ROI."
+      },
+      "partnership": {
+        "title": "True Partnership",
+        "description": "We're not just vendors — we're partners invested in your long-term success and growth."
+      }
+    },
+    "team": {
+      "title": "Meet the Team",
+      "member": {
+        "title": "Founder & CEO",
+        "bio": "With over 10 years of experience in technology and business automation, leading Flownox's mission to democratize AI automation for small businesses."
+      }
+    },
+    "location": {
+      "title": "Based in Ireland",
+      "subtitle": "Built for Busy Entrepreneurs",
+      "description": "We're a remote-first company serving clients globally, with a special focus on helping Irish and European businesses embrace automation."
+    }
+  },
+  "services": {
+    "title": "Our",
+    "titleHighlight": "Services",
+    "subtitle": "Comprehensive AI automation solutions designed to transform every aspect of your business operations.",
+    "features": "Key Features",
+    "items": {
+      "support": {
+        "title": "AI Customer Support",
+        "description": "Deploy intelligent chatbots that handle customer inquiries 24/7, providing instant responses and seamless escalation when needed.",
+        "features": ["24/7 availability", "Multi-language support", "Smart escalation", "CRM integration"]
+      },
+      "booking": {
+        "title": "Smart Booking Systems",
+        "description": "Eliminate scheduling headaches with automated booking, reminders, and follow-ups that keep your calendar full and organized.",
+        "features": ["Online scheduling", "Automated reminders", "Calendar sync", "No-show reduction"]
+      },
+      "crm": {
+        "title": "CRM & Workflow Automation",
+        "description": "Streamline your sales pipeline with automated lead scoring, follow-ups, and customer journey management.",
+        "features": ["Lead automation", "Pipeline management", "Email sequences", "Task automation"]
+      },
+      "invoicing": {
+        "title": "Invoicing & Payments",
+        "description": "Automate your billing cycle from invoice generation to payment collection and reconciliation.",
+        "features": ["Auto-invoicing", "Payment reminders", "Receipt generation", "Financial reporting"]
+      },
+      "chatbot": {
+        "title": "Website Chat & AI Widgets",
+        "description": "Engage visitors with intelligent chat widgets that qualify leads, answer questions, and book appointments.",
+        "features": ["Lead qualification", "FAQ automation", "Appointment booking", "Analytics dashboard"]
+      },
+      "custom": {
+        "title": "Custom Automation",
+        "description": "Bespoke automation solutions tailored to your unique business processes and requirements.",
+        "features": ["Custom workflows", "API integrations", "Process automation", "Dedicated support"]
+      }
+    }
+  },
+  "howItWorksPage": {
+    "title": "How It",
+    "titleHighlight": "Works",
+    "subtitle": "A proven, structured process that takes you from workflow chaos to automated efficiency in weeks, not months.",
+    "steps": {
+      "discover": {
+        "number": "01",
+        "title": "Discover & Analyze",
+        "subtitle": "Understanding Your Business",
+        "description": "We start by diving deep into your existing workflows, systems, and pain points. Through discovery calls and process audits, we identify the highest-impact automation opportunities.",
+        "duration": "Week 0",
+        "details": ["Comprehensive workflow audit", "Stakeholder interviews", "Bottleneck identification", "ROI opportunity analysis"]
+      },
+      "build": {
+        "number": "02",
+        "title": "Build & Customize",
+        "subtitle": "Tailored Solutions",
+        "description": "Our team designs and builds custom AI automation solutions specifically for your needs. No cookie-cutter approaches — every system is tailored to your unique processes.",
+        "duration": "Week 1",
+        "details": ["Custom solution architecture", "AI model training", "Integration development", "Quality assurance testing"]
+      },
+      "deploy": {
+        "number": "03",
+        "title": "Deploy & Integrate",
+        "subtitle": "Seamless Go-Live",
+        "description": "We handle the entire deployment process, ensuring seamless integration with your existing tools and minimal disruption to your operations.",
+        "duration": "Week 2",
+        "details": ["Staged rollout strategy", "Team training sessions", "Documentation delivery", "Go-live support"]
+      },
+      "monitor": {
+        "number": "04",
+        "title": "Monitor & Optimize",
+        "subtitle": "Continuous Improvement",
+        "description": "Our relationship doesn't end at deployment. We continuously monitor performance, gather feedback, and optimize your automation for maximum ROI.",
+        "duration": "Ongoing",
+        "details": ["Performance monitoring", "Regular optimization cycles", "Priority support access", "Quarterly business reviews"]
+      }
+    },
+    "whatHappens": "What happens in this phase:",
+    "faq": {
+      "title": "Common Questions",
+      "questions": {
+        "duration": {
+          "q": "How long does the entire process take?",
+          "a": "Most projects are completed within 4-8 weeks from kickoff to go-live, depending on complexity and scope."
+        },
+        "technical": {
+          "q": "Do I need technical expertise on my team?",
+          "a": "No. We handle all technical aspects and provide comprehensive training for your team to use the new systems."
+        },
+        "changes": {
+          "q": "What if I need changes after deployment?",
+          "a": "Our ongoing support includes regular optimization cycles. Additional changes can be made as part of our maintenance plan."
+        }
+      }
+    },
+    "moreQuestions": "Have More Questions?"
+  },
+  "useCases": {
+    "title": "Use",
+    "titleHighlight": "Cases",
+    "subtitle": "Discover how businesses across industries have transformed their operations with Flownox automation solutions.",
+    "results": "Results",
+    "challenge": "The Challenge",
+    "solution": "Our Solution",
+    "impact": "The Impact",
+    "cases": {
+      "healthcare": {
+        "title": "Healthcare & Clinics",
+        "description": "Automated patient scheduling, reminders, and follow-up care coordination for medical practices.",
+        "challenge": "Managing patient appointments, reducing no-shows, and coordinating follow-up care was consuming valuable staff time.",
+        "solution": "We implemented an AI-powered scheduling system with automated reminders, intake forms, and post-visit follow-ups.",
+        "results": ["60% reduction in no-shows", "15+ hours saved weekly", "95% patient satisfaction"]
+      },
+      "ecommerce": {
+        "title": "E-commerce & Retail",
+        "description": "Streamlined order processing, inventory management, and customer communication for online stores.",
+        "challenge": "Manual order processing and inventory updates were causing delays and errors, leading to customer complaints.",
+        "solution": "Automated order workflows, real-time inventory sync, and AI-powered customer support chatbot.",
+        "results": ["90% faster order processing", "Zero inventory discrepancies", "24/7 customer support"]
+      },
+      "agencies": {
+        "title": "Marketing Agencies",
+        "description": "Automated client onboarding, reporting, and project management workflows for creative agencies.",
+        "challenge": "Client onboarding took weeks, and manual reporting was eating into billable hours.",
+        "solution": "Streamlined onboarding automation, automated reporting dashboards, and project status updates.",
+        "results": ["75% faster onboarding", "10+ hours saved on reporting", "Improved client retention"]
+      },
+      "realestate": {
+        "title": "Real Estate",
+        "description": "Lead management, property matching, and client communication automation for real estate professionals.",
+        "challenge": "Leads were falling through the cracks, and agents were spending too much time on administrative tasks.",
+        "solution": "AI-powered lead scoring, automated property matching, and follow-up sequences.",
+        "results": ["2x lead conversion rate", "20+ hours saved weekly", "Faster deal closures"]
+      },
+      "consulting": {
+        "title": "Consulting Firms",
+        "description": "Proposal generation, time tracking, and client management automation for professional services.",
+        "challenge": "Creating proposals and tracking billable hours was a manual, error-prone process.",
+        "solution": "Automated proposal generation, integrated time tracking, and client portal for seamless communication.",
+        "results": ["50% faster proposals", "Accurate time tracking", "Improved cash flow"]
+      },
+      "hospitality": {
+        "title": "Hospitality & Events",
+        "description": "Booking management, guest communication, and event coordination automation.",
+        "challenge": "Managing reservations across multiple platforms and coordinating events was overwhelming.",
+        "solution": "Centralized booking system, automated guest communications, and event workflow automation.",
+        "results": ["Zero double bookings", "90% guest response rate", "Streamlined operations"]
+      }
+    }
+  },
+  "blog": {
+    "title": "Blog &",
+    "titleHighlight": "Insights",
+    "subtitle": "Stay updated with the latest in AI automation, productivity tips, and business growth strategies.",
+    "readMore": "Read More",
+    "newsletter": {
+      "title": "Stay Updated",
+      "description": "Subscribe to our newsletter for the latest automation insights and tips.",
+      "placeholder": "Enter your email",
+      "subscribe": "Subscribe"
+    },
+    "comingSoon": {
+      "title": "Blog Coming Soon",
+      "description": "We're working on amazing content to help you master AI automation. Check back soon!"
+    }
+  },
+  "privacy": {
+    "title": "Privacy",
+    "titleHighlight": "Policy",
+    "lastUpdated": "Last updated",
+    "sections": {
+      "intro": {
+        "title": "Introduction",
+        "content": "At Flownox, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services."
+      },
+      "collection": {
+        "title": "Information We Collect",
+        "content": "We may collect information about you in various ways, including:",
+        "items": ["Name and contact information", "Email address and phone number", "Company and job title", "Usage data and analytics", "Communication preferences"]
+      },
+      "use": {
+        "title": "How We Use Your Information",
+        "content": "We use the information we collect to provide, maintain, and improve our services, communicate with you, and comply with legal obligations."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "content": "If you have questions about this Privacy Policy, please contact us at:"
+      }
+    }
+  },
+  "terms": {
+    "title": "Terms of",
+    "titleHighlight": "Service",
+    "lastUpdated": "Last updated",
+    "sections": {
+      "intro": {
+        "title": "Agreement to Terms",
+        "content": "By accessing or using Flownox's services, you agree to be bound by these Terms of Service. If you disagree with any part of these terms, you may not access our services."
+      },
+      "services": {
+        "title": "Our Services",
+        "content": "Flownox provides AI automation consulting and implementation services. We reserve the right to modify or discontinue our services at any time."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "content": "If you have questions about these Terms, please contact us at:"
+      }
+    }
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "Sorry, we couldn't find the page you're looking for.",
+    "backHome": "Back to Home"
+  }
+}
+

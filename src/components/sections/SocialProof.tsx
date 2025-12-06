@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Star, Quote } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const testimonials = [
   {
@@ -25,14 +26,16 @@ const testimonials = [
   },
 ];
 
-const metrics = [
-  { value: "500+", label: "Hours Saved Monthly" },
-  { value: "98%", label: "Client Satisfaction" },
-  { value: "40+", label: "Active Automations" },
-  { value: "24/7", label: "System Uptime" },
-];
-
 export function SocialProof() {
+  const { t } = useTranslation();
+
+  const metrics = [
+    { value: "500+", label: t("socialProof.stats.hoursSaved") },
+    { value: "98%", label: t("socialProof.stats.satisfaction") },
+    { value: "99.9%", label: t("socialProof.stats.uptime") },
+    { value: "10x", label: t("socialProof.stats.roi") },
+  ];
+
   return (
     <section className="py-20 lg:py-28 bg-secondary/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -45,10 +48,10 @@ export function SocialProof() {
           className="text-center max-w-2xl mx-auto mb-16"
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">
-            Trusted by <span className="text-gradient">Growing Businesses</span>
+            {t("socialProof.title")} <span className="text-gradient">{t("socialProof.titleHighlight")}</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Join companies that have transformed their operations with Flownox.
+            {t("socialProof.subtitle")}
           </p>
         </motion.div>
 

@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 
 export function CTA() {
+  const { t } = useTranslation();
+
   return (
     <section className="py-20 lg:py-28 bg-background relative overflow-hidden">
       {/* Background Gradient */}
@@ -20,17 +23,16 @@ export function CTA() {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan/10 border border-cyan/20 mb-6">
             <Sparkles className="w-4 h-4 text-cyan" />
             <span className="text-sm text-foreground font-medium">
-              Ready to Transform Your Business?
+              {t("cta.badge")}
             </span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-foreground mb-6">
-            Start Automating Today
+            {t("cta.title")}
           </h2>
 
           <p className="text-lg text-muted-foreground mb-10 max-w-xl mx-auto">
-            Book a free demo and discover how Flownox can save you hours every
-            week while scaling your operations effortlessly.
+            {t("cta.subtitle")}
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -40,12 +42,12 @@ export function CTA() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Book a Free Demo
+                {t("cta.bookDemo")}
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>
             <Button variant="outline" size="xl" asChild>
-              <Link to="/services">Learn More</Link>
+              <Link to="/services">{t("cta.learnMore")}</Link>
             </Button>
           </div>
         </motion.div>

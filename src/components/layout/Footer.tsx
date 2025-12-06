@@ -1,24 +1,27 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { Mail, Linkedin } from "lucide-react";
 
-const footerLinks = {
-  company: [
-    { name: "About Us", path: "/about" },
-    { name: "Services", path: "/services" },
-    { name: "Use Cases", path: "/use-cases" },
-    { name: "Contact", path: "/contact" },
-  ],
-  resources: [
-    { name: "How It Works", path: "/how-it-works" },
-    { name: "Blog", path: "/blog" },
-  ],
-  legal: [
-    { name: "Privacy Policy", path: "/privacy" },
-    { name: "Terms of Service", path: "/terms" },
-  ],
-};
-
 export function Footer() {
+  const { t } = useTranslation();
+
+  const footerLinks = {
+    company: [
+      { name: t("footer.aboutUs"), path: "/about" },
+      { name: t("nav.services"), path: "/services" },
+      { name: t("nav.useCases"), path: "/use-cases" },
+      { name: t("nav.contact"), path: "/contact" },
+    ],
+    resources: [
+      { name: t("nav.howItWorks"), path: "/how-it-works" },
+      { name: "Blog", path: "/blog" },
+    ],
+    legal: [
+      { name: t("footer.privacyPolicy"), path: "/privacy" },
+      { name: t("footer.termsOfService"), path: "/terms" },
+    ],
+  };
+
   return (
     <footer className="bg-navy text-primary-foreground">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -33,8 +36,7 @@ export function Footer() {
               />
             </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed mb-6">
-              Custom AI automation systems that turn your daily workflows into a
-              smooth, 24/7-running engine.
+              {t("footer.description")}
             </p>
             <div className="flex items-center gap-3">
               <a
@@ -58,7 +60,7 @@ export function Footer() {
 
           {/* Company Links */}
           <div>
-            <h4 className="font-display font-semibold text-lg mb-4">Company</h4>
+            <h4 className="font-display font-semibold text-lg mb-4">{t("footer.company")}</h4>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.path}>
@@ -76,7 +78,7 @@ export function Footer() {
           {/* Resources Links */}
           <div>
             <h4 className="font-display font-semibold text-lg mb-4">
-              Resources
+              {t("footer.resources")}
             </h4>
             <ul className="space-y-3">
               {footerLinks.resources.map((link) => (
@@ -94,7 +96,7 @@ export function Footer() {
 
           {/* Legal Links */}
           <div>
-            <h4 className="font-display font-semibold text-lg mb-4">Legal</h4>
+            <h4 className="font-display font-semibold text-lg mb-4">{t("footer.legal")}</h4>
             <ul className="space-y-3">
               {footerLinks.legal.map((link) => (
                 <li key={link.path}>
@@ -114,10 +116,10 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-primary-foreground/50 text-sm">
-              © {new Date().getFullYear()} Flownox. All rights reserved.
+              © {new Date().getFullYear()} Flownox. {t("footer.copyright")}
             </p>
             <p className="text-primary-foreground/50 text-sm">
-              Built with AI. Powered by automation.
+              {t("footer.tagline")}
             </p>
           </div>
         </div>

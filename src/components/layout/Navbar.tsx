@@ -1,23 +1,30 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Globe } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-
-const navLinks = [
-  { name: "Home", path: "/" },
-  { name: "Services", path: "/services" },
-  { name: "How It Works", path: "/how-it-works" },
-  { name: "Use Cases", path: "/use-cases" },
-  { name: "About", path: "/about" },
-];
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { t, i18n } = useTranslation();
 
   const isActive = (path: string) => location.pathname === path;
+
+  const navLinks = [
+    { name: t("nav.home"), path: "/" },
+    { name: t("nav.services"), path: "/services" },
+    { name: t("nav.howItWorks"), path: "/how-it-works" },
+    { name: t("nav.useCases"), path: "/use-cases" },
+    { name: t("nav.about"), path: "/about" },
+  ];
+
+  const toggleLanguage = () => {
+    const newLang = i18n.language === "en" ? "es" : "en";
+    i18n.changeLanguage(newLang);
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/50">
@@ -50,10 +57,19 @@ export function Navbar() {
             ))}
           </div>
 
-          {/* CTA Button */}
+          {/* CTA Button & Language Switcher */}
           <div className="hidden lg:flex items-center gap-3">
+            {/* Language Switcher */}
+            <button
+              onClick={toggleLanguage}
+              className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary/50 transition-colors"
+              aria-label="Toggle language"
+            >
+              <Globe className="w-4 h-4" />
+              <span className="uppercase">{i18n.language}</span>
+            </button>
             <Button variant="ghost" size="sm" asChild>
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact">{t("nav.contact")}</Link>
             </Button>
             <Button variant="accent" size="default" asChild>
               <a
@@ -61,7 +77,7 @@ export function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Book Demo
+                {t("nav.bookDemo")}
               </a>
             </Button>
           </div>
@@ -106,10 +122,20 @@ export function Navbar() {
                     {link.name}
                   </Link>
                 ))}
+                
+                {/* Mobile Language Switcher */}
+                <button
+                  onClick={toggleLanguage}
+                  className="flex items-center gap-2 w-full px-4 py-3 rounded-lg text-base font-medium text-muted-foreground hover:text-foreground hover:bg-secondary/50 transition-colors"
+                >
+                  <Globe className="w-5 h-5" />
+                  <span>{i18n.language === "en" ? "Español" : "English"}</span>
+                </button>
+
                 <div className="pt-4 px-4 space-y-2">
                   <Button variant="outline" className="w-full" asChild>
                     <Link to="/contact" onClick={() => setIsOpen(false)}>
-                      Contact
+                      {t("nav.contact")}
                     </Link>
                   </Button>
                   <Button variant="accent" className="w-full" asChild>
@@ -119,7 +145,7 @@ export function Navbar() {
                       rel="noopener noreferrer"
                       onClick={() => setIsOpen(false)}
                     >
-                      Book Demo
+                      {t("nav.bookDemo")}
                     </a>
                   </Button>
                 </div>

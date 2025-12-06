@@ -1,36 +1,35 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Building2, Store, Briefcase, Users, ArrowRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 
-const industries = [
-  {
-    icon: Building2,
-    title: "Agencies",
-    description:
-      "Automate client onboarding, reporting, and project management workflows.",
-  },
-  {
-    icon: Store,
-    title: "Retail & E-commerce",
-    description:
-      "Streamline inventory, orders, and customer support at scale.",
-  },
-  {
-    icon: Briefcase,
-    title: "Professional Services",
-    description:
-      "Handle scheduling, billing, and client communications effortlessly.",
-  },
-  {
-    icon: Users,
-    title: "SMBs",
-    description:
-      "Enterprise-level automation accessible for growing businesses.",
-  },
-];
-
 export function UseCasesPreview() {
+  const { t } = useTranslation();
+
+  const industries = [
+    {
+      icon: Building2,
+      title: t("useCasesPreview.cases.agency.title"),
+      description: t("useCasesPreview.cases.agency.description"),
+    },
+    {
+      icon: Store,
+      title: t("useCasesPreview.cases.ecommerce.title"),
+      description: t("useCasesPreview.cases.ecommerce.description"),
+    },
+    {
+      icon: Briefcase,
+      title: t("useCasesPreview.cases.clinic.title"),
+      description: t("useCasesPreview.cases.clinic.description"),
+    },
+    {
+      icon: Users,
+      title: "SMBs",
+      description: "Enterprise-level automation accessible for growing businesses.",
+    },
+  ];
+
   return (
     <section className="py-20 lg:py-28 bg-navy text-primary-foreground relative overflow-hidden">
       {/* Background Pattern */}
@@ -54,11 +53,10 @@ export function UseCasesPreview() {
           className="text-center max-w-2xl mx-auto mb-16"
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold mb-4">
-            Industries We <span className="text-cyan">Serve</span>
+            {t("useCasesPreview.title")} <span className="text-cyan">{t("useCasesPreview.titleHighlight")}</span>
           </h2>
           <p className="text-lg text-primary-foreground/70">
-            Tailored automation solutions for businesses across multiple
-            sectors.
+            {t("useCasesPreview.subtitle")}
           </p>
         </motion.div>
 
@@ -96,7 +94,7 @@ export function UseCasesPreview() {
         >
           <Button variant="hero" size="lg" asChild>
             <Link to="/use-cases">
-              View All Use Cases
+              {t("useCasesPreview.viewAll")}
               <ArrowRight className="w-4 h-4" />
             </Link>
           </Button>

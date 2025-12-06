@@ -1,38 +1,37 @@
 import { motion } from "framer-motion";
 import { Search, Wrench, Rocket, LineChart } from "lucide-react";
-
-const steps = [
-  {
-    icon: Search,
-    number: "01",
-    title: "Discover & Analyze",
-    description:
-      "We map your existing workflows, identify bottlenecks, and uncover automation opportunities.",
-  },
-  {
-    icon: Wrench,
-    number: "02",
-    title: "Build & Customize",
-    description:
-      "Our team designs and builds custom AI automation tailored to your specific needs.",
-  },
-  {
-    icon: Rocket,
-    number: "03",
-    title: "Deploy & Integrate",
-    description:
-      "Seamless integration with your existing tools and systems. Go live with confidence.",
-  },
-  {
-    icon: LineChart,
-    number: "04",
-    title: "Monitor & Optimize",
-    description:
-      "Continuous refinement and support to ensure peak performance and ROI.",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 export function HowItWorks() {
+  const { t } = useTranslation();
+
+  const steps = [
+    {
+      icon: Search,
+      number: "01",
+      title: t("howItWorks.steps.discover.title"),
+      description: t("howItWorks.steps.discover.description"),
+    },
+    {
+      icon: Wrench,
+      number: "02",
+      title: t("howItWorks.steps.build.title"),
+      description: t("howItWorks.steps.build.description"),
+    },
+    {
+      icon: Rocket,
+      number: "03",
+      title: t("howItWorks.steps.deploy.title"),
+      description: t("howItWorks.steps.deploy.description"),
+    },
+    {
+      icon: LineChart,
+      number: "04",
+      title: t("howItWorks.steps.monitor.title"),
+      description: t("howItWorks.steps.monitor.description"),
+    },
+  ];
+
   return (
     <section className="py-20 lg:py-28 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -45,20 +44,15 @@ export function HowItWorks() {
           className="text-center max-w-2xl mx-auto mb-16"
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">
-            How It <span className="text-gradient">Works</span>
+            {t("howItWorks.title")} <span className="text-gradient">{t("howItWorks.titleHighlight")}</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            A simple, proven process to transform your operations with AI
-            automation.
+            {t("howItWorks.subtitle")}
           </p>
         </motion.div>
 
         {/* Steps */}
-        <div className="relative">
-          {/* Connection Line */}
-          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-cyan/30 to-transparent -translate-y-1/2" />
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {steps.map((step, index) => (
               <motion.div
                 key={index}
@@ -88,7 +82,6 @@ export function HowItWorks() {
               </motion.div>
             ))}
           </div>
-        </div>
       </div>
     </section>
   );

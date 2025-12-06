@@ -2,12 +2,14 @@ import { useState } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Send, CheckCircle } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
+  const { t } = useTranslation();
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
@@ -26,8 +28,8 @@ const Contact = () => {
     await new Promise((resolve) => setTimeout(resolve, 1000));
 
     toast({
-      title: "Message sent!",
-      description: "We'll get back to you within 24 hours.",
+      title: t("contact.toast.title"),
+      description: t("contact.toast.description"),
     });
 
     setFormData({
@@ -51,6 +53,13 @@ const Contact = () => {
     }));
   };
 
+  const expectations = [
+    t("contact.expectations.call"),
+    t("contact.expectations.analysis"),
+    t("contact.expectations.proposal"),
+    t("contact.expectations.noPressure"),
+  ];
+
   return (
     <Layout>
       {/* Hero */}
@@ -63,11 +72,10 @@ const Contact = () => {
             className="max-w-3xl mx-auto text-center"
           >
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-primary-foreground mb-6">
-              Book a <span className="text-gradient">Demo</span>
+              {t("contact.title")} <span className="text-gradient">{t("contact.titleHighlight")}</span>
             </h1>
             <p className="text-lg sm:text-xl text-primary-foreground/70 leading-relaxed">
-              Ready to transform your workflows? Let's discuss how Flownox can
-              help your business automate, scale, and save time.
+              {t("contact.subtitle")}
             </p>
           </motion.div>
         </div>
@@ -85,11 +93,10 @@ const Contact = () => {
               transition={{ duration: 0.5 }}
             >
               <h2 className="text-2xl sm:text-3xl font-display font-bold text-foreground mb-6">
-                Get in Touch
+                {t("contact.getInTouch")}
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-8">
-                Fill out the form and our team will get back to you within 24
-                hours. We're excited to learn about your automation needs.
+                {t("contact.getInTouchDescription")}
               </p>
 
               <div className="space-y-6 mb-8">
@@ -98,7 +105,7 @@ const Contact = () => {
                     <Mail className="w-5 h-5 text-cyan" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">Email</h4>
+                    <h4 className="font-semibold text-foreground mb-1">{t("contact.email")}</h4>
                     <a
                       href="mailto:info@flownox.com"
                       className="text-muted-foreground hover:text-cyan transition-colors"
@@ -113,7 +120,7 @@ const Contact = () => {
                     <Phone className="w-5 h-5 text-cyan" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-1">Phone</h4>
+                    <h4 className="font-semibold text-foreground mb-1">{t("contact.phone")}</h4>
                     <a
                       href="tel:+353896564733"
                       className="text-muted-foreground hover:text-cyan transition-colors"
@@ -129,10 +136,10 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">
-                      Location
+                      {t("contact.location")}
                     </h4>
                     <p className="text-muted-foreground">
-                      Remote-first, serving clients globally
+                      {t("contact.locationValue")}
                     </p>
                   </div>
                 </div>
@@ -141,15 +148,10 @@ const Contact = () => {
               {/* What to Expect */}
               <div className="p-6 rounded-2xl bg-secondary/50 border border-border">
                 <h4 className="font-display font-semibold text-foreground mb-4">
-                  What to Expect
+                  {t("contact.whatToExpect")}
                 </h4>
                 <ul className="space-y-3">
-                  {[
-                    "Free 30-minute discovery call",
-                    "Workflow analysis & recommendations",
-                    "Custom proposal within 48 hours",
-                    "No obligation, no pressure",
-                  ].map((item, index) => (
+                  {expectations.map((item, index) => (
                     <li key={index} className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-cyan shrink-0 mt-0.5" />
                       <span className="text-sm text-muted-foreground">
@@ -173,7 +175,7 @@ const Contact = () => {
                 className="p-8 rounded-2xl bg-card border border-border"
               >
                 <h3 className="text-xl font-display font-semibold text-foreground mb-6">
-                  Book Your Free Demo
+                  {t("contact.form.title")}
                 </h3>
 
                 <div className="space-y-5">
@@ -183,7 +185,7 @@ const Contact = () => {
                         htmlFor="name"
                         className="block text-sm font-medium text-foreground mb-2"
                       >
-                        Name *
+                        {t("contact.form.name")} *
                       </label>
                       <Input
                         id="name"
@@ -192,7 +194,7 @@ const Contact = () => {
                         required
                         value={formData.name}
                         onChange={handleChange}
-                        placeholder="Your name"
+                        placeholder={t("contact.form.namePlaceholder")}
                         className="h-12"
                       />
                     </div>
@@ -201,7 +203,7 @@ const Contact = () => {
                         htmlFor="company"
                         className="block text-sm font-medium text-foreground mb-2"
                       >
-                        Company
+                        {t("contact.form.company")}
                       </label>
                       <Input
                         id="company"
@@ -209,7 +211,7 @@ const Contact = () => {
                         type="text"
                         value={formData.company}
                         onChange={handleChange}
-                        placeholder="Your company"
+                        placeholder={t("contact.form.companyPlaceholder")}
                         className="h-12"
                       />
                     </div>
@@ -220,7 +222,7 @@ const Contact = () => {
                       htmlFor="email"
                       className="block text-sm font-medium text-foreground mb-2"
                     >
-                      Email *
+                      {t("contact.form.email")} *
                     </label>
                     <Input
                       id="email"
@@ -229,7 +231,7 @@ const Contact = () => {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="info@flownox.com"
+                      placeholder={t("contact.form.emailPlaceholder")}
                       className="h-12"
                     />
                   </div>
@@ -239,7 +241,7 @@ const Contact = () => {
                       htmlFor="service"
                       className="block text-sm font-medium text-foreground mb-2"
                     >
-                      Service Interest
+                      {t("contact.form.serviceInterest")}
                     </label>
                     <select
                       id="service"
@@ -248,14 +250,14 @@ const Contact = () => {
                       onChange={handleChange}
                       className="w-full h-12 px-4 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
                     >
-                      <option value="">Select a service...</option>
-                      <option value="ai-support">AI Customer Support</option>
-                      <option value="booking">Appointment Booking</option>
-                      <option value="crm">CRM & Workflow Automation</option>
-                      <option value="invoicing">Invoicing & Payments</option>
-                      <option value="chatbot">Website Chat & AI Widgets</option>
-                      <option value="custom">Custom Automation</option>
-                      <option value="other">Other / Not Sure</option>
+                      <option value="">{t("contact.form.selectService")}</option>
+                      <option value="ai-support">{t("contact.form.services.aiSupport")}</option>
+                      <option value="booking">{t("contact.form.services.booking")}</option>
+                      <option value="crm">{t("contact.form.services.crm")}</option>
+                      <option value="invoicing">{t("contact.form.services.invoicing")}</option>
+                      <option value="chatbot">{t("contact.form.services.chatbot")}</option>
+                      <option value="custom">{t("contact.form.services.custom")}</option>
+                      <option value="other">{t("contact.form.services.other")}</option>
                     </select>
                   </div>
 
@@ -264,7 +266,7 @@ const Contact = () => {
                       htmlFor="message"
                       className="block text-sm font-medium text-foreground mb-2"
                     >
-                      Message *
+                      {t("contact.form.message")} *
                     </label>
                     <Textarea
                       id="message"
@@ -272,7 +274,7 @@ const Contact = () => {
                       required
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="Tell us about your automation needs..."
+                      placeholder={t("contact.form.messagePlaceholder")}
                       rows={4}
                       className="resize-none"
                     />
@@ -286,22 +288,22 @@ const Contact = () => {
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? (
-                      "Sending..."
+                      t("contact.form.sending")
                     ) : (
                       <>
-                        Send Message
+                        {t("contact.form.submit")}
                         <Send className="w-4 h-4" />
                       </>
                     )}
                   </Button>
 
                   <p className="text-xs text-muted-foreground text-center">
-                    By submitting this form, you agree to our{" "}
+                    {t("contact.form.privacyNote")}{" "}
                     <a
                       href="/privacy"
                       className="text-cyan hover:underline"
                     >
-                      Privacy Policy
+                      {t("contact.form.privacyLink")}
                     </a>
                     .
                   </p>
