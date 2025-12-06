@@ -16,7 +16,7 @@ interface Message {
 }
 
 export function Chatbot() {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
@@ -83,45 +83,60 @@ Important guidelines:
 - Highlight relevant benefits and results when discussing services`;
 
     try {
-      const response = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            contents: [
-              {
-                parts: [
+      // Try gemini-1.5-flash first, fallback to gemini-pro
+      const models = ["gemini-1.5-flash", "gemini-pro"];
+      let lastError: Error | null = null;
+
+      for (const model of models) {
+        try {
+          const response = await fetch(
+            `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${GEMINI_API_KEY}`,
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                contents: [
                   {
-                    text: `${systemPrompt}\n\nUser message: ${userMessage}`,
+                    parts: [
+                      {
+                        text: `${systemPrompt}\n\nUser message: ${userMessage}`,
+                      },
+                    ],
                   },
                 ],
-              },
-            ],
-            generationConfig: {
-              temperature: 0.7,
-              topK: 40,
-              topP: 0.95,
-              maxOutputTokens: 500,
-            },
-          }),
+                generationConfig: {
+                  temperature: 0.7,
+                  topK: 40,
+                  topP: 0.95,
+                  maxOutputTokens: 500,
+                },
+              }),
+            }
+          );
+
+          const data = await response.json();
+
+          // Check for API errors
+          if (data.error) {
+            console.error(`Gemini API error (${model}):`, data.error);
+            lastError = new Error(data.error.message || "API error");
+            continue;
+          }
+
+          const generatedText = data.candidates?.[0]?.content?.parts?.[0]?.text;
+
+          if (generatedText) {
+            return generatedText;
+          }
+        } catch (err) {
+          console.error(`Error with model ${model}:`, err);
+          lastError = err as Error;
         }
-      );
-
-      if (!response.ok) {
-        throw new Error("API request failed");
       }
 
-      const data = await response.json();
-      const generatedText = data.candidates?.[0]?.content?.parts?.[0]?.text;
-
-      if (!generatedText) {
-        throw new Error("No response generated");
-      }
-
-      return generatedText;
+      throw lastError || new Error("No response generated");
     } catch (error) {
       console.error("Gemini API error:", error);
       return isSpanish
@@ -288,4 +303,3 @@ Important guidelines:
     </>
   );
 }
-
