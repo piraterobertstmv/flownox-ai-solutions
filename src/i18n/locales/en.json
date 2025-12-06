@@ -124,17 +124,11 @@
       }
     }
   },
-  "socialProof": {
-    "title": "Trusted by",
-    "titleHighlight": "Growing Businesses",
-    "subtitle": "Join the businesses that have transformed their operations with Flownox.",
-    "stats": {
-      "hoursSaved": "Hours Saved Weekly",
-      "satisfaction": "Client Satisfaction",
-      "uptime": "System Uptime",
-      "roi": "Average ROI"
-    },
-    "testimonials": {
+  "testimonials": {
+    "title": "What Our",
+    "titleHighlight": "Clients Say",
+    "subtitle": "Real results from real businesses that transformed their operations with Flownox.",
+    "items": {
       "t1": {
         "quote": "Flownox transformed our customer support. We now handle 3x more inquiries with the same team size.",
         "author": "Sarah Chen",
@@ -152,7 +146,54 @@
         "author": "Emily Rodriguez",
         "role": "Founder",
         "company": "Bloom Retail"
+      },
+      "t4": {
+        "quote": "Our booking system went from chaos to seamless. No more double bookings, ever.",
+        "author": "David Park",
+        "role": "Practice Manager",
+        "company": "Wellness Clinic Dublin"
+      },
+      "t5": {
+        "quote": "We automated our entire invoicing process. Now payments come in faster than ever.",
+        "author": "Lisa Thompson",
+        "role": "Finance Director",
+        "company": "Creative Solutions Ltd"
+      },
+      "t6": {
+        "quote": "The chatbot handles 80% of our inquiries. Our team can focus on complex cases.",
+        "author": "James O'Brien",
+        "role": "Customer Success Lead",
+        "company": "SaaSify"
+      },
+      "t7": {
+        "quote": "From lead to close, everything is automated. Our sales cycle dropped by 40%.",
+        "author": "Maria Santos",
+        "role": "Sales Director",
+        "company": "PropTech Innovations"
+      },
+      "t8": {
+        "quote": "Best investment we made this year. The automation pays for itself every month.",
+        "author": "Thomas Müller",
+        "role": "Managing Director",
+        "company": "EuroConsult GmbH"
+      },
+      "t9": {
+        "quote": "They delivered exactly what they promised. Our operations run like clockwork now.",
+        "author": "Anna Kowalski",
+        "role": "COO",
+        "company": "LogiFlow Express"
       }
+    }
+  },
+  "socialProof": {
+    "title": "Trusted by",
+    "titleHighlight": "Growing Businesses",
+    "subtitle": "Join the businesses that have transformed their operations with Flownox.",
+    "stats": {
+      "hoursSaved": "Hours Saved Weekly",
+      "satisfaction": "Client Satisfaction",
+      "uptime": "System Uptime",
+      "roi": "Average ROI"
     }
   },
   "cta": {

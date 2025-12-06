@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Star, Quote } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const containerVariants = {
@@ -32,29 +31,8 @@ export function SocialProof() {
     { value: "10x", label: t("socialProof.stats.roi") },
   ];
 
-  const testimonials = [
-    {
-      quote: t("socialProof.testimonials.t1.quote"),
-      author: t("socialProof.testimonials.t1.author"),
-      role: t("socialProof.testimonials.t1.role"),
-      company: t("socialProof.testimonials.t1.company"),
-    },
-    {
-      quote: t("socialProof.testimonials.t2.quote"),
-      author: t("socialProof.testimonials.t2.author"),
-      role: t("socialProof.testimonials.t2.role"),
-      company: t("socialProof.testimonials.t2.company"),
-    },
-    {
-      quote: t("socialProof.testimonials.t3.quote"),
-      author: t("socialProof.testimonials.t3.author"),
-      role: t("socialProof.testimonials.t3.role"),
-      company: t("socialProof.testimonials.t3.company"),
-    },
-  ];
-
   return (
-    <section className="py-20 lg:py-28 bg-secondary/50">
+    <section className="py-16 lg:py-20 bg-secondary/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -62,7 +40,7 @@ export function SocialProof() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.4, ease: "easeOut" }}
-          className="text-center max-w-2xl mx-auto mb-16"
+          className="text-center max-w-2xl mx-auto mb-12"
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">
             {t("socialProof.title")} <span className="text-gradient">{t("socialProof.titleHighlight")}</span>
@@ -78,7 +56,7 @@ export function SocialProof() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16"
+          className="grid grid-cols-2 lg:grid-cols-4 gap-6"
         >
           {metrics.map((metric, index) => (
             <motion.div
@@ -90,46 +68,6 @@ export function SocialProof() {
                 {metric.value}
               </div>
               <div className="text-sm text-muted-foreground">{metric.label}</div>
-            </motion.div>
-          ))}
-        </motion.div>
-
-        {/* Testimonials */}
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          className="grid grid-cols-1 lg:grid-cols-3 gap-6"
-        >
-          {testimonials.map((testimonial, index) => (
-            <motion.div
-              key={index}
-              variants={itemVariants}
-              className="p-6 rounded-2xl bg-card border border-border hover:border-cyan/20 transition-colors"
-            >
-              <div className="flex items-center gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star
-                    key={i}
-                    className="w-4 h-4 fill-cyan text-cyan"
-                  />
-                ))}
-              </div>
-              <div className="relative mb-4">
-                <Quote className="absolute -top-2 -left-2 w-8 h-8 text-cyan/10" />
-                <p className="text-foreground leading-relaxed relative z-10">
-                  "{testimonial.quote}"
-                </p>
-              </div>
-              <div>
-                <div className="font-semibold text-foreground">
-                  {testimonial.author}
-                </div>
-                <div className="text-sm text-muted-foreground">
-                  {testimonial.role}, {testimonial.company}
-                </div>
-              </div>
             </motion.div>
           ))}
         </motion.div>

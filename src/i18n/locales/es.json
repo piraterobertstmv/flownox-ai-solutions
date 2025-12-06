@@ -124,17 +124,11 @@
       }
     }
   },
-  "socialProof": {
-    "title": "Confían en",
-    "titleHighlight": "Nosotros",
-    "subtitle": "Únete a las empresas que han transformado sus operaciones con Flownox.",
-    "stats": {
-      "hoursSaved": "Horas Ahorradas Semanalmente",
-      "satisfaction": "Satisfacción del Cliente",
-      "uptime": "Disponibilidad del Sistema",
-      "roi": "Retorno Promedio"
-    },
-    "testimonials": {
+  "testimonials": {
+    "title": "Lo Que Dicen",
+    "titleHighlight": "Nuestros Clientes",
+    "subtitle": "Resultados reales de empresas que transformaron sus operaciones con Flownox.",
+    "items": {
       "t1": {
         "quote": "Flownox transformó nuestra atención al cliente. Ahora gestionamos 3 veces más consultas con el mismo equipo.",
         "author": "Sara García",
@@ -152,7 +146,54 @@
         "author": "Elena Martínez",
         "role": "Fundadora",
         "company": "Bloom Retail"
+      },
+      "t4": {
+        "quote": "Nuestro sistema de reservas pasó del caos a funcionar perfectamente. Nunca más reservas duplicadas.",
+        "author": "David López",
+        "role": "Director de Clínica",
+        "company": "Centro Wellness Madrid"
+      },
+      "t5": {
+        "quote": "Automatizamos todo nuestro proceso de facturación. Ahora los pagos llegan más rápido que nunca.",
+        "author": "Laura Sánchez",
+        "role": "Directora Financiera",
+        "company": "Soluciones Creativas SL"
+      },
+      "t6": {
+        "quote": "El chatbot gestiona el 80% de nuestras consultas. El equipo puede enfocarse en casos complejos.",
+        "author": "Javier Ruiz",
+        "role": "Responsable de Éxito del Cliente",
+        "company": "SaaSify"
+      },
+      "t7": {
+        "quote": "Desde el lead hasta el cierre, todo está automatizado. Nuestro ciclo de ventas bajó un 40%.",
+        "author": "María Santos",
+        "role": "Directora Comercial",
+        "company": "PropTech Innovaciones"
+      },
+      "t8": {
+        "quote": "La mejor inversión del año. La automatización se paga sola cada mes.",
+        "author": "Tomás Moreno",
+        "role": "Director General",
+        "company": "EuroConsult SL"
+      },
+      "t9": {
+        "quote": "Entregaron exactamente lo que prometieron. Nuestras operaciones funcionan como un reloj.",
+        "author": "Ana Navarro",
+        "role": "COO",
+        "company": "LogiFlow Express"
       }
+    }
+  },
+  "socialProof": {
+    "title": "Confían en",
+    "titleHighlight": "Nosotros",
+    "subtitle": "Únete a las empresas que han transformado sus operaciones con Flownox.",
+    "stats": {
+      "hoursSaved": "Horas Ahorradas Semanalmente",
+      "satisfaction": "Satisfacción del Cliente",
+      "uptime": "Disponibilidad del Sistema",
+      "roi": "Retorno Promedio"
     }
   },
   "cta": {
