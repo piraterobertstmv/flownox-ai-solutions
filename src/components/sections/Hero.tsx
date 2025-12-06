@@ -106,7 +106,7 @@ export function Hero() {
             className="mt-16 grid grid-cols-3 gap-8 max-w-xl mx-auto"
           >
             {[
-              { value: "5-15", label: t("hero.stats.hoursSaved") },
+              { value: "10-25", label: t("hero.stats.hoursSaved") },
               { value: "24/7", label: t("hero.stats.uptime") },
               { value: "90%", label: t("hero.stats.errorReduction") },
             ].map((stat, index) => (
