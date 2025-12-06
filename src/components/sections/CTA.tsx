@@ -1,11 +1,14 @@
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Sparkles, MessageCircle } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 
 export function CTA() {
   const { t } = useTranslation();
+
+  const handleOpenChatbot = () => {
+    window.dispatchEvent(new CustomEvent("openChatbot"));
+  };
 
   return (
     <section className="py-20 lg:py-28 bg-background relative overflow-hidden">
@@ -46,8 +49,9 @@ export function CTA() {
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>
-            <Button variant="outline" size="xl" asChild>
-              <Link to="/services">{t("cta.learnMore")}</Link>
+            <Button variant="outline" size="xl" onClick={handleOpenChatbot}>
+              <MessageCircle className="w-5 h-5" />
+              {t("cta.learnMore")}
             </Button>
           </div>
         </motion.div>

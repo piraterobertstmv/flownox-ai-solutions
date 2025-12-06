@@ -1,6 +1,5 @@
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import {
   Building2,
@@ -9,7 +8,7 @@ import {
   Users,
   Stethoscope,
   Hotel,
-  ArrowRight,
+  MessageCircle,
   CheckCircle,
   TrendingUp,
 } from "lucide-react";
@@ -18,6 +17,10 @@ import { CTA } from "@/components/sections/CTA";
 
 const UseCasesPage = () => {
   const { t } = useTranslation();
+
+  const handleOpenChatbot = () => {
+    window.dispatchEvent(new CustomEvent("openChatbot"));
+  };
 
   const useCases = [
     {
@@ -118,11 +121,9 @@ const UseCasesPage = () => {
                       </div>
                     </div>
 
-                    <Button variant="default" asChild>
-                      <Link to="/contact">
-                        {t("useCases.learnMore")}
-                        <ArrowRight className="w-4 h-4" />
-                      </Link>
+                    <Button variant="default" onClick={handleOpenChatbot}>
+                      <MessageCircle className="w-4 h-4" />
+                      {t("useCases.learnMore")}
                     </Button>
                   </div>
 
