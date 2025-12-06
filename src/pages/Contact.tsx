@@ -8,8 +8,11 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 
+// Web3Forms access key - Get yours free at https://web3forms.com
+const WEB3FORMS_ACCESS_KEY = "YOUR_ACCESS_KEY_HERE";
+
 const Contact = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
@@ -24,22 +27,56 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          to: "info@flownox.com",
+          from_name: "Flownox Website",
+          subject: `New Demo Request from ${formData.name}`,
+          name: formData.name,
+          email: formData.email,
+          company: formData.company || "Not provided",
+          service_interest: formData.service || "Not specified",
+          message: formData.message,
+        }),
+      });
 
-    toast({
-      title: t("contact.toast.title"),
-      description: t("contact.toast.description"),
-    });
+      const result = await response.json();
 
-    setFormData({
-      name: "",
-      company: "",
-      email: "",
-      service: "",
-      message: "",
-    });
-    setIsSubmitting(false);
+      if (result.success) {
+        toast({
+          title: t("contact.toast.title"),
+          description: t("contact.toast.description"),
+        });
+
+        setFormData({
+          name: "",
+          company: "",
+          email: "",
+          service: "",
+          message: "",
+        });
+      } else {
+        throw new Error(result.message || "Form submission failed");
+      }
+    } catch (error) {
+      toast({
+        title: i18n.language === "es" ? "Error" : "Error",
+        description:
+          i18n.language === "es"
+            ? "Hubo un problema al enviar el mensaje. Por favor, inténtalo de nuevo."
+            : "There was a problem sending your message. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
