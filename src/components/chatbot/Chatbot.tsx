@@ -28,6 +28,7 @@ export function Chatbot() {
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const previousLangRef = useRef(i18n.language);
 
   const isSpanish = i18n.language === "es";
 
@@ -35,6 +36,23 @@ export function Chatbot() {
     ? "¡Hola! 👋 Soy FlowNoxy, tu asistente virtual. ¿En qué puedo ayudarte hoy? Puedo responder preguntas sobre nuestros servicios de automatización con IA o ayudarte a agendar una demo gratuita."
     : "Hi! 👋 I'm FlowNoxy, your AI assistant. How can I help you today? I can answer questions about our AI automation services or help you book a free demo.";
 
+  // Reset chat when language changes
+  useEffect(() => {
+    if (previousLangRef.current !== i18n.language) {
+      previousLangRef.current = i18n.language;
+      // Clear messages and show new welcome in new language
+      setMessages([
+        {
+          id: "welcome-" + Date.now(),
+          role: "assistant",
+          content: welcomeMessage,
+          timestamp: new Date(),
+        },
+      ]);
+    }
+  }, [i18n.language, welcomeMessage]);
+
+  // Show welcome message when chat opens for the first time
   useEffect(() => {
     if (isOpen && messages.length === 0) {
       setMessages([
