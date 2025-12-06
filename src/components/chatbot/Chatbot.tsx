@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { FLOWNOX_KNOWLEDGE_BASE, BOOKING_URL, BOOKING_TRIGGERS } from "./knowledgeBase";
 
 // Add your OpenAI API key here or use environment variable
-const OPENAI_API_KEY = import.meta.env.VITE_OPENAI_API_KEY || "YOUR_OPENAI_API_KEY_HERE";
+const OPENAI_API_KEY = import.meta.env.VITE_OPENAI_API_KEY || "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";
 
 interface Message {
   id: string;
@@ -32,8 +32,8 @@ export function Chatbot() {
   const isSpanish = i18n.language === "es";
 
   const welcomeMessage = isSpanish
-    ? "¡Hola! 👋 Soy el asistente virtual de Flownox. ¿En qué puedo ayudarte hoy? Puedo responder preguntas sobre nuestros servicios de automatización con IA o ayudarte a agendar una demo gratuita."
-    : "Hi! 👋 I'm the Flownox virtual assistant. How can I help you today? I can answer questions about our AI automation services or help you book a free demo.";
+    ? "¡Hola! 👋 Soy FlowNoxy, tu asistente virtual. ¿En qué puedo ayudarte hoy? Puedo responder preguntas sobre nuestros servicios de automatización con IA o ayudarte a agendar una demo gratuita."
+    : "Hi! 👋 I'm FlowNoxy, your AI assistant. How can I help you today? I can answer questions about our AI automation services or help you book a free demo.";
 
   useEffect(() => {
     if (isOpen && messages.length === 0) {
@@ -66,7 +66,7 @@ export function Chatbot() {
   const generateResponse = async (userMessage: string): Promise<string> => {
     const hasBookingIntent = detectBookingIntent(userMessage);
 
-    const systemPrompt = `You are a helpful virtual assistant for Flownox, an AI automation agency. 
+    const systemPrompt = `You are FlowNoxy, a helpful and friendly virtual assistant for Flownox, an AI automation agency. 
 Your role is to:
 1. Answer questions about Flownox services, pricing, and processes
 2. Help users understand how AI automation can benefit their business
@@ -195,9 +195,9 @@ Important guidelines:
                   <Bot className="w-5 h-5 text-navy" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-sm">Flownox Assistant</h3>
+                  <h3 className="font-semibold text-sm">FlowNoxy</h3>
                   <p className="text-xs text-primary-foreground/70">
-                    {isSpanish ? "Siempre disponible" : "Always available"}
+                    {isSpanish ? "Tu asistente virtual" : "Your AI assistant"}
                   </p>
                 </div>
               </div>
