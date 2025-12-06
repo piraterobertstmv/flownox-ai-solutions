@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { FLOWNOX_KNOWLEDGE_BASE, BOOKING_URL, BOOKING_TRIGGERS } from "./knowledgeBase";
 
 // Add your Google Gemini API key here or use environment variable
-const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY || "YOUR_GEMINI_API_KEY_HERE";
+const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY || "AIzaSyBgFGDZOThb5PqMpVXkNR7CA7_DN-Pd_sw";
 
 interface Message {
   id: string;
