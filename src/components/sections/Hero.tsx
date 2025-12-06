@@ -4,6 +4,26 @@ import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.08,
+      delayChildren: 0.1,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 15 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.4, ease: "easeOut" },
+  },
+};
+
 export function Hero() {
   const { t } = useTranslation();
 
@@ -25,12 +45,15 @@ export function Hero() {
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+          className="max-w-4xl mx-auto text-center"
+        >
           {/* Badge */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            variants={itemVariants}
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-cyan/20 mb-8"
           >
             <Sparkles className="w-4 h-4 text-cyan" />
@@ -41,9 +64,7 @@ export function Hero() {
 
           {/* Headline */}
           <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
+            variants={itemVariants}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold text-primary-foreground leading-tight mb-6"
           >
             <span className="text-gradient">{t("hero.headline1")}</span> {t("hero.headline2")}{" "}
@@ -53,9 +74,7 @@ export function Hero() {
 
           {/* Sub-headline */}
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            variants={itemVariants}
             className="text-lg sm:text-xl text-primary-foreground/70 max-w-2xl mx-auto mb-10 leading-relaxed"
           >
             {t("hero.subheadline")}
@@ -63,9 +82,7 @@ export function Hero() {
 
           {/* CTA Buttons */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
+            variants={itemVariants}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <Button variant="hero" size="xl" asChild>
@@ -85,9 +102,7 @@ export function Hero() {
 
           {/* Stats */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
+            variants={itemVariants}
             className="mt-16 grid grid-cols-3 gap-8 max-w-xl mx-auto"
           >
             {[
@@ -105,13 +120,13 @@ export function Hero() {
               </div>
             ))}
           </motion.div>
-        </div>
+        </motion.div>
 
-        {/* Floating Icons */}
+        {/* Floating Icons - Only on Desktop */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.5 }}
+          transition={{ duration: 0.6, delay: 0.5 }}
           className="absolute top-1/3 left-8 hidden lg:block"
         >
           <div className="w-16 h-16 rounded-2xl bg-white/5 border border-cyan/20 flex items-center justify-center animate-float">
@@ -122,7 +137,7 @@ export function Hero() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.6 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
           className="absolute top-1/2 right-8 hidden lg:block"
         >
           <div

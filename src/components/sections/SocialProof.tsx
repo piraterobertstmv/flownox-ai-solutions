@@ -2,6 +2,26 @@ import { motion } from "framer-motion";
 import { Star, Quote } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.1,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.4, ease: "easeOut" },
+  },
+};
+
 const testimonials = [
   {
     quote:
@@ -43,8 +63,8 @@ export function SocialProof() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">
@@ -57,34 +77,38 @@ export function SocialProof() {
 
         {/* Metrics */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.1 }}
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
           className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16"
         >
           {metrics.map((metric, index) => (
-            <div
+            <motion.div
               key={index}
+              variants={itemVariants}
               className="text-center p-6 rounded-2xl bg-card border border-border"
             >
               <div className="text-3xl sm:text-4xl font-display font-bold text-cyan mb-2">
                 {metric.value}
               </div>
               <div className="text-sm text-muted-foreground">{metric.label}</div>
-            </div>
+            </motion.div>
           ))}
         </motion.div>
 
         {/* Testimonials */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          className="grid grid-cols-1 lg:grid-cols-3 gap-6"
+        >
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 + 0.2 }}
+              variants={itemVariants}
               className="p-6 rounded-2xl bg-card border border-border hover:border-cyan/20 transition-colors"
             >
               <div className="flex items-center gap-1 mb-4">
@@ -111,7 +135,7 @@ export function SocialProof() {
               </div>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
