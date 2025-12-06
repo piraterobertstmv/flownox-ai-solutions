@@ -3,137 +3,167 @@
     "home": "Inicio",
     "services": "Servicios",
     "howItWorks": "Cómo Funciona",
-    "useCases": "Casos de Uso",
+    "useCases": "Casos de Éxito",
     "about": "Nosotros",
     "contact": "Contacto",
-    "bookDemo": "Reservar Demo"
+    "bookDemo": "Agendar Demo"
   },
   "hero": {
     "badge": "Agencia de Automatización con IA",
     "headline1": "Automatiza.",
     "headline2": "Escala.",
     "headline3": "Ahorra Tiempo.",
-    "subheadline": "Sistemas de automatización con IA personalizados que transforman tus flujos de trabajo diarios en un motor eficiente 24/7. Deja de perder horas en tareas repetitivas.",
-    "bookDemo": "Reserva una Demo Gratis",
-    "exploreServices": "Explorar Servicios",
+    "subheadline": "Desarrollamos sistemas de automatización con inteligencia artificial que transforman tus procesos diarios en un motor eficiente que trabaja 24/7. Deja de perder horas en tareas repetitivas.",
+    "bookDemo": "Agenda tu Demo Gratis",
+    "exploreServices": "Ver Servicios",
     "stats": {
       "hoursSaved": "Horas Ahorradas/Semana",
-      "uptime": "Tiempo de Actividad",
-      "errorReduction": "Reducción de Errores"
+      "uptime": "Disponibilidad",
+      "errorReduction": "Menos Errores"
     }
   },
   "valueProps": {
-    "title": "Por Qué Elegir",
+    "title": "¿Por Qué Elegir",
     "titleHighlight": "Flownox",
-    "subtitle": "No solo automatizamos tareas — transformamos cómo opera tu negocio, ahorrándote tiempo y dinero mientras escalas tus capacidades.",
+    "subtitle": "No solo automatizamos tareas — transformamos la operación de tu negocio, ahorrándote tiempo y dinero mientras escalas tus capacidades.",
     "items": {
       "time": {
-        "title": "Ahorra 5-15 Horas/Semana",
-        "description": "Recupera tiempo valioso automatizando tareas repetitivas. Enfócate en lo que realmente importa — hacer crecer tu negocio."
+        "title": "Ahorra 10-25 Horas/Semana",
+        "description": "Recupera tiempo valioso automatizando tareas repetitivas. Enfócate en lo que realmente importa: hacer crecer tu negocio."
       },
       "reliability": {
-        "title": "Fiabilidad 24/7",
-        "description": "Tu automatización funciona las 24 horas, nunca descansa y mantiene una calidad consistente en todo momento."
+        "title": "Disponibilidad 24/7",
+        "description": "Tu automatización trabaja las 24 horas del día, los 7 días de la semana, sin descansos y con calidad consistente siempre."
       },
       "growth": {
         "title": "Escala Sin Límites",
-        "description": "Maneja 10 veces más trabajo sin contratar 10 veces más personal. Crece eficientemente con automatización inteligente."
+        "description": "Maneja 10 veces más trabajo sin necesidad de contratar 10 veces más personal. Crece de forma eficiente con automatización inteligente."
       },
       "speed": {
-        "title": "Implementación Rápida",
-        "description": "Pasa del concepto a la automatización en funcionamiento en semanas, no meses. Empieza a ver ROI más rápido que nunca."
+        "title": "Implementación Ágil",
+        "description": "Del concepto a la automatización funcionando en semanas, no en meses. Empieza a ver resultados más rápido que nunca."
       }
     }
   },
   "howItWorks": {
     "title": "Cómo",
     "titleHighlight": "Funciona",
-    "subtitle": "Un proceso simple y probado para transformar tus operaciones con automatización de IA.",
+    "subtitle": "Un proceso simple y probado para transformar tus operaciones con automatización inteligente.",
     "steps": {
       "discover": {
-        "title": "Descubrir y Analizar",
-        "description": "Mapeamos tus flujos de trabajo existentes, identificamos cuellos de botella y descubrimos oportunidades de automatización."
+        "title": "Análisis y Diagnóstico",
+        "description": "Mapeamos tus flujos de trabajo actuales, identificamos cuellos de botella y descubrimos oportunidades de automatización."
       },
       "build": {
-        "title": "Construir y Personalizar",
-        "description": "Nuestro equipo diseña y construye automatización de IA personalizada adaptada a tus necesidades específicas."
+        "title": "Desarrollo a Medida",
+        "description": "Nuestro equipo diseña y construye soluciones de automatización personalizadas según tus necesidades específicas."
       },
       "deploy": {
-        "title": "Desplegar e Integrar",
-        "description": "Integración perfecta con tus herramientas y sistemas existentes. Lanzamiento con total confianza."
+        "title": "Implementación e Integración",
+        "description": "Integración perfecta con tus herramientas y sistemas actuales. Lanzamiento con total confianza."
       },
       "monitor": {
-        "title": "Monitorear y Optimizar",
-        "description": "Refinamiento continuo y soporte para asegurar el máximo rendimiento y ROI."
+        "title": "Seguimiento y Mejora Continua",
+        "description": "Optimización constante y soporte dedicado para asegurar el máximo rendimiento y retorno de inversión."
       }
     }
   },
   "servicesPreview": {
     "title": "Nuestros",
     "titleHighlight": "Servicios",
-    "subtitle": "Soluciones de automatización con IA de extremo a extremo diseñadas para optimizar cada aspecto de las operaciones de tu negocio.",
+    "subtitle": "Soluciones integrales de automatización con IA diseñadas para optimizar cada aspecto de las operaciones de tu negocio.",
     "viewAll": "Ver Todos los Servicios",
     "services": {
       "support": {
-        "title": "Soporte al Cliente con IA",
-        "description": "Chatbots inteligentes 24/7 que gestionan consultas, resuelven problemas y escalan cuando es necesario."
+        "title": "Atención al Cliente con IA",
+        "description": "Chatbots inteligentes disponibles 24/7 que gestionan consultas, resuelven problemas y escalan cuando es necesario."
       },
       "booking": {
         "title": "Sistemas de Reservas Inteligentes",
-        "description": "Programación automatizada, recordatorios y seguimientos que eliminan las ausencias y las dobles reservas."
+        "description": "Programación automatizada, recordatorios y seguimientos que eliminan las ausencias y las reservas duplicadas."
       },
       "crm": {
         "title": "Automatización de CRM",
-        "description": "Gestión optimizada de leads, seguimientos y automatización del recorrido del cliente."
+        "description": "Gestión optimizada de leads, seguimientos automáticos y automatización del recorrido del cliente."
       },
       "invoicing": {
-        "title": "Facturación y Pagos",
-        "description": "Flujos de trabajo automatizados de facturación, recordatorios de pago y conciliación."
+        "title": "Facturación y Cobros",
+        "description": "Facturación automatizada, recordatorios de pago y flujos de conciliación sin intervención manual."
+      },
+      "widgets": {
+        "title": "Asistentes Web con IA",
+        "description": "Asistentes inteligentes integrados en tu sitio web para captar y convertir visitantes."
+      },
+      "custom": {
+        "title": "Automatizaciones Personalizadas",
+        "description": "Soluciones de automatización a medida diseñadas para tus procesos únicos."
       }
     }
   },
   "useCasesPreview": {
-    "title": "Casos de",
-    "titleHighlight": "Éxito",
-    "subtitle": "Descubre cómo negocios como el tuyo han transformado sus operaciones con la automatización de Flownox.",
-    "viewAll": "Ver Todos los Casos de Uso",
-    "results": "Resultados",
-    "timeSaved": "tiempo ahorrado en administración",
-    "cases": {
-      "clinic": {
-        "title": "Clínica de Salud",
-        "description": "Programación automatizada de pacientes, recordatorios y coordinación de atención de seguimiento."
+    "title": "Sectores que",
+    "titleHighlight": "Atendemos",
+    "subtitle": "Soluciones de automatización adaptadas para empresas de múltiples industrias.",
+    "viewAll": "Ver Todos los Casos",
+    "industries": {
+      "agencies": {
+        "title": "Agencias",
+        "description": "Automatiza el onboarding de clientes, reportes y flujos de gestión de proyectos."
       },
-      "ecommerce": {
-        "title": "Tienda E-commerce",
-        "description": "Procesamiento de pedidos optimizado, actualizaciones de inventario y comunicación con clientes."
+      "retail": {
+        "title": "Retail y E-commerce",
+        "description": "Optimiza inventario, pedidos y atención al cliente a escala."
       },
-      "agency": {
-        "title": "Agencia de Marketing",
-        "description": "Onboarding de clientes automatizado, informes y flujos de trabajo de gestión de proyectos."
+      "professional": {
+        "title": "Servicios Profesionales",
+        "description": "Gestiona agendas, facturación y comunicación con clientes sin esfuerzo."
+      },
+      "smbs": {
+        "title": "PYMEs",
+        "description": "Automatización de nivel empresarial accesible para negocios en crecimiento."
       }
     }
   },
   "socialProof": {
-    "title": "Confían en Nosotros",
-    "titleHighlight": "Negocios en Crecimiento",
-    "subtitle": "Únete a los negocios que han transformado sus operaciones con Flownox.",
+    "title": "Confían en",
+    "titleHighlight": "Nosotros",
+    "subtitle": "Únete a las empresas que han transformado sus operaciones con Flownox.",
     "stats": {
       "hoursSaved": "Horas Ahorradas Semanalmente",
       "satisfaction": "Satisfacción del Cliente",
-      "uptime": "Tiempo de Actividad del Sistema",
-      "roi": "ROI Promedio"
+      "uptime": "Disponibilidad del Sistema",
+      "roi": "Retorno Promedio"
+    },
+    "testimonials": {
+      "t1": {
+        "quote": "Flownox transformó nuestra atención al cliente. Ahora gestionamos 3 veces más consultas con el mismo equipo.",
+        "author": "Sara García",
+        "role": "Directora de Operaciones",
+        "company": "TechScale España"
+      },
+      "t2": {
+        "quote": "El retorno fue inmediato. Ahorramos más de 20 horas semanales solo en entrada de datos manual.",
+        "author": "Miguel Fernández",
+        "role": "Director General",
+        "company": "Agencia GrowthPath"
+      },
+      "t3": {
+        "quote": "Profesionales, eficientes y realmente entendieron nuestros retos operativos. Muy recomendables.",
+        "author": "Elena Martínez",
+        "role": "Fundadora",
+        "company": "Bloom Retail"
+      }
     }
   },
   "cta": {
     "badge": "¿Listo para Transformar tu Negocio?",
     "title": "Empieza a Automatizar Hoy",
-    "subtitle": "Reserva una demo gratis y descubre cómo Flownox puede ahorrarte horas cada semana mientras escalas tus operaciones sin esfuerzo.",
-    "bookDemo": "Reserva una Demo Gratis",
+    "subtitle": "Agenda una demo gratuita y descubre cómo Flownox puede ahorrarte horas cada semana mientras escalas tus operaciones sin complicaciones.",
+    "bookDemo": "Agenda tu Demo Gratis",
     "learnMore": "Saber Más"
   },
   "footer": {
-    "description": "Sistemas de automatización con IA personalizados que transforman tus flujos de trabajo diarios en un motor eficiente 24/7.",
+    "description": "Desarrollamos sistemas de automatización con IA que transforman tus procesos diarios en un motor eficiente que trabaja 24/7.",
     "company": "Empresa",
     "resources": "Recursos",
     "legal": "Legal",
@@ -141,43 +171,43 @@
     "privacyPolicy": "Política de Privacidad",
     "termsOfService": "Términos de Servicio",
     "copyright": "Todos los derechos reservados.",
-    "tagline": "Construido con IA. Impulsado por automatización."
+    "tagline": "Desarrollado con IA. Impulsado por automatización."
   },
   "contact": {
-    "title": "Reserva una",
+    "title": "Agenda una",
     "titleHighlight": "Demo",
-    "subtitle": "¿Listo para transformar tus flujos de trabajo? Hablemos de cómo Flownox puede ayudar a tu negocio a automatizar, escalar y ahorrar tiempo.",
-    "getInTouch": "Ponte en Contacto",
-    "getInTouchDescription": "Completa el formulario y nuestro equipo te responderá en 24 horas. Estamos emocionados de conocer tus necesidades de automatización.",
-    "email": "Email",
+    "subtitle": "¿Listo para transformar tus procesos? Hablemos de cómo Flownox puede ayudar a tu negocio a automatizar, escalar y ahorrar tiempo.",
+    "getInTouch": "Contáctanos",
+    "getInTouchDescription": "Completa el formulario y nuestro equipo te responderá en menos de 24 horas. Estamos deseando conocer tus necesidades de automatización.",
+    "email": "Correo Electrónico",
     "phone": "Teléfono",
     "location": "Ubicación",
-    "locationValue": "Empresa remota, sirviendo clientes globalmente",
-    "whatToExpect": "Qué Esperar",
+    "locationValue": "Empresa remota, atendemos clientes en todo el mundo",
+    "whatToExpect": "Qué Puedes Esperar",
     "expectations": {
       "call": "Llamada de descubrimiento gratuita de 30 minutos",
-      "analysis": "Análisis de flujos de trabajo y recomendaciones",
+      "analysis": "Análisis de procesos y recomendaciones",
       "proposal": "Propuesta personalizada en 48 horas",
       "noPressure": "Sin compromiso, sin presión"
     },
     "form": {
-      "title": "Reserva tu Demo Gratis",
+      "title": "Agenda tu Demo Gratis",
       "name": "Nombre",
       "namePlaceholder": "Tu nombre",
       "company": "Empresa",
       "companyPlaceholder": "Tu empresa",
-      "email": "Email",
+      "email": "Correo Electrónico",
       "emailPlaceholder": "tu@email.com",
       "serviceInterest": "Servicio de Interés",
       "selectService": "Selecciona un servicio...",
       "services": {
-        "aiSupport": "Soporte al Cliente con IA",
-        "booking": "Reserva de Citas",
-        "crm": "Automatización de CRM y Flujos de Trabajo",
-        "invoicing": "Facturación y Pagos",
-        "chatbot": "Chat Web y Widgets de IA",
+        "aiSupport": "Atención al Cliente con IA",
+        "booking": "Sistema de Reservas",
+        "crm": "Automatización de CRM",
+        "invoicing": "Facturación y Cobros",
+        "chatbot": "Chat Web y Asistentes IA",
         "custom": "Automatización Personalizada",
-        "other": "Otro / No Estoy Seguro"
+        "other": "Otro / No estoy seguro"
       },
       "message": "Mensaje",
       "messagePlaceholder": "Cuéntanos sobre tus necesidades de automatización...",
@@ -188,119 +218,123 @@
     },
     "toast": {
       "title": "¡Mensaje enviado!",
-      "description": "Te responderemos en 24 horas."
+      "description": "Te responderemos en menos de 24 horas."
     }
   },
   "about": {
     "title": "Sobre",
     "titleHighlight": "Flownox",
-    "subtitle": "Nuestra misión es ayudar a pequeños negocios y emprendedores a trabajar de forma más inteligente, no más duro, a través de la automatización inteligente.",
+    "subtitle": "Nuestra misión es ayudar a pequeñas y medianas empresas a trabajar de forma más inteligente, no más duro, a través de la automatización con IA.",
     "story": {
       "title": "Nuestra Historia",
-      "p1": "Flownox nació de una observación simple: los propietarios de pequeños negocios pasan demasiado tiempo en tareas repetitivas que podrían automatizarse.",
-      "p2": "Vimos emprendedores ahogándose en emails, luchando por responder a las consultas de clientes, y perdiendo horas cada semana en trabajo administrativo. Sabíamos que tenía que haber una mejor manera.",
-      "p3": "Hoy, ayudamos a negocios de todos los tamaños a implementar automatización con IA que ahorra tiempo, reduce errores y permite que los equipos se enfoquen en lo que mejor saben hacer — hacer crecer su negocio."
+      "p1": "Flownox nació de una observación simple: los propietarios de pequeños negocios dedican demasiado tiempo a tareas repetitivas que podrían automatizarse.",
+      "p2": "Vimos emprendedores saturados de correos electrónicos, luchando por responder a las consultas de clientes, y perdiendo horas cada semana en trabajo administrativo. Sabíamos que tenía que haber una forma mejor.",
+      "p3": "Hoy ayudamos a empresas de todos los tamaños a implementar automatización con IA que ahorra tiempo, reduce errores y permite que los equipos se enfoquen en lo que mejor saben hacer: hacer crecer su negocio."
+    },
+    "mission": {
+      "title": "Nuestra Misión",
+      "description": "Democratizar la automatización con IA, haciendo que la eficiencia empresarial esté al alcance de negocios de cualquier tamaño, para que los equipos puedan enfocarse en la creatividad, la estrategia y las relaciones humanas."
     },
     "values": {
       "title": "Nuestros Valores",
       "simplicity": {
-        "title": "Simplicidad Primero",
-        "description": "Creemos que la tecnología potente debe ser fácil de usar. Nuestras soluciones están diseñadas para la simplicidad sin sacrificar la capacidad."
+        "title": "Simplicidad Ante Todo",
+        "description": "Creemos que la tecnología potente debe ser fácil de usar. Nuestras soluciones priorizan la simplicidad sin sacrificar funcionalidad."
       },
       "results": {
         "title": "Orientados a Resultados",
-        "description": "Medimos nuestro éxito por tu éxito. Cada automatización que construimos está diseñada para entregar ROI medible."
+        "description": "Medimos nuestro éxito por tu éxito. Cada automatización que desarrollamos está diseñada para generar un retorno de inversión medible."
       },
       "partnership": {
-        "title": "Verdadera Asociación",
-        "description": "No somos solo proveedores — somos socios invertidos en tu éxito y crecimiento a largo plazo."
-      }
-    },
-    "team": {
-      "title": "Conoce al Equipo",
-      "member": {
-        "title": "Fundador y CEO",
-        "bio": "Con más de 10 años de experiencia en tecnología y automatización empresarial, liderando la misión de Flownox de democratizar la automatización con IA para pequeños negocios."
+        "title": "Verdadera Colaboración",
+        "description": "No somos solo proveedores — somos socios comprometidos con tu éxito y crecimiento a largo plazo."
+      },
+      "innovation": {
+        "title": "Innovación Constante",
+        "description": "Nos mantenemos a la vanguardia de la tecnología de IA para ofrecerte las soluciones de automatización más efectivas."
       }
     },
     "location": {
-      "title": "Con Base en Irlanda",
-      "subtitle": "Construido para Emprendedores Ocupados",
-      "description": "Somos una empresa remota que sirve a clientes globalmente, con un enfoque especial en ayudar a negocios irlandeses y europeos a adoptar la automatización."
-    }
+      "title": "Con Sede en Irlanda",
+      "subtitle": "Atendiendo Clientes Globalmente",
+      "description": "Somos una empresa remota que atiende clientes en todo el mundo, con especial enfoque en ayudar a empresas de España, Latinoamérica y Europa a adoptar la automatización."
+    },
+    "readyToWork": "¿Listo para Colaborar?",
+    "readyToWorkDescription": "Hablemos de cómo Flownox puede transformar las operaciones de tu negocio."
   },
   "services": {
     "title": "Nuestros",
     "titleHighlight": "Servicios",
     "subtitle": "Soluciones integrales de automatización con IA diseñadas para transformar cada aspecto de las operaciones de tu negocio.",
-    "features": "Características Clave",
+    "features": "Características Principales",
+    "getStarted": "Comenzar",
     "items": {
       "support": {
-        "title": "Soporte al Cliente con IA",
-        "description": "Despliega chatbots inteligentes que gestionan consultas de clientes 24/7, proporcionando respuestas instantáneas y escalado fluido cuando es necesario.",
+        "title": "Atención al Cliente con IA",
+        "description": "Implementa chatbots inteligentes que gestionan consultas de clientes 24/7, proporcionando respuestas instantáneas y escalado fluido cuando es necesario.",
         "features": ["Disponibilidad 24/7", "Soporte multiidioma", "Escalado inteligente", "Integración con CRM"]
       },
       "booking": {
         "title": "Sistemas de Reservas Inteligentes",
-        "description": "Elimina los dolores de cabeza de programación con reservas automatizadas, recordatorios y seguimientos que mantienen tu agenda llena y organizada.",
-        "features": ["Programación online", "Recordatorios automáticos", "Sincronización de calendario", "Reducción de ausencias"]
+        "description": "Elimina los dolores de cabeza de la programación con reservas automatizadas, recordatorios y seguimientos que mantienen tu agenda llena y organizada.",
+        "features": ["Reservas online", "Recordatorios automáticos", "Sincronización de calendario", "Reducción de ausencias"]
       },
       "crm": {
-        "title": "Automatización de CRM y Flujos de Trabajo",
-        "description": "Optimiza tu pipeline de ventas con calificación automática de leads, seguimientos y gestión del recorrido del cliente.",
+        "title": "Automatización de CRM",
+        "description": "Optimiza tu embudo de ventas con calificación automática de leads, seguimientos y gestión del ciclo de vida del cliente.",
         "features": ["Automatización de leads", "Gestión del pipeline", "Secuencias de email", "Automatización de tareas"]
       },
       "invoicing": {
-        "title": "Facturación y Pagos",
+        "title": "Facturación y Cobros",
         "description": "Automatiza tu ciclo de facturación desde la generación de facturas hasta el cobro y la conciliación.",
-        "features": ["Auto-facturación", "Recordatorios de pago", "Generación de recibos", "Informes financieros"]
+        "features": ["Facturación automática", "Recordatorios de pago", "Generación de recibos", "Reportes financieros"]
       },
       "chatbot": {
-        "title": "Chat Web y Widgets de IA",
-        "description": "Interactúa con visitantes mediante widgets de chat inteligentes que califican leads, responden preguntas y reservan citas.",
-        "features": ["Calificación de leads", "Automatización de FAQ", "Reserva de citas", "Panel de analíticas"]
+        "title": "Chat Web y Asistentes IA",
+        "description": "Interactúa con visitantes mediante widgets de chat inteligentes que califican leads, responden preguntas y agendan citas.",
+        "features": ["Calificación de leads", "Automatización de FAQ", "Agendamiento de citas", "Panel de analíticas"]
       },
       "custom": {
         "title": "Automatización Personalizada",
         "description": "Soluciones de automatización a medida adaptadas a tus procesos y requisitos de negocio únicos.",
-        "features": ["Flujos de trabajo personalizados", "Integraciones API", "Automatización de procesos", "Soporte dedicado"]
+        "features": ["Flujos personalizados", "Integraciones API", "Automatización de procesos", "Soporte dedicado"]
       }
     }
   },
   "howItWorksPage": {
     "title": "Cómo",
     "titleHighlight": "Funciona",
-    "subtitle": "Un proceso probado y estructurado que te lleva del caos del flujo de trabajo a la eficiencia automatizada en semanas, no meses.",
+    "subtitle": "Un proceso estructurado y probado que te lleva del caos operativo a la eficiencia automatizada en semanas, no en meses.",
     "steps": {
       "discover": {
         "number": "01",
-        "title": "Descubrir y Analizar",
+        "title": "Análisis y Diagnóstico",
         "subtitle": "Entendiendo tu Negocio",
-        "description": "Comenzamos profundizando en tus flujos de trabajo existentes, sistemas y puntos de dolor. A través de llamadas de descubrimiento y auditorías de procesos, identificamos las oportunidades de automatización de mayor impacto.",
+        "description": "Comenzamos profundizando en tus flujos de trabajo actuales, sistemas y puntos de fricción. A través de llamadas de descubrimiento y auditorías de procesos, identificamos las oportunidades de automatización de mayor impacto.",
         "duration": "Semana 0",
-        "details": ["Auditoría completa de flujos de trabajo", "Entrevistas con stakeholders", "Identificación de cuellos de botella", "Análisis de oportunidades de ROI"]
+        "details": ["Auditoría completa de procesos", "Entrevistas con stakeholders", "Identificación de cuellos de botella", "Análisis de oportunidades de ROI"]
       },
       "build": {
         "number": "02",
-        "title": "Construir y Personalizar",
-        "subtitle": "Soluciones a Medida",
-        "description": "Nuestro equipo diseña y construye soluciones de automatización con IA específicamente para tus necesidades. Sin enfoques genéricos — cada sistema está adaptado a tus procesos únicos.",
+        "title": "Desarrollo a Medida",
+        "subtitle": "Soluciones Personalizadas",
+        "description": "Nuestro equipo diseña y construye soluciones de automatización con IA específicamente para tus necesidades. Sin plantillas genéricas — cada sistema se adapta a tus procesos únicos.",
         "duration": "Semana 1",
-        "details": ["Arquitectura de solución personalizada", "Entrenamiento de modelos de IA", "Desarrollo de integraciones", "Pruebas de aseguramiento de calidad"]
+        "details": ["Arquitectura de solución personalizada", "Entrenamiento de modelos de IA", "Desarrollo de integraciones", "Pruebas de calidad"]
       },
       "deploy": {
         "number": "03",
-        "title": "Desplegar e Integrar",
-        "subtitle": "Lanzamiento Sin Problemas",
-        "description": "Manejamos todo el proceso de despliegue, asegurando una integración perfecta con tus herramientas existentes y mínima interrupción en tus operaciones.",
+        "title": "Implementación e Integración",
+        "subtitle": "Lanzamiento Sin Fricciones",
+        "description": "Nos encargamos de todo el proceso de implementación, asegurando una integración perfecta con tus herramientas actuales y mínima interrupción en tus operaciones.",
         "duration": "Semana 2",
-        "details": ["Estrategia de despliegue por etapas", "Sesiones de capacitación del equipo", "Entrega de documentación", "Soporte de lanzamiento"]
+        "details": ["Estrategia de despliegue por fases", "Sesiones de capacitación", "Entrega de documentación", "Soporte de lanzamiento"]
       },
       "monitor": {
         "number": "04",
-        "title": "Monitorear y Optimizar",
+        "title": "Seguimiento y Optimización",
         "subtitle": "Mejora Continua",
-        "description": "Nuestra relación no termina en el despliegue. Monitoreamos continuamente el rendimiento, recopilamos feedback y optimizamos tu automatización para máximo ROI.",
+        "description": "Nuestra relación no termina en la implementación. Monitoreamos continuamente el rendimiento, recopilamos feedback y optimizamos tu automatización para maximizar el ROI.",
         "duration": "Continuo",
         "details": ["Monitoreo de rendimiento", "Ciclos de optimización regulares", "Acceso a soporte prioritario", "Revisiones trimestrales de negocio"]
       }
@@ -315,11 +349,11 @@
         },
         "technical": {
           "q": "¿Necesito experiencia técnica en mi equipo?",
-          "a": "No. Nosotros manejamos todos los aspectos técnicos y proporcionamos capacitación completa para que tu equipo use los nuevos sistemas."
+          "a": "No. Nosotros nos encargamos de todos los aspectos técnicos y proporcionamos capacitación completa para que tu equipo use los nuevos sistemas."
         },
         "changes": {
-          "q": "¿Qué pasa si necesito cambios después del despliegue?",
-          "a": "Nuestro soporte continuo incluye ciclos de optimización regulares. Los cambios adicionales pueden hacerse como parte de nuestro plan de mantenimiento."
+          "q": "¿Qué pasa si necesito cambios después del lanzamiento?",
+          "a": "Nuestro soporte continuo incluye ciclos de optimización regulares. Los cambios adicionales pueden realizarse como parte de nuestro plan de mantenimiento."
         }
       }
     },
@@ -327,71 +361,72 @@
   },
   "useCases": {
     "title": "Casos de",
-    "titleHighlight": "Uso",
-    "subtitle": "Descubre cómo negocios de diversas industrias han transformado sus operaciones con las soluciones de automatización de Flownox.",
+    "titleHighlight": "Éxito",
+    "subtitle": "Descubre cómo empresas de distintos sectores han transformado sus operaciones con las soluciones de automatización de Flownox.",
     "results": "Resultados",
     "challenge": "El Desafío",
     "solution": "Nuestra Solución",
     "impact": "El Impacto",
+    "learnMore": "Saber Más",
     "cases": {
       "healthcare": {
         "title": "Salud y Clínicas",
-        "description": "Programación automatizada de pacientes, recordatorios y coordinación de atención de seguimiento para consultas médicas.",
-        "challenge": "Gestionar citas de pacientes, reducir ausencias y coordinar la atención de seguimiento consumía tiempo valioso del personal.",
-        "solution": "Implementamos un sistema de programación con IA con recordatorios automatizados, formularios de admisión y seguimientos post-visita.",
-        "results": ["60% reducción en ausencias", "15+ horas ahorradas semanalmente", "95% satisfacción del paciente"]
+        "description": "Programación automatizada de pacientes, recordatorios y coordinación de seguimiento para consultorios médicos.",
+        "challenge": "Gestionar las citas de pacientes, reducir las ausencias y coordinar el seguimiento consumía tiempo valioso del personal.",
+        "solution": "Implementamos un sistema de programación con IA con recordatorios automatizados, formularios de admisión y seguimientos post-consulta.",
+        "results": ["60% menos ausencias", "15+ horas ahorradas semanalmente", "95% de satisfacción del paciente"]
       },
       "ecommerce": {
         "title": "E-commerce y Retail",
         "description": "Procesamiento de pedidos optimizado, gestión de inventario y comunicación con clientes para tiendas online.",
-        "challenge": "El procesamiento manual de pedidos y las actualizaciones de inventario causaban retrasos y errores, llevando a quejas de clientes.",
-        "solution": "Flujos de trabajo de pedidos automatizados, sincronización de inventario en tiempo real y chatbot de soporte al cliente con IA.",
-        "results": ["90% más rápido procesamiento de pedidos", "Cero discrepancias de inventario", "Soporte al cliente 24/7"]
+        "challenge": "El procesamiento manual de pedidos y las actualizaciones de inventario causaban retrasos y errores, generando quejas de clientes.",
+        "solution": "Flujos de trabajo de pedidos automatizados, sincronización de inventario en tiempo real y chatbot de soporte con IA.",
+        "results": ["90% más rápido en procesamiento", "Cero errores de inventario", "Atención al cliente 24/7"]
       },
       "agencies": {
         "title": "Agencias de Marketing",
-        "description": "Onboarding de clientes automatizado, informes y flujos de trabajo de gestión de proyectos para agencias creativas.",
-        "challenge": "El onboarding de clientes tomaba semanas, y los informes manuales consumían horas facturables.",
-        "solution": "Automatización de onboarding optimizada, dashboards de informes automatizados y actualizaciones de estado de proyectos.",
-        "results": ["75% más rápido onboarding", "10+ horas ahorradas en informes", "Mejora en retención de clientes"]
+        "description": "Onboarding de clientes automatizado, reportes y flujos de gestión de proyectos para agencias creativas.",
+        "challenge": "El onboarding de clientes tomaba semanas, y los reportes manuales consumían horas facturables.",
+        "solution": "Automatización del onboarding, dashboards de reportes automatizados y actualizaciones de estado de proyectos.",
+        "results": ["75% más rápido en onboarding", "10+ horas ahorradas en reportes", "Mayor retención de clientes"]
       },
       "realestate": {
-        "title": "Inmobiliaria",
-        "description": "Gestión de leads, matching de propiedades y automatización de comunicación con clientes para profesionales inmobiliarios.",
-        "challenge": "Los leads se perdían, y los agentes pasaban demasiado tiempo en tareas administrativas.",
+        "title": "Inmobiliario",
+        "description": "Gestión de leads, matching de propiedades y automatización de comunicación para profesionales inmobiliarios.",
+        "challenge": "Los leads se perdían y los agentes dedicaban demasiado tiempo a tareas administrativas.",
         "solution": "Calificación de leads con IA, matching automatizado de propiedades y secuencias de seguimiento.",
-        "results": ["2x tasa de conversión de leads", "20+ horas ahorradas semanalmente", "Cierres de negocios más rápidos"]
+        "results": ["2x tasa de conversión", "20+ horas ahorradas semanalmente", "Cierres más rápidos"]
       },
       "consulting": {
         "title": "Firmas de Consultoría",
-        "description": "Generación de propuestas, seguimiento de tiempo y automatización de gestión de clientes para servicios profesionales.",
-        "challenge": "Crear propuestas y hacer seguimiento de horas facturables era un proceso manual propenso a errores.",
-        "solution": "Generación automatizada de propuestas, seguimiento de tiempo integrado y portal de cliente para comunicación fluida.",
-        "results": ["50% más rápido en propuestas", "Seguimiento de tiempo preciso", "Mejora en flujo de caja"]
+        "description": "Generación de propuestas, registro de tiempo y automatización de gestión de clientes para servicios profesionales.",
+        "challenge": "Crear propuestas y registrar horas facturables era un proceso manual propenso a errores.",
+        "solution": "Generación automatizada de propuestas, registro de tiempo integrado y portal de cliente para comunicación fluida.",
+        "results": ["50% más rápido en propuestas", "Registro de tiempo preciso", "Mejor flujo de caja"]
       },
       "hospitality": {
         "title": "Hostelería y Eventos",
         "description": "Gestión de reservas, comunicación con huéspedes y automatización de coordinación de eventos.",
         "challenge": "Gestionar reservas en múltiples plataformas y coordinar eventos era abrumador.",
-        "solution": "Sistema de reservas centralizado, comunicaciones automatizadas con huéspedes y automatización de flujos de trabajo de eventos.",
-        "results": ["Cero dobles reservas", "90% tasa de respuesta de huéspedes", "Operaciones optimizadas"]
+        "solution": "Sistema de reservas centralizado, comunicaciones automatizadas con huéspedes y automatización de flujos de eventos.",
+        "results": ["Cero reservas duplicadas", "90% de tasa de respuesta", "Operaciones optimizadas"]
       }
     }
   },
   "blog": {
     "title": "Blog e",
     "titleHighlight": "Insights",
-    "subtitle": "Mantente actualizado con lo último en automatización con IA, consejos de productividad y estrategias de crecimiento empresarial.",
+    "subtitle": "Mantente al día con lo último en automatización con IA, consejos de productividad y estrategias de crecimiento empresarial.",
     "readMore": "Leer Más",
     "newsletter": {
-      "title": "Mantente Actualizado",
-      "description": "Suscríbete a nuestro newsletter para los últimos insights y consejos de automatización.",
-      "placeholder": "Ingresa tu email",
+      "title": "Mantente Informado",
+      "description": "Suscríbete a nuestro newsletter para recibir los últimos insights y consejos sobre automatización.",
+      "placeholder": "Tu correo electrónico",
       "subscribe": "Suscribirse"
     },
     "comingSoon": {
       "title": "Blog Próximamente",
-      "description": "Estamos trabajando en contenido increíble para ayudarte a dominar la automatización con IA. ¡Vuelve pronto!"
+      "description": "Estamos preparando contenido de valor para ayudarte a dominar la automatización con IA. ¡Vuelve pronto!"
     }
   },
   "privacy": {
@@ -401,20 +436,32 @@
     "sections": {
       "intro": {
         "title": "Introducción",
-        "content": "En Flownox, tomamos tu privacidad en serio. Esta Política de Privacidad explica cómo recopilamos, usamos, divulgamos y protegemos tu información cuando visitas nuestro sitio web o usas nuestros servicios."
+        "content": "En Flownox nos tomamos muy en serio tu privacidad. Esta Política de Privacidad explica cómo recopilamos, utilizamos, divulgamos y protegemos tu información cuando visitas nuestro sitio web o utilizas nuestros servicios."
       },
       "collection": {
         "title": "Información que Recopilamos",
-        "content": "Podemos recopilar información sobre ti de varias maneras, incluyendo:",
-        "items": ["Nombre e información de contacto", "Dirección de email y número de teléfono", "Empresa y cargo", "Datos de uso y analíticas", "Preferencias de comunicación"]
+        "content": "Podemos recopilar información sobre ti de diversas formas, incluyendo:",
+        "items": ["Nombre e información de contacto", "Correo electrónico y número de teléfono", "Empresa y cargo", "Datos de uso y analíticas", "Preferencias de comunicación"]
       },
       "use": {
-        "title": "Cómo Usamos tu Información",
-        "content": "Usamos la información que recopilamos para proporcionar, mantener y mejorar nuestros servicios, comunicarnos contigo y cumplir con obligaciones legales."
+        "title": "Cómo Utilizamos tu Información",
+        "content": "Utilizamos la información recopilada para proporcionar, mantener y mejorar nuestros servicios, comunicarnos contigo y cumplir con obligaciones legales."
+      },
+      "sharing": {
+        "title": "Compartir Información",
+        "content": "No vendemos tu información personal. Podemos compartir información con proveedores de confianza que nos ayudan a operar nuestro negocio."
+      },
+      "security": {
+        "title": "Seguridad de los Datos",
+        "content": "Implementamos medidas de seguridad apropiadas para proteger tu información personal de acceso no autorizado, alteración o destrucción."
+      },
+      "rights": {
+        "title": "Tus Derechos",
+        "content": "Tienes derecho a acceder, corregir o eliminar tu información personal. Contáctanos para ejercer estos derechos."
       },
       "contact": {
         "title": "Contáctanos",
-        "content": "Si tienes preguntas sobre esta Política de Privacidad, por favor contáctanos en:"
+        "content": "Si tienes preguntas sobre esta Política de Privacidad, contáctanos en:"
       }
     }
   },
@@ -424,16 +471,28 @@
     "lastUpdated": "Última actualización",
     "sections": {
       "intro": {
-        "title": "Acuerdo de Términos",
-        "content": "Al acceder o usar los servicios de Flownox, aceptas estar sujeto a estos Términos de Servicio. Si no estás de acuerdo con alguna parte de estos términos, no puedes acceder a nuestros servicios."
+        "title": "Aceptación de Términos",
+        "content": "Al acceder o utilizar los servicios de Flownox, aceptas quedar vinculado por estos Términos de Servicio. Si no estás de acuerdo con alguna parte de estos términos, no podrás acceder a nuestros servicios."
       },
       "services": {
         "title": "Nuestros Servicios",
-        "content": "Flownox proporciona servicios de consultoría e implementación de automatización con IA. Nos reservamos el derecho de modificar o descontinuar nuestros servicios en cualquier momento."
+        "content": "Flownox proporciona servicios de consultoría e implementación de automatización con IA. Nos reservamos el derecho de modificar o discontinuar nuestros servicios en cualquier momento."
+      },
+      "obligations": {
+        "title": "Tus Obligaciones",
+        "content": "Te comprometes a utilizar nuestros servicios únicamente con fines legales y de acuerdo con estos Términos. Eres responsable de mantener la confidencialidad de tu cuenta."
+      },
+      "intellectual": {
+        "title": "Propiedad Intelectual",
+        "content": "Todo el contenido, características y funcionalidades de nuestros servicios son propiedad de Flownox y están protegidos por las leyes de propiedad intelectual."
+      },
+      "liability": {
+        "title": "Limitación de Responsabilidad",
+        "content": "Flownox no será responsable de ningún daño indirecto, incidental o consecuente derivado de tu uso de nuestros servicios."
       },
       "contact": {
         "title": "Contáctanos",
-        "content": "Si tienes preguntas sobre estos Términos, por favor contáctanos en:"
+        "content": "Si tienes preguntas sobre estos Términos, contáctanos en:"
       }
     }
   },
@@ -443,4 +502,3 @@
     "backHome": "Volver al Inicio"
   }
 }
-

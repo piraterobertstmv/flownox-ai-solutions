@@ -58,13 +58,13 @@ export function ServicesPreview() {
     },
     {
       icon: Bot,
-      title: "Website AI Widgets",
-      description: "Smart assistants embedded in your site to engage and convert visitors.",
+      title: t("servicesPreview.services.widgets.title"),
+      description: t("servicesPreview.services.widgets.description"),
     },
     {
       icon: Workflow,
-      title: "Custom Workflows",
-      description: "Tailored automation solutions designed for your unique processes.",
+      title: t("servicesPreview.services.custom.title"),
+      description: t("servicesPreview.services.custom.description"),
     },
   ];
 

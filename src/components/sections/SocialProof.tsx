@@ -22,30 +22,6 @@ const itemVariants = {
   },
 };
 
-const testimonials = [
-  {
-    quote:
-      "Flownox transformed our customer support. We now handle 3x more inquiries with the same team size.",
-    author: "Sarah Chen",
-    role: "Operations Director",
-    company: "TechScale Inc.",
-  },
-  {
-    quote:
-      "The ROI was immediate. We saved 20+ hours per week on manual data entry alone.",
-    author: "Marcus Williams",
-    role: "CEO",
-    company: "GrowthPath Agency",
-  },
-  {
-    quote:
-      "Professional, efficient, and truly understood our workflow challenges. Highly recommend.",
-    author: "Emily Rodriguez",
-    role: "Founder",
-    company: "Bloom Retail",
-  },
-];
-
 export function SocialProof() {
   const { t } = useTranslation();
 
@@ -54,6 +30,27 @@ export function SocialProof() {
     { value: "98%", label: t("socialProof.stats.satisfaction") },
     { value: "99.9%", label: t("socialProof.stats.uptime") },
     { value: "10x", label: t("socialProof.stats.roi") },
+  ];
+
+  const testimonials = [
+    {
+      quote: t("socialProof.testimonials.t1.quote"),
+      author: t("socialProof.testimonials.t1.author"),
+      role: t("socialProof.testimonials.t1.role"),
+      company: t("socialProof.testimonials.t1.company"),
+    },
+    {
+      quote: t("socialProof.testimonials.t2.quote"),
+      author: t("socialProof.testimonials.t2.author"),
+      role: t("socialProof.testimonials.t2.role"),
+      company: t("socialProof.testimonials.t2.company"),
+    },
+    {
+      quote: t("socialProof.testimonials.t3.quote"),
+      author: t("socialProof.testimonials.t3.author"),
+      role: t("socialProof.testimonials.t3.role"),
+      company: t("socialProof.testimonials.t3.company"),
+    },
   ];
 
   return (

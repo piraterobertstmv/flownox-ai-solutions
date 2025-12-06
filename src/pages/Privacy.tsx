@@ -1,7 +1,12 @@
 import { Layout } from "@/components/layout/Layout";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Privacy = () => {
+  const { t } = useTranslation();
+
+  const collectionItems = t("privacy.sections.collection.items", { returnObjects: true }) as string[];
+
   return (
     <Layout>
       <section className="py-20 lg:py-28 bg-background">
@@ -12,110 +17,86 @@ const Privacy = () => {
             transition={{ duration: 0.5 }}
             className="max-w-3xl mx-auto"
           >
-            <h1 className="text-4xl sm:text-5xl font-display font-bold text-foreground mb-8">
-              Privacy Policy
+            <h1 className="text-4xl sm:text-5xl font-display font-bold text-foreground mb-4">
+              {t("privacy.title")} <span className="text-gradient">{t("privacy.titleHighlight")}</span>
             </h1>
             <p className="text-muted-foreground mb-8">
-              Last updated: {new Date().toLocaleDateString()}
+              {t("privacy.lastUpdated")}: {new Date().toLocaleDateString()}
             </p>
 
             <div className="prose prose-lg max-w-none">
               <div className="space-y-8 text-muted-foreground">
                 <section>
                   <h2 className="text-2xl font-display font-semibold text-foreground mb-4">
-                    1. Information We Collect
+                    {t("privacy.sections.intro.title")}
+                  </h2>
+                  <p className="leading-relaxed">
+                    {t("privacy.sections.intro.content")}
+                  </p>
+                </section>
+
+                <section>
+                  <h2 className="text-2xl font-display font-semibold text-foreground mb-4">
+                    {t("privacy.sections.collection.title")}
                   </h2>
                   <p className="leading-relaxed mb-4">
-                    We collect information you provide directly to us, such as
-                    when you fill out a contact form, request a demo, or
-                    communicate with us. This may include:
+                    {t("privacy.sections.collection.content")}
                   </p>
                   <ul className="list-disc pl-6 space-y-2">
-                    <li>Name and contact information</li>
-                    <li>Company name and role</li>
-                    <li>Email address and phone number</li>
-                    <li>Information about your business needs</li>
+                    {Array.isArray(collectionItems) && collectionItems.map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
                   </ul>
                 </section>
 
                 <section>
                   <h2 className="text-2xl font-display font-semibold text-foreground mb-4">
-                    2. How We Use Your Information
-                  </h2>
-                  <p className="leading-relaxed mb-4">
-                    We use the information we collect to:
-                  </p>
-                  <ul className="list-disc pl-6 space-y-2">
-                    <li>Respond to your inquiries and provide requested services</li>
-                    <li>Send you relevant information about our services</li>
-                    <li>Improve our website and services</li>
-                    <li>Comply with legal obligations</li>
-                  </ul>
-                </section>
-
-                <section>
-                  <h2 className="text-2xl font-display font-semibold text-foreground mb-4">
-                    3. Information Sharing
+                    {t("privacy.sections.use.title")}
                   </h2>
                   <p className="leading-relaxed">
-                    We do not sell, trade, or otherwise transfer your personal
-                    information to third parties without your consent, except as
-                    required by law or to provide our services through trusted
-                    partners who assist us in operating our website and
-                    conducting our business.
+                    {t("privacy.sections.use.content")}
                   </p>
                 </section>
 
                 <section>
                   <h2 className="text-2xl font-display font-semibold text-foreground mb-4">
-                    4. Data Security
+                    {t("privacy.sections.sharing.title")}
                   </h2>
                   <p className="leading-relaxed">
-                    We implement appropriate security measures to protect your
-                    personal information against unauthorized access, alteration,
-                    disclosure, or destruction. However, no method of
-                    transmission over the Internet is 100% secure.
+                    {t("privacy.sections.sharing.content")}
                   </p>
                 </section>
 
                 <section>
                   <h2 className="text-2xl font-display font-semibold text-foreground mb-4">
-                    5. Cookies
+                    {t("privacy.sections.security.title")}
                   </h2>
                   <p className="leading-relaxed">
-                    Our website may use cookies to enhance your experience. You
-                    can choose to disable cookies through your browser settings,
-                    though this may affect some functionality of our website.
+                    {t("privacy.sections.security.content")}
                   </p>
                 </section>
 
                 <section>
                   <h2 className="text-2xl font-display font-semibold text-foreground mb-4">
-                    6. Your Rights
+                    {t("privacy.sections.rights.title")}
                   </h2>
-                  <p className="leading-relaxed mb-4">You have the right to:</p>
-                  <ul className="list-disc pl-6 space-y-2">
-                    <li>Access the personal information we hold about you</li>
-                    <li>Request correction of inaccurate information</li>
-                    <li>Request deletion of your personal information</li>
-                    <li>Opt-out of marketing communications</li>
-                  </ul>
+                  <p className="leading-relaxed">
+                    {t("privacy.sections.rights.content")}
+                  </p>
                 </section>
 
                 <section>
                   <h2 className="text-2xl font-display font-semibold text-foreground mb-4">
-                    7. Contact Us
+                    {t("privacy.sections.contact.title")}
                   </h2>
                   <p className="leading-relaxed">
-                    If you have questions about this Privacy Policy, please
-                    contact us at{" "}
+                    {t("privacy.sections.contact.content")}{" "}
                     <a
                       href="mailto:info@flownox.com"
                       className="text-cyan hover:underline"
                     >
                       info@flownox.com
                     </a>
-                    .
                   </p>
                 </section>
               </div>

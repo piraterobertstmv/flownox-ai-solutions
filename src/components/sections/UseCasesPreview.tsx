@@ -30,23 +30,23 @@ export function UseCasesPreview() {
   const industries = [
     {
       icon: Building2,
-      title: t("useCasesPreview.cases.agency.title"),
-      description: t("useCasesPreview.cases.agency.description"),
+      title: t("useCasesPreview.industries.agencies.title"),
+      description: t("useCasesPreview.industries.agencies.description"),
     },
     {
       icon: Store,
-      title: t("useCasesPreview.cases.ecommerce.title"),
-      description: t("useCasesPreview.cases.ecommerce.description"),
+      title: t("useCasesPreview.industries.retail.title"),
+      description: t("useCasesPreview.industries.retail.description"),
     },
     {
       icon: Briefcase,
-      title: t("useCasesPreview.cases.clinic.title"),
-      description: t("useCasesPreview.cases.clinic.description"),
+      title: t("useCasesPreview.industries.professional.title"),
+      description: t("useCasesPreview.industries.professional.description"),
     },
     {
       icon: Users,
-      title: "SMBs",
-      description: "Enterprise-level automation accessible for growing businesses.",
+      title: t("useCasesPreview.industries.smbs.title"),
+      description: t("useCasesPreview.industries.smbs.description"),
     },
   ];
 

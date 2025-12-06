@@ -34,8 +34,8 @@ const About = () => {
     },
     {
       icon: Users,
-      title: "Partnership",
-      description: "We see ourselves as an extension of your team, invested in your success for the long term.",
+      title: t("about.values.innovation.title"),
+      description: t("about.values.innovation.description"),
     },
   ];
 
@@ -96,6 +96,9 @@ const About = () => {
                     <h3 className="text-xl font-display font-bold text-primary-foreground">
                       {t("about.location.title")}
                     </h3>
+                    <p className="text-sm text-primary-foreground/70">
+                      {t("about.location.subtitle")}
+                    </p>
                   </div>
                 </div>
                 <p className="text-primary-foreground/80 text-lg leading-relaxed">
@@ -104,6 +107,26 @@ const About = () => {
               </div>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* Mission Section */}
+      <section className="py-20 bg-navy text-primary-foreground">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="max-w-3xl mx-auto text-center"
+          >
+            <h2 className="text-3xl sm:text-4xl font-display font-bold mb-6">
+              {t("about.mission.title")}
+            </h2>
+            <p className="text-lg text-primary-foreground/80 leading-relaxed">
+              {t("about.mission.description")}
+            </p>
+          </motion.div>
         </div>
       </section>
 
@@ -148,7 +171,7 @@ const About = () => {
       </section>
 
       {/* Team CTA */}
-      <section className="py-20 bg-navy text-primary-foreground">
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -157,13 +180,13 @@ const About = () => {
             transition={{ duration: 0.5 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h2 className="text-3xl sm:text-4xl font-display font-bold mb-6">
-              {t("cta.badge")}
+            <h2 className="text-3xl sm:text-4xl font-display font-bold text-foreground mb-6">
+              {t("about.readyToWork")}
             </h2>
-            <p className="text-lg text-primary-foreground/70 mb-8">
-              {t("cta.subtitle")}
+            <p className="text-lg text-muted-foreground mb-8">
+              {t("about.readyToWorkDescription")}
             </p>
-            <Button variant="hero" size="xl" asChild>
+            <Button variant="default" size="xl" asChild>
               <Link to="/contact">
                 {t("nav.contact")}
                 <ArrowRight className="w-5 h-5" />
