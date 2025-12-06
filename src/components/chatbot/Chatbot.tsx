@@ -5,14 +5,19 @@ import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { FLOWNOX_KNOWLEDGE_BASE, BOOKING_URL, BOOKING_TRIGGERS } from "./knowledgeBase";
 
-// Add your Google Gemini API key here or use environment variable
-const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY || "AIzaSyBgFGDZOThb5PqMpVXkNR7CA7_DN-Pd_sw";
+// Add your OpenAI API key here or use environment variable
+const OPENAI_API_KEY = import.meta.env.VITE_OPENAI_API_KEY || "YOUR_OPENAI_API_KEY_HERE";
 
 interface Message {
   id: string;
   role: "user" | "assistant";
   content: string;
   timestamp: Date;
+}
+
+interface ChatMessage {
+  role: "system" | "user" | "assistant";
+  content: string;
 }
 
 export function Chatbot() {
@@ -83,62 +88,42 @@ Important guidelines:
 - Highlight relevant benefits and results when discussing services`;
 
     try {
-      // Try gemini-1.5-flash first, fallback to gemini-pro
-      const models = ["gemini-1.5-flash", "gemini-pro"];
-      let lastError: Error | null = null;
+      const chatMessages: ChatMessage[] = [
+        { role: "system", content: systemPrompt },
+        { role: "user", content: userMessage },
+      ];
 
-      for (const model of models) {
-        try {
-          const response = await fetch(
-            `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${GEMINI_API_KEY}`,
-            {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify({
-                contents: [
-                  {
-                    parts: [
-                      {
-                        text: `${systemPrompt}\n\nUser message: ${userMessage}`,
-                      },
-                    ],
-                  },
-                ],
-                generationConfig: {
-                  temperature: 0.7,
-                  topK: 40,
-                  topP: 0.95,
-                  maxOutputTokens: 500,
-                },
-              }),
-            }
-          );
+      const response = await fetch("https://api.openai.com/v1/chat/completions", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${OPENAI_API_KEY}`,
+        },
+        body: JSON.stringify({
+          model: "gpt-4o-mini",
+          messages: chatMessages,
+          temperature: 0.7,
+          max_tokens: 500,
+        }),
+      });
 
-          const data = await response.json();
+      const data = await response.json();
 
-          // Check for API errors
-          if (data.error) {
-            console.error(`Gemini API error (${model}):`, data.error);
-            lastError = new Error(data.error.message || "API error");
-            continue;
-          }
-
-          const generatedText = data.candidates?.[0]?.content?.parts?.[0]?.text;
-
-          if (generatedText) {
-            return generatedText;
-          }
-        } catch (err) {
-          console.error(`Error with model ${model}:`, err);
-          lastError = err as Error;
-        }
+      // Check for API errors
+      if (data.error) {
+        console.error("OpenAI API error:", data.error);
+        throw new Error(data.error.message || "API error");
       }
 
-      throw lastError || new Error("No response generated");
+      const generatedText = data.choices?.[0]?.message?.content;
+
+      if (!generatedText) {
+        throw new Error("No response generated");
+      }
+
+      return generatedText;
     } catch (error) {
-      console.error("Gemini API error:", error);
+      console.error("OpenAI API error:", error);
       return isSpanish
         ? "Lo siento, estoy teniendo problemas técnicos. Por favor, contacta directamente a info@flownox.com o llama al +353 89 656 4733."
         : "I'm sorry, I'm having technical difficulties. Please contact info@flownox.com directly or call +353 89 656 4733.";
