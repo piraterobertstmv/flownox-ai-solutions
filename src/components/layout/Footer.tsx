@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { Mail, Linkedin } from "lucide-react";
+import { Mail, Linkedin, Instagram } from "lucide-react";
 
 export function Footer() {
   const { t } = useTranslation();
@@ -47,6 +47,15 @@ export function Footer() {
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
+              </a>
+              <a
+                href="https://www.instagram.com/flownoxsolutions/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-5 h-5" />
               </a>
               <a
                 href="mailto:info@flownox.com"
