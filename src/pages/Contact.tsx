@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Layout } from "@/components/layout/Layout";
+import { SEO } from "@/components/SEO";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Send, CheckCircle } from "lucide-react";
 import { useTranslation } from "react-i18next";
@@ -99,6 +100,10 @@ const Contact = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Contact & Book a Demo"
+        description="Get in touch with Flownox. Book a free 30-minute discovery call and learn how AI automation can transform your business operations."
+      />
       {/* Hero */}
       <section className="py-20 lg:py-28 bg-gradient-hero">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

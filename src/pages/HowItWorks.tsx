@@ -1,4 +1,5 @@
 import { Layout } from "@/components/layout/Layout";
+import { SEO } from "@/components/SEO";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -53,6 +54,10 @@ const HowItWorksPage = () => {
 
   return (
     <Layout>
+      <SEO
+        title="How It Works"
+        description="Our proven 4-step process: Discover, Build, Deploy, and Monitor. Go from workflow chaos to automated efficiency in weeks, not months."
+      />
       {/* Hero */}
       <section className="py-20 lg:py-28 bg-gradient-hero">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

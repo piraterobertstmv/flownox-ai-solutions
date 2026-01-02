@@ -1,4 +1,5 @@
 import { Layout } from "@/components/layout/Layout";
+import { SEO } from "@/components/SEO";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import {
@@ -51,6 +52,10 @@ const UseCasesPage = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Use Cases & Success Stories"
+        description="See how businesses across healthcare, e-commerce, agencies, real estate, consulting, and hospitality transformed their operations with Flownox AI automation."
+      />
       {/* Hero */}
       <section className="py-20 lg:py-28 bg-gradient-hero">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

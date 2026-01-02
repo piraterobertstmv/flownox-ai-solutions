@@ -1,16 +1,11 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
+# Flownox - AI Automation Agency
+# https://www.flownox.com
 
 User-agent: *
 Allow: /
 
+# Sitemaps
 Sitemap: https://www.flownox.com/sitemap.xml
+
+# Crawl-delay (optional, for polite crawling)
+Crawl-delay: 1

@@ -1,4 +1,5 @@
 import { Layout } from "@/components/layout/Layout";
+import { SEO } from "@/components/SEO";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -47,6 +48,10 @@ const Services = () => {
 
   return (
     <Layout>
+      <SEO
+        title="AI Automation Services"
+        description="Comprehensive AI automation solutions: customer support chatbots, smart booking systems, CRM automation, invoicing, and custom workflows. Transform your business operations."
+      />
       {/* Hero */}
       <section className="py-20 lg:py-28 bg-gradient-hero">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

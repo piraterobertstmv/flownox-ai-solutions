@@ -1,4 +1,5 @@
 import { Layout } from "@/components/layout/Layout";
+import { SEO } from "@/components/SEO";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { FileText } from "lucide-react";
@@ -10,6 +11,10 @@ const Blog = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Blog & Insights"
+        description="Stay updated with the latest in AI automation, productivity tips, and business growth strategies from Flownox."
+      />
       {/* Hero */}
       <section className="py-20 lg:py-28 bg-gradient-hero">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

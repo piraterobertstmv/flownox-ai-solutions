@@ -1,4 +1,5 @@
 import { Layout } from "@/components/layout/Layout";
+import { SEO } from "@/components/SEO";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
@@ -7,6 +8,10 @@ const Terms = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Terms of Service"
+        description="Read the terms and conditions for using Flownox services. By using our services, you agree to these terms."
+      />
       <section className="py-20 lg:py-28 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div

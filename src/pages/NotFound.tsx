@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Home } from "lucide-react";
 
@@ -8,6 +9,10 @@ const NotFound = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-background">
+      <Helmet>
+        <title>Page Not Found | Flownox</title>
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
       <div className="text-center px-4">
         <h1 className="text-8xl font-display font-bold text-cyan mb-4">404</h1>
         <h2 className="text-2xl sm:text-3xl font-display font-bold text-foreground mb-4">

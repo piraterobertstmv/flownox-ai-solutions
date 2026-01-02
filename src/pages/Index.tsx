@@ -1,4 +1,5 @@
 import { Layout } from "@/components/layout/Layout";
+import { SEO } from "@/components/SEO";
 import { Hero } from "@/components/sections/Hero";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { ValueProps } from "@/components/sections/ValueProps";
@@ -11,6 +12,7 @@ import { CTA } from "@/components/sections/CTA";
 const Index = () => {
   return (
     <Layout>
+      <SEO />
       <Hero />
       <ValueProps />
       <ServicesPreview />

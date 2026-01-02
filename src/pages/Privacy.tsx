@@ -1,4 +1,5 @@
 import { Layout } from "@/components/layout/Layout";
+import { SEO } from "@/components/SEO";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
@@ -9,6 +10,10 @@ const Privacy = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Privacy Policy"
+        description="Learn how Flownox collects, uses, and protects your personal information. Your privacy is important to us."
+      />
       <section className="py-20 lg:py-28 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div

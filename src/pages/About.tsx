@@ -1,4 +1,5 @@
 import { Layout } from "@/components/layout/Layout";
+import { SEO } from "@/components/SEO";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import {
@@ -41,6 +42,10 @@ const About = () => {
 
   return (
     <Layout>
+      <SEO
+        title="About Flownox"
+        description="Flownox is an AI automation agency based in Ireland, helping small businesses and solopreneurs work smarter through intelligent automation. Learn our story and values."
+      />
       {/* Hero */}
       <section className="py-20 lg:py-28 bg-gradient-hero">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
