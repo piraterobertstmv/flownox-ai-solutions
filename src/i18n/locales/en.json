@@ -5,6 +5,7 @@
     "howItWorks": "How It Works",
     "useCases": "Use Cases",
     "about": "About",
+    "team": "Team",
     "contact": "Contact",
     "bookDemo": "Book Demo"
   },
@@ -541,5 +542,15 @@
     "title": "Page Not Found",
     "description": "Sorry, we couldn't find the page you're looking for.",
     "backHome": "Back to Home"
+  },
+  "team": {
+    "title": "Our",
+    "titleHighlight": "Team",
+    "subtitle": "Meet the visionary behind FlowNox, dedicated to transforming business operations with AI.",
+    "member": {
+      "name": "Antonio Moya",
+      "role": "Founder & Software Engineer",
+      "bio": "Software Engineer and Founder of FlowNox. Passionate about leveraging AI and automation to help businesses scale and save time."
+    }
   }
 }

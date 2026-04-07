@@ -53,7 +53,7 @@ export function Hero() {
         >
           {/* Badge */}
           <motion.div
-            variants={itemVariants}
+            variants={itemVariants as any}
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-cyan/20 mb-8"
           >
             <Sparkles className="w-4 h-4 text-cyan" />
@@ -64,7 +64,7 @@ export function Hero() {
 
           {/* Headline */}
           <motion.h1
-            variants={itemVariants}
+            variants={itemVariants as any}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold text-primary-foreground leading-tight mb-6"
           >
             <span className="text-gradient">{t("hero.headline1")}</span> {t("hero.headline2")}{" "}
@@ -74,7 +74,7 @@ export function Hero() {
 
           {/* Sub-headline */}
           <motion.p
-            variants={itemVariants}
+            variants={itemVariants as any}
             className="text-lg sm:text-xl text-primary-foreground/70 max-w-2xl mx-auto mb-10 leading-relaxed"
           >
             {t("hero.subheadline")}
@@ -82,12 +82,12 @@ export function Hero() {
 
           {/* CTA Buttons */}
           <motion.div
-            variants={itemVariants}
+            variants={itemVariants as any}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <Button variant="hero" size="xl" asChild>
               <a
-                href="https://api.leadconnectorhq.com/widget/bookings/book-flownox-meeting"
+                href="https://calendly.com/amoyavalls/30min"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -102,7 +102,10 @@ export function Hero() {
 
           {/* Stats */}
           <motion.div
-            variants={itemVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={itemVariants as any}
             className="mt-16 grid grid-cols-3 gap-8 max-w-xl mx-auto"
           >
             {[

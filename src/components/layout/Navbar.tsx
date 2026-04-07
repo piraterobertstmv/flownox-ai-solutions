@@ -19,6 +19,7 @@ export function Navbar() {
     { name: t("nav.howItWorks"), path: "/how-it-works" },
     { name: t("nav.useCases"), path: "/use-cases" },
     { name: t("nav.about"), path: "/about" },
+    { name: t("nav.team"), path: "/team" },
   ];
 
   const toggleLanguage = () => {
@@ -72,13 +73,14 @@ export function Navbar() {
               <Link to="/contact">{t("nav.contact")}</Link>
             </Button>
             <Button variant="accent" size="default" asChild>
-              <a
-                href="https://api.leadconnectorhq.com/widget/bookings/book-flownox-meeting"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {t("nav.bookDemo")}
-              </a>
+                    <a
+                      href="https://calendly.com/amoyavalls/30min"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {t("nav.bookDemo")}
+                    </a>
             </Button>
           </div>
 
@@ -140,7 +142,7 @@ export function Navbar() {
                   </Button>
                   <Button variant="accent" className="w-full" asChild>
                     <a
-                      href="https://api.leadconnectorhq.com/widget/bookings/book-flownox-meeting"
+                      href="https://calendly.com/amoyavalls/30min"
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={() => setIsOpen(false)}

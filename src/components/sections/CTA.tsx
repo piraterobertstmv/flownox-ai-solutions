@@ -41,7 +41,7 @@ export function CTA() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button variant="accent" size="xl" asChild>
               <a
-                href="https://api.leadconnectorhq.com/widget/bookings/book-flownox-meeting"
+                href="https://calendly.com/amoyavalls/30min"
                 target="_blank"
                 rel="noopener noreferrer"
               >

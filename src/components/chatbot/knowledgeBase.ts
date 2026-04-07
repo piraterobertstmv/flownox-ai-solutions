@@ -9,6 +9,13 @@ Flownox is an AI-powered automation agency that helps small businesses and solop
 
 Based in Ireland, we serve clients globally with a special focus on helping Irish, Spanish, and European businesses embrace automation.
 
+## Team & Leadership
+Flownox is led by Antonio Moya, Founder and Software Engineer. Antonio is passionate about leveraging AI and automation to help businesses scale and save time. With a background in software engineering, he ensures that every automation solution is built with technical excellence and business ROI in mind.
+- Name: Antonio Moya
+- Role: Founder & Software Engineer
+- Profile: Software Engineer and Founder of FlowNox. Passionate about leveraging AI and automation to help businesses scale and save time.
+- Connect: Users can connect with Antonio or see our full team vision at: https://www.flownox.com/team
+
 ## Contact Information
 - Email: info@flownox.com
 - Phone: +353 89 656 4733
@@ -144,7 +151,7 @@ We offer customized solutions based on your specific needs. To get started:
 ## Booking a Demo
 To book a free demo or consultation, users can:
 1. Visit the contact page and fill out the form
-2. Book directly at: https://api.leadconnectorhq.com/widget/bookings/book-flownox-meeting
+2. Book directly at: https://calendly.com/amoyavalls/30min
 3. Email: info@flownox.com
 4. Call: +353 89 656 4733
 
@@ -169,7 +176,7 @@ A: Our ongoing support includes regular optimization cycles. Additional changes 
 Flownox offers services in both English and Spanish, serving clients in Ireland, Spain, Latin America, and throughout Europe.
 `;
 
-export const BOOKING_URL = "https://api.leadconnectorhq.com/widget/bookings/book-flownox-meeting";
+export const BOOKING_URL = "https://calendly.com/amoyavalls/30min";
 
 export const BOOKING_TRIGGERS = [
   "book",

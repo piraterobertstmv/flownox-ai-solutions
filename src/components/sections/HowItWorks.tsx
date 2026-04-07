@@ -82,7 +82,7 @@ export function HowItWorks() {
           {steps.map((step, index) => (
             <motion.div
               key={index}
-              variants={itemVariants}
+              variants={itemVariants as any}
               className="relative text-center"
             >
               {/* Number Badge */}

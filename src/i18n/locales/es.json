@@ -5,6 +5,7 @@
     "howItWorks": "Cómo Funciona",
     "useCases": "Casos de Éxito",
     "about": "Nosotros",
+    "team": "Equipo",
     "contact": "Contacto",
     "bookDemo": "Agendar Demo"
   },
@@ -541,5 +542,15 @@
     "title": "Página No Encontrada",
     "description": "Lo sentimos, no pudimos encontrar la página que buscas.",
     "backHome": "Volver al Inicio"
+  },
+  "team": {
+    "title": "Nuestro",
+    "titleHighlight": "Equipo",
+    "subtitle": "Conoce al visionario detrás de FlowNox, dedicado a transformar las operaciones empresariales con IA.",
+    "member": {
+      "name": "Antonio Moya",
+      "role": "Fundador e Ingeniero de Software",
+      "bio": "Ingeniero de Software y Fundador de FlowNox. Apasionado por aprovechar la IA y la automatización para ayudar a las empresas a escalar y ahorrar tiempo."
+    }
   }
 }

@@ -8,9 +8,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-
-// Web3Forms access key - Get yours free at https://web3forms.com
-const WEB3FORMS_ACCESS_KEY = "aa3d2776-b282-4dff-af73-ede2b125eb06";
+import { db } from "@/lib/firebase";
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 
 const Contact = () => {
   const { t, i18n } = useTranslation();
@@ -29,44 +28,29 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({
-          access_key: WEB3FORMS_ACCESS_KEY,
-          to: "info@flownox.com",
-          from_name: "Flownox Website",
-          subject: `New Demo Request from ${formData.name}`,
-          name: formData.name,
-          email: formData.email,
-          company: formData.company || "Not provided",
-          service_interest: formData.service || "Not specified",
-          message: formData.message,
-        }),
+      // Save data to Firestore
+      const leadsRef = collection(db, "leads");
+      await addDoc(leadsRef, {
+        ...formData,
+        submittedAt: serverTimestamp(),
+        source: "website_contact_form",
+        status: "new"
       });
 
-      const result = await response.json();
+      toast({
+        title: t("contact.toast.title"),
+        description: t("contact.toast.description"),
+      });
 
-      if (result.success) {
-        toast({
-          title: t("contact.toast.title"),
-          description: t("contact.toast.description"),
-        });
-
-        setFormData({
-          name: "",
-          company: "",
-          email: "",
-          service: "",
-          message: "",
-        });
-      } else {
-        throw new Error(result.message || "Form submission failed");
-      }
+      setFormData({
+        name: "",
+        company: "",
+        email: "",
+        service: "",
+        message: "",
+      });
     } catch (error) {
+      console.error("Firebase Error:", error);
       toast({
         title: i18n.language === "es" ? "Error" : "Error",
         description:
