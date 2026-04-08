@@ -1,556 +1,284 @@
 {
   "nav": {
     "home": "Home",
-    "services": "Services",
-    "howItWorks": "How It Works",
-    "useCases": "Use Cases",
+    "whatWeBuild": "What We Build",
+    "caseStudy": "Case Study",
     "about": "About",
-    "team": "Team",
-    "contact": "Contact",
-    "bookDemo": "Book Demo"
+    "bookCall": "Book a Call"
   },
   "hero": {
-    "badge": "AI-Powered Automation Agency",
-    "headline1": "Automate.",
-    "headline2": "Scale.",
-    "headline3": "Save Time.",
-    "subheadline": "Custom AI automation systems that turn your daily workflows into a smooth, 24/7-running engine. Stop wasting hours on repetitive tasks.",
-    "bookDemo": "Book a Free Demo",
-    "exploreServices": "Explore Services",
-    "stats": {
-      "hoursSaved": "Hours Saved/Week",
-      "uptime": "Automation Uptime",
-      "errorReduction": "Error Reduction"
-    }
+    "headline": "We build custom operations portals for physio & sports clinics — so you spend less time on admin and more time with patients.",
+    "subheadline": "A done-for-you web portal: patient intake forms, appointment tracking, staff task board, and automated reminders. Built in 2 weeks. €1,500 setup + €200/month.",
+    "bookCall": "Book a 20-min call",
+    "whatWeBuild": "What we build",
+    "readCaseStudy": "Read the case study"
   },
-  "valueProps": {
-    "title": "Why Choose",
-    "titleHighlight": "Flownox",
-    "subtitle": "We don't just automate tasks — we transform how your business operates, saving you time and money while scaling your capabilities.",
-    "items": {
-      "time": {
-        "title": "Save 10-25 Hours/Week",
-        "description": "Reclaim valuable time by automating repetitive tasks. Focus on what truly matters — growing your business."
+  "painPoints": {
+    "title": "Does this sound familiar?",
+    "cards": [
+      {
+        "bold": "Your front desk spends hours every day on calls, reminders, and chasing no-shows.",
+        "detail": "That's time and salary going into admin that doesn't treat a single patient."
       },
-      "reliability": {
-        "title": "24/7 Reliability",
-        "description": "Your automation works around the clock, never takes breaks, and maintains consistent quality every time."
+      {
+        "bold": "Patient intake forms are still on paper, or scattered across email and WhatsApp.",
+        "detail": "Every new patient creates manual work before they've even walked through the door."
       },
-      "growth": {
-        "title": "Scale Without Limits",
-        "description": "Handle 10x the workload without hiring 10x the team. Grow efficiently with intelligent automation."
-      },
-      "speed": {
-        "title": "Rapid Implementation",
-        "description": "Go from concept to live automation in weeks, not months. Start seeing ROI faster than ever."
+      {
+        "bold": "You have no clear view of which patients are overdue for follow-up.",
+        "detail": "It lives in someone's head — and when that person is busy, patients fall through the cracks."
       }
-    }
+    ]
   },
   "howItWorks": {
-    "title": "How It",
-    "titleHighlight": "Works",
-    "subtitle": "A simple, proven process to transform your operations with AI automation.",
-    "steps": {
-      "discover": {
-        "title": "Discover & Analyze",
-        "description": "We map your existing workflows, identify bottlenecks, and uncover automation opportunities."
+    "title": "From first call to live portal in 2 weeks",
+    "steps": [
+      {
+        "title": "Step 1 — Week 0: Discovery call (20 minutes)",
+        "description": "We learn your clinic's workflow, your pain points, and exactly what you need. You get a clear scope document the same day."
       },
-      "build": {
-        "title": "Build & Customize",
-        "description": "Our team designs and builds custom AI automation tailored to your specific needs."
+      {
+        "title": "Step 2 — Week 1–2: We build it",
+        "description": "No back-and-forth, no slow agency process. You get progress updates every 2 days. We handle everything technical."
       },
-      "deploy": {
-        "title": "Deploy & Integrate",
-        "description": "Seamless integration with your existing tools and systems. Go live with confidence."
-      },
-      "monitor": {
-        "title": "Monitor & Optimize",
-        "description": "Continuous refinement and support to ensure peak performance and ROI."
+      {
+        "title": "Step 3 — Go live",
+        "description": "Your staff get a 30-minute walkthrough. The portal is live. We stay on for support at €200/month — updates, tweaks, hosting included."
       }
-    }
+    ]
   },
-  "servicesPreview": {
-    "title": "Our",
-    "titleHighlight": "Services",
-    "subtitle": "End-to-end AI automation solutions designed to streamline every aspect of your business operations.",
-    "viewAll": "View All Services",
-    "services": {
-      "support": {
-        "title": "AI Customer Support",
-        "description": "24/7 intelligent chatbots that handle inquiries, resolve issues, and escalate when needed."
+  "offer": {
+    "title": "One product. Built for your clinic.",
+    "subtitle": "We don't offer a menu of services. We build one thing — a custom operations portal — and we build it extremely well.",
+    "portalCaption": "The portal built for a Dublin physio clinic — interface is customised per client.",
+    "cardTitle": "The Clinic Operations Portal",
+    "features": [
+      {
+        "name": "Patient intake forms",
+        "description": "Digital intake sent automatically before the first appointment. No paper, no manual data entry."
       },
-      "booking": {
-        "title": "Smart Booking Systems",
-        "description": "Automated scheduling, reminders, and follow-ups that eliminate no-shows and double bookings."
+      {
+        "name": "Appointment tracking",
+        "description": "A live dashboard showing today's bookings, upcoming sessions, and patient history at a glance."
       },
-      "crm": {
-        "title": "CRM Automation",
-        "description": "Streamlined lead management, follow-ups, and customer journey automation."
+      {
+        "name": "Staff task board",
+        "description": "Internal task management so nothing gets forgotten between sessions, admin, and follow-ups."
       },
-      "invoicing": {
-        "title": "Invoicing & Payments",
-        "description": "Automated invoicing, payment reminders, and reconciliation workflows."
-      },
-      "widgets": {
-        "title": "Website AI Widgets",
-        "description": "Smart assistants embedded in your site to engage and convert visitors."
-      },
-      "custom": {
-        "title": "Custom Workflows",
-        "description": "Tailored automation solutions designed for your unique processes."
+      {
+        "name": "Automated reminders",
+        "description": "SMS and email reminders sent automatically 24h and 2h before each appointment. No-show rates drop immediately."
       }
-    }
-  },
-  "useCasesPreview": {
-    "title": "Industries We",
-    "titleHighlight": "Serve",
-    "subtitle": "Tailored automation solutions for businesses across multiple sectors.",
-    "viewAll": "View All Use Cases",
-    "industries": {
-      "agencies": {
-        "title": "Agencies",
-        "description": "Automate client onboarding, reporting, and project management workflows."
-      },
-      "retail": {
-        "title": "Retail & E-commerce",
-        "description": "Streamline inventory, orders, and customer support at scale."
-      },
-      "professional": {
-        "title": "Professional Services",
-        "description": "Handle scheduling, billing, and client communications effortlessly."
-      },
-      "smbs": {
-        "title": "SMBs",
-        "description": "Enterprise-level automation accessible for growing businesses."
-      }
-    }
-  },
-  "testimonials": {
-    "title": "What Our",
-    "titleHighlight": "Clients Say",
-    "subtitle": "Real results from real businesses that transformed their operations with Flownox.",
-    "items": {
-      "t1": {
-        "quote": "Flownox transformed our customer support. We now handle 3x more inquiries with the same team size.",
-        "author": "Sarah Chen",
-        "role": "Operations Director",
-        "company": "TechScale Inc."
-      },
-      "t2": {
-        "quote": "The ROI was immediate. We saved 20+ hours per week on manual data entry alone.",
-        "author": "Marcus Williams",
-        "role": "CEO",
-        "company": "GrowthPath Agency"
-      },
-      "t3": {
-        "quote": "Professional, efficient, and truly understood our workflow challenges. Highly recommend.",
-        "author": "Emily Rodriguez",
-        "role": "Founder",
-        "company": "Bloom Retail"
-      },
-      "t4": {
-        "quote": "Our booking system went from chaos to seamless. No more double bookings, ever.",
-        "author": "David Park",
-        "role": "Practice Manager",
-        "company": "Wellness Clinic Dublin"
-      },
-      "t5": {
-        "quote": "We automated our entire invoicing process. Now payments come in faster than ever.",
-        "author": "Lisa Thompson",
-        "role": "Finance Director",
-        "company": "Creative Solutions Ltd"
-      },
-      "t6": {
-        "quote": "The chatbot handles 80% of our inquiries. Our team can focus on complex cases.",
-        "author": "James O'Brien",
-        "role": "Customer Success Lead",
-        "company": "SaaSify"
-      },
-      "t7": {
-        "quote": "From lead to close, everything is automated. Our sales cycle dropped by 40%.",
-        "author": "Maria Santos",
-        "role": "Sales Director",
-        "company": "PropTech Innovations"
-      },
-      "t8": {
-        "quote": "Best investment we made this year. The automation pays for itself every month.",
-        "author": "Thomas Müller",
-        "role": "Managing Director",
-        "company": "EuroConsult GmbH"
-      },
-      "t9": {
-        "quote": "They delivered exactly what they promised. Our operations run like clockwork now.",
-        "author": "Anna Kowalski",
-        "role": "COO",
-        "company": "LogiFlow Express"
-      }
-    }
+    ],
+    "pricing": "€1,500 setup  ·  €200/month  ·  Live in 2 weeks  ·  30-day money-back guarantee",
+    "bookCall": "Book a 20-min call"
   },
   "socialProof": {
-    "title": "Trusted by",
-    "titleHighlight": "Growing Businesses",
-    "subtitle": "Join the businesses that have transformed their operations with Flownox.",
-    "stats": {
-      "hoursSaved": "Hours Saved Weekly",
-      "satisfaction": "Client Satisfaction",
-      "uptime": "System Uptime",
-      "roi": "Average ROI"
-    }
+    "title": "Real results from a Dublin physio clinic",
+    "metrics": [
+      {
+        "value": "15+ hrs",
+        "description": "saved on admin per week"
+      },
+      {
+        "value": "~30%",
+        "description": "fewer no-shows after launch"
+      },
+      {
+        "value": "11 days",
+        "description": "from first call to going live"
+      }
+    ],
+    "subtext": "Results from a 3-therapist physio clinic in Dublin. Built and live in 11 days."
   },
   "cta": {
-    "badge": "Ready to Transform Your Business?",
-    "title": "Start Automating Today",
-    "subtitle": "Book a free demo and discover how Flownox can save you hours every week while scaling your operations effortlessly.",
-    "bookDemo": "Book a Free Demo",
-    "learnMore": "Try Our Chatbot"
+    "title": "Running a physio clinic?",
+    "subtitle": "Book a free 20-min call. We'll tell you honestly whether a portal would help — and what it would cost.",
+    "bookCall": "Book a 20-min call"
+  },
+  "caseStudy": {
+    "badge": "Case study",
+    "hero": {
+      "title": "How a Dublin physio clinic cut admin time by 15 hours a week",
+      "subtitle": "Peak Physio Ballsbridge was spending 20 hours a week on appointment reminders, intake paperwork, and follow-up calls. We fixed it in 2 weeks."
+    },
+    "stats": {
+      "admin": "15 hrs saved per week on admin",
+      "noShows": "~30% reduction in no-show rate",
+      "timeline": "2 weeks from first call to live"
+    },
+    "client": {
+      "title": "Peak Physio Ballsbridge",
+      "description": "Peak Physio Ballsbridge is a 3-therapist clinic in Dublin dealing with complex sports injuries and post-surgical rehabilitation. Before launch, the clinic was managing patient intake via physical clipboards and appointment reminders via manual WhatsApp messages — a process that consumed roughly 15 hours of the clinic director's week.",
+      "snapshot": {
+        "location": "Ballsbridge, Dublin 4",
+        "team": "3 Chartered Physiotherapists",
+        "patients": "150+ patients per week",
+        "tools": "Paper, Excel & WhatsApp"
+      }
+    },
+    "problem": {
+      "title": "The problem",
+      "p1": "Peak Physio Ballsbridge's front desk was spending nearly 3 hours every morning on appointment reminders — calling patients one by one, leaving voicemails, and sending manual texts. On busy days, some patients never got reminded at all, leading to costly gaps in the schedule.",
+      "p2": "Intake was handled on paper forms that patients filled out on arrival. The therapist would then manually enter the relevant details into their notes system. If a form was illegible, they'd have to ask the patient to repeat information they'd already written down, wasting valuable treatment time.",
+      "p3": "There was no shared visibility across the team. If a therapist left a note that a patient needed a follow-up call in two weeks, it lived on a Post-It note. The admin team had no centralized way to track these tasks, meaning revenue-generating follow-ups were often missed."
+    },
+    "solution": {
+      "title": "What we built",
+      "intro": "We built a web-based operations portal custom to Peak Performance's workflow. It took 11 days from kickoff to the team going live. No off-the-shelf software was used — everything was designed around how the clinic actually operates.",
+      "intake": {
+        "title": "Digital intake",
+        "desc": "Patients now receive an intake form link automatically when an appointment is booked. By the time they arrive, their details are already in the system. The therapist reviews the form on a tablet before walking into the session."
+      },
+      "reminders": {
+        "title": "Reminder automation",
+        "desc": "Every appointment triggers an automatic SMS and email reminder 24 hours and 2 hours beforehand. Patients can confirm or cancel with one tap. Cancellations immediately free the slot and notify the front desk."
+      },
+      "tasks": {
+        "title": "Staff task board",
+        "desc": "Therapists can leave follow-up tasks directly from a patient's record — 'call in 2 weeks', 'check in after surgery', 'send exercise sheet'. These appear in the admin task queue with due dates and patient context."
+      }
+    },
+    "result": {
+      "title": "What changed",
+      "card1": {
+        "value": "15 hrs/week",
+        "label": "time saved on admin",
+        "sub": "The morning reminder calls stopped entirely."
+      },
+      "card2": {
+        "value": "~30%",
+        "label": "fewer no-shows",
+        "sub": "Automated reminders replaced manual calls."
+      },
+      "card3": {
+        "value": "11 days",
+        "label": "from kickoff to live",
+        "sub": "The team was using it within 2 weeks."
+      },
+      "quote": "\"The portal replaced a stack of spreadsheets and a lot of phone calls. The team picked it up in an afternoon. Our front desk finally has time to actually talk to patients.\"",
+      "author": "Sarah, Owner — Peak Physio Ballsbridge"
+    },
+    "final": {
+      "title": "Running a physio clinic?",
+      "subtitle": "We can build you the same thing — customised to your workflow. Book a 20-minute call and we'll walk you through exactly what it would look like for your clinic.",
+      "cta": "Book a 20-min call"
+    }
   },
   "footer": {
-    "description": "Custom AI automation systems that turn your daily workflows into a smooth, 24/7-running engine.",
+    "description": "Custom operations portals for physio & sports clinics. Built in Ireland, serving clients across Europe.",
     "company": "Company",
+    "product": "Product",
     "resources": "Resources",
     "legal": "Legal",
     "aboutUs": "About Us",
+    "caseStudy": "Case Study",
+    "blog": "Blog",
+    "customPortals": "Custom Portals",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service",
     "copyright": "All rights reserved.",
-    "tagline": "Built with AI. Powered by automation."
-  },
-  "contact": {
-    "title": "Book a",
-    "titleHighlight": "Demo",
-    "subtitle": "Ready to transform your workflows? Let's discuss how Flownox can help your business automate, scale, and save time.",
-    "getInTouch": "Get in Touch",
-    "getInTouchDescription": "Fill out the form and our team will get back to you within 24 hours. We're excited to learn about your automation needs.",
-    "email": "Email",
-    "phone": "Phone",
-    "location": "Location",
-    "locationValue": "Remote-first, serving clients globally",
-    "whatToExpect": "What to Expect",
-    "expectations": {
-      "call": "Free 30-minute discovery call",
-      "analysis": "Workflow analysis & recommendations",
-      "proposal": "Custom proposal within 48 hours",
-      "noPressure": "No obligation, no pressure"
-    },
-    "form": {
-      "title": "Book Your Free Demo",
-      "name": "Name",
-      "namePlaceholder": "Your name",
-      "company": "Company",
-      "companyPlaceholder": "Your company",
-      "email": "Email",
-      "emailPlaceholder": "your@email.com",
-      "serviceInterest": "Service Interest",
-      "selectService": "Select a service...",
-      "services": {
-        "aiSupport": "AI Customer Support",
-        "booking": "Appointment Booking",
-        "crm": "CRM & Workflow Automation",
-        "invoicing": "Invoicing & Payments",
-        "chatbot": "Website Chat & AI Widgets",
-        "custom": "Custom Automation",
-        "other": "Other / Not Sure"
-      },
-      "message": "Message",
-      "messagePlaceholder": "Tell us about your automation needs...",
-      "submit": "Send Message",
-      "sending": "Sending...",
-      "privacyNote": "By submitting this form, you agree to our",
-      "privacyLink": "Privacy Policy"
-    },
-    "toast": {
-      "title": "Message sent!",
-      "description": "We'll get back to you within 24 hours."
-    }
+    "tagline": "Built with precision in Dublin."
   },
   "about": {
-    "title": "About",
-    "titleHighlight": "Flownox",
-    "subtitle": "We're on a mission to help small businesses and solopreneurs work smarter, not harder, through intelligent automation.",
+    "hero": {
+      "title": "Built by a software engineer who watched a clinic drown in admin.",
+      "subtitle": "Flownox started with one observation: clinics that are excellent at treating patients are often terrible at running the admin side — not because they're disorganised, but because no one ever built them the right tools."
+    },
     "story": {
-      "title": "Our Story",
-      "p1": "Flownox was born from a simple observation: small business owners spend too much time on repetitive tasks that could be automated.",
-      "p2": "We saw entrepreneurs drowning in emails, struggling to keep up with customer inquiries, and losing hours every week to administrative work. We knew there had to be a better way.",
-      "p3": "Today, we help businesses of all sizes implement AI-powered automation that saves time, reduces errors, and allows teams to focus on what they do best — growing their business."
+      "title": "How this started",
+      "p1": "The first clinic we worked with was a physiotherapy practice in Dublin. They were running their bookings on one system, intake on paper, reminders by phone, and patient follow-ups on Post-It notes. The receptionist spent the first hour of every morning making calls that could have been automated in 5 minutes.",
+      "p2": "We built them a portal. It took about two weeks. The morning reminder calls stopped. The intake forms went digital. The therapists stopped losing follow-up tasks. It wasn't revolutionary technology — it was just the right system, built for how they actually work.",
+      "p3": "That's what Flownox does now. We build operations portals for physio and sports clinics that want to stop running their admin on workarounds."
     },
-    "mission": {
-      "title": "Our Mission",
-      "description": "To democratize AI automation, making enterprise-level efficiency accessible to businesses of every size — so teams can focus on creativity, strategy, and human connection."
+    "founder": {
+      "title": "Who you're working with",
+      "name": "Antonio Moya — Founder & Software Engineer",
+      "bio": "Antonio is a software engineer based in Ireland. He built Flownox after seeing firsthand how much time clinic staff spend on tasks that should be automated. He handles everything personally: the discovery call, the build, the handover, and the ongoing support. When you work with Flownox, you work directly with Antonio — not a project manager or an account manager.",
+      "line1": "Based in Ireland. Serving clinics across Ireland and Europe.",
+      "line2": "All builds are custom. No templates, no off-the-shelf tools."
     },
-    "values": {
-      "title": "Our Values",
-      "simplicity": {
-        "title": "Simplicity First",
-        "description": "We believe powerful technology should be easy to use. Our solutions are designed for simplicity without sacrificing capability."
-      },
-      "results": {
-        "title": "Results-Driven",
-        "description": "We measure our success by your success. Every automation we build is designed to deliver measurable ROI."
-      },
-      "partnership": {
-        "title": "True Partnership",
-        "description": "We're not just vendors — we're partners invested in your long-term success and growth."
-      },
-      "innovation": {
-        "title": "Innovation",
-        "description": "We stay at the cutting edge of AI technology to bring you the most effective automation solutions."
-      }
+    "honest": {
+      "title": "A few things worth knowing before you get in touch",
+      "paragraph": "Flownox is a small, focused operation. We work with a limited number of clinics at a time — not because of capacity, but because we don't take on work we can't do properly. If you get in touch, you'll speak to Antonio directly. If the portal isn't right for your clinic, we'll tell you. If you want a quote for something different, we can discuss it — but our main offer is the portal described on this site."
     },
-    "location": {
-      "title": "Based in Ireland",
-      "subtitle": "Serving Clients Globally",
-      "description": "We're a remote-first company serving clients globally, with a special focus on helping Irish and European businesses embrace automation."
-    },
-    "readyToWork": "Ready to Work Together?",
-    "readyToWorkDescription": "Let's discuss how Flownox can transform your business operations."
-  },
-  "services": {
-    "title": "Our",
-    "titleHighlight": "Services",
-    "subtitle": "Comprehensive AI automation solutions designed to transform every aspect of your business operations.",
-    "features": "Key Features",
-    "getStarted": "Get Started",
-    "items": {
-      "support": {
-        "title": "AI Customer Support",
-        "description": "Deploy intelligent chatbots that handle customer inquiries 24/7, providing instant responses and seamless escalation when needed.",
-        "features": ["24/7 availability", "Multi-language support", "Smart escalation", "CRM integration"]
-      },
-      "booking": {
-        "title": "Smart Booking Systems",
-        "description": "Eliminate scheduling headaches with automated booking, reminders, and follow-ups that keep your calendar full and organized.",
-        "features": ["Online scheduling", "Automated reminders", "Calendar sync", "No-show reduction"]
-      },
-      "crm": {
-        "title": "CRM & Workflow Automation",
-        "description": "Streamline your sales pipeline with automated lead scoring, follow-ups, and customer journey management.",
-        "features": ["Lead automation", "Pipeline management", "Email sequences", "Task automation"]
-      },
-      "invoicing": {
-        "title": "Invoicing & Payments",
-        "description": "Automate your billing cycle from invoice generation to payment collection and reconciliation.",
-        "features": ["Auto-invoicing", "Payment reminders", "Receipt generation", "Financial reporting"]
-      },
-      "chatbot": {
-        "title": "Website Chat & AI Widgets",
-        "description": "Engage visitors with intelligent chat widgets that qualify leads, answer questions, and book appointments.",
-        "features": ["Lead qualification", "FAQ automation", "Appointment booking", "Analytics dashboard"]
-      },
-      "custom": {
-        "title": "Custom Automation",
-        "description": "Bespoke automation solutions tailored to your unique business processes and requirements.",
-        "features": ["Custom workflows", "API integrations", "Process automation", "Dedicated support"]
-      }
+    "finalCta": {
+      "title": "Want to work together?",
+      "subtitle": "Book a 20-minute call with Antonio. No sales process, no proposal deck. Just a conversation about whether we can help.",
+      "button": "Book a 20-min call"
     }
   },
-  "howItWorksPage": {
-    "title": "How It",
-    "titleHighlight": "Works",
-    "subtitle": "A proven, structured process that takes you from workflow chaos to automated efficiency in weeks, not months.",
-    "steps": {
-      "discover": {
-        "number": "01",
-        "title": "Discover & Analyze",
-        "subtitle": "Understanding Your Business",
-        "description": "We start by diving deep into your existing workflows, systems, and pain points. Through discovery calls and process audits, we identify the highest-impact automation opportunities.",
-        "duration": "Week 0",
-        "details": ["Comprehensive workflow audit", "Stakeholder interviews", "Bottleneck identification", "ROI opportunity analysis"]
-      },
-      "build": {
-        "number": "02",
-        "title": "Build & Customize",
-        "subtitle": "Tailored Solutions",
-        "description": "Our team designs and builds custom AI automation solutions specifically for your needs. No cookie-cutter approaches — every system is tailored to your unique processes.",
-        "duration": "Week 1",
-        "details": ["Custom solution architecture", "AI model training", "Integration development", "Quality assurance testing"]
-      },
-      "deploy": {
-        "number": "03",
-        "title": "Deploy & Integrate",
-        "subtitle": "Seamless Go-Live",
-        "description": "We handle the entire deployment process, ensuring seamless integration with your existing tools and minimal disruption to your operations.",
-        "duration": "Week 2",
-        "details": ["Staged rollout strategy", "Team training sessions", "Documentation delivery", "Go-live support"]
-      },
-      "monitor": {
-        "number": "04",
-        "title": "Monitor & Optimize",
-        "subtitle": "Continuous Improvement",
-        "description": "Our relationship doesn't end at deployment. We continuously monitor performance, gather feedback, and optimize your automation for maximum ROI.",
-        "duration": "Ongoing",
-        "details": ["Performance monitoring", "Regular optimization cycles", "Priority support access", "Quarterly business reviews"]
-      }
+  "whatWeBuildPage": {
+    "hero": {
+      "title": "The Clinic Operations Portal",
+      "subtitle": "A custom web portal built specifically for your clinic. Replaces spreadsheets, paper forms, phone reminders, and scattered tools — with one system your whole team actually uses.",
+      "pricing": "€1,500 setup + €200/month",
+      "timeline": "Live in 2 weeks",
+      "cta": "Book a 20-min call"
     },
-    "whatHappens": "What happens in this phase:",
-    "faq": {
-      "title": "Common Questions",
-      "questions": {
-        "duration": {
-          "q": "How long does the entire process take?",
-          "a": "Most projects are completed within 4-8 weeks from kickoff to go-live, depending on complexity and scope."
+    "included": {
+      "title": "Everything your clinic needs. Nothing it doesn't.",
+      "features": [
+        {
+          "title": "Patient intake forms",
+          "description": "Digital forms sent to patients automatically before their first appointment. They fill it in on their phone. By the time they arrive, you already have their details, medical history, and consent.",
+          "whyItMatters": "Your therapists walk into every first session prepared. No clipboard, no manual data entry, no chasing paperwork."
         },
-        "technical": {
-          "q": "Do I need technical expertise on my team?",
-          "a": "No. We handle all technical aspects and provide comprehensive training for your team to use the new systems."
+        {
+          "title": "Live appointment dashboard",
+          "description": "A clean, real-time view of today's bookings, upcoming sessions, and each patient's history. Filter by therapist, by date, by treatment type.",
+          "whyItMatters": "Everyone on your team sees the same information. No more asking 'who has Mrs Murphy at 3pm?'"
         },
-        "changes": {
-          "q": "What if I need changes after deployment?",
-          "a": "Our ongoing support includes regular optimization cycles. Additional changes can be made as part of our maintenance plan."
+        {
+          "title": "Internal task board",
+          "description": "A lightweight internal task system so nothing falls through the cracks. Notes from sessions, follow-up reminders, admin tasks — all visible to the right people.",
+          "whyItMatters": "When a therapist writes 'call patient after 2 weeks', it shows up as a task — not a sticky note that disappears."
+        },
+        {
+          "title": "Automated appointment reminders",
+          "description": "SMS and email reminders sent automatically 24 hours and 2 hours before each appointment. Patients can confirm or cancel with one tap.",
+          "whyItMatters": "No-show rates drop immediately. Your front desk stops spending 45 minutes every morning making reminder calls."
         }
+      ]
+    },
+    "pricing": {
+      "title": "Simple, transparent pricing",
+      "card": {
+        "setup": {
+          "label": "Setup fee",
+          "price": "€1,500",
+          "frequency": "one-time",
+          "includes": "discovery call, full build, testing, team walkthrough"
+        },
+        "monthly": {
+          "label": "Monthly",
+          "price": "€200/month",
+          "includes": "hosting, maintenance, small updates, ongoing support"
+        },
+        "timeline": "live in 2 weeks from first call",
+        "guarantee": "30-day money-back if you're not satisfied",
+        "bookCall": "Book a 20-min call",
+        "scopeLine": "We'll scope your clinic specifically on the call. Price is fixed — no surprise invoices."
       }
     },
-    "moreQuestions": "Have More Questions?"
-  },
-  "useCases": {
-    "title": "Use",
-    "titleHighlight": "Cases",
-    "subtitle": "Discover how businesses across industries have transformed their operations with Flownox automation solutions.",
-    "results": "Results",
-    "challenge": "The Challenge",
-    "solution": "Our Solution",
-    "impact": "The Impact",
-    "learnMore": "Try Our Chatbot",
-    "cases": {
-      "healthcare": {
-        "title": "Healthcare & Clinics",
-        "description": "Automated patient scheduling, reminders, and follow-up care coordination for medical practices.",
-        "challenge": "Managing patient appointments, reducing no-shows, and coordinating follow-up care was consuming valuable staff time.",
-        "solution": "We implemented an AI-powered scheduling system with automated reminders, intake forms, and post-visit follow-ups.",
-        "results": ["60% reduction in no-shows", "15+ hours saved weekly", "95% patient satisfaction"]
-      },
-      "ecommerce": {
-        "title": "E-commerce & Retail",
-        "description": "Streamlined order processing, inventory management, and customer communication for online stores.",
-        "challenge": "Manual order processing and inventory updates were causing delays and errors, leading to customer complaints.",
-        "solution": "Automated order workflows, real-time inventory sync, and AI-powered customer support chatbot.",
-        "results": ["90% faster order processing", "Zero inventory discrepancies", "24/7 customer support"]
-      },
-      "agencies": {
-        "title": "Marketing Agencies",
-        "description": "Automated client onboarding, reporting, and project management workflows for creative agencies.",
-        "challenge": "Client onboarding took weeks, and manual reporting was eating into billable hours.",
-        "solution": "Streamlined onboarding automation, automated reporting dashboards, and project status updates.",
-        "results": ["75% faster onboarding", "10+ hours saved on reporting", "Improved client retention"]
-      },
-      "realestate": {
-        "title": "Real Estate",
-        "description": "Lead management, property matching, and client communication automation for real estate professionals.",
-        "challenge": "Leads were falling through the cracks, and agents were spending too much time on administrative tasks.",
-        "solution": "AI-powered lead scoring, automated property matching, and follow-up sequences.",
-        "results": ["2x lead conversion rate", "20+ hours saved weekly", "Faster deal closures"]
-      },
-      "consulting": {
-        "title": "Consulting Firms",
-        "description": "Proposal generation, time tracking, and client management automation for professional services.",
-        "challenge": "Creating proposals and tracking billable hours was a manual, error-prone process.",
-        "solution": "Automated proposal generation, integrated time tracking, and client portal for seamless communication.",
-        "results": ["50% faster proposals", "Accurate time tracking", "Improved cash flow"]
-      },
-      "hospitality": {
-        "title": "Hospitality & Events",
-        "description": "Booking management, guest communication, and event coordination automation.",
-        "challenge": "Managing reservations across multiple platforms and coordinating events was overwhelming.",
-        "solution": "Centralized booking system, automated guest communications, and event workflow automation.",
-        "results": ["Zero double bookings", "90% guest response rate", "Streamlined operations"]
-      }
-    }
-  },
-  "blog": {
-    "title": "Blog &",
-    "titleHighlight": "Insights",
-    "subtitle": "Stay updated with the latest in AI automation, productivity tips, and business growth strategies.",
-    "readMore": "Read More",
-    "newsletter": {
-      "title": "Stay Updated",
-      "description": "Subscribe to our newsletter for the latest automation insights and tips.",
-      "placeholder": "Enter your email",
-      "subscribe": "Subscribe"
+    "whatNot": {
+      "title": "What this is not",
+      "items": [
+        "Not a generic SaaS subscription. This is custom-built for your clinic's actual workflow.",
+        "Not a 6-month agency project. You're live in 2 weeks or we refund the setup fee.",
+        "Not a tool your staff will need training to use. We build for non-technical people."
+      ]
     },
-    "comingSoon": {
-      "title": "Blog Coming Soon",
-      "description": "We're working on amazing content to help you master AI automation. Check back soon!"
-    }
-  },
-  "privacy": {
-    "title": "Privacy",
-    "titleHighlight": "Policy",
-    "lastUpdated": "Last updated",
-    "sections": {
-      "intro": {
-        "title": "Introduction",
-        "content": "At Flownox, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services."
-      },
-      "collection": {
-        "title": "Information We Collect",
-        "content": "We may collect information about you in various ways, including:",
-        "items": ["Name and contact information", "Email address and phone number", "Company and job title", "Usage data and analytics", "Communication preferences"]
-      },
-      "use": {
-        "title": "How We Use Your Information",
-        "content": "We use the information we collect to provide, maintain, and improve our services, communicate with you, and comply with legal obligations."
-      },
-      "sharing": {
-        "title": "Information Sharing",
-        "content": "We do not sell your personal information. We may share information with trusted service providers who assist us in operating our business."
-      },
-      "security": {
-        "title": "Data Security",
-        "content": "We implement appropriate security measures to protect your personal information from unauthorized access, alteration, or destruction."
-      },
-      "rights": {
-        "title": "Your Rights",
-        "content": "You have the right to access, correct, or delete your personal information. Contact us to exercise these rights."
-      },
-      "contact": {
-        "title": "Contact Us",
-        "content": "If you have questions about this Privacy Policy, please contact us at:"
-      }
-    }
-  },
-  "terms": {
-    "title": "Terms of",
-    "titleHighlight": "Service",
-    "lastUpdated": "Last updated",
-    "sections": {
-      "intro": {
-        "title": "Agreement to Terms",
-        "content": "By accessing or using Flownox's services, you agree to be bound by these Terms of Service. If you disagree with any part of these terms, you may not access our services."
-      },
-      "services": {
-        "title": "Our Services",
-        "content": "Flownox provides AI automation consulting and implementation services. We reserve the right to modify or discontinue our services at any time."
-      },
-      "obligations": {
-        "title": "Your Obligations",
-        "content": "You agree to use our services only for lawful purposes and in accordance with these Terms. You are responsible for maintaining the confidentiality of your account."
-      },
-      "intellectual": {
-        "title": "Intellectual Property",
-        "content": "All content, features, and functionality of our services are owned by Flownox and are protected by intellectual property laws."
-      },
-      "liability": {
-        "title": "Limitation of Liability",
-        "content": "Flownox shall not be liable for any indirect, incidental, or consequential damages arising from your use of our services."
-      },
-      "contact": {
-        "title": "Contact Us",
-        "content": "If you have questions about these Terms, please contact us at:"
-      }
+    "finalCta": {
+      "title": "Want to see if this fits your clinic?",
+      "subtitle": "Book a free 20-minute call. We'll look at your current setup and tell you exactly what we'd build — and whether it's worth it for you.",
+      "button": "Book a 20-min call",
+      "muted": "No commitment. We'll give you honest advice even if you decide not to proceed."
     }
   },
   "notFound": {
     "title": "Page Not Found",
     "description": "Sorry, we couldn't find the page you're looking for.",
     "backHome": "Back to Home"
-  },
-  "team": {
-    "title": "Our",
-    "titleHighlight": "Team",
-    "subtitle": "Meet the visionary behind FlowNox, dedicated to transforming business operations with AI.",
-    "member": {
-      "name": "Antonio Moya",
-      "role": "Founder & Software Engineer",
-      "bio": "Software Engineer and Founder of FlowNox. Passionate about leveraging AI and automation to help businesses scale and save time."
-    }
   }
 }

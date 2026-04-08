@@ -15,11 +15,9 @@ export function Navbar() {
 
   const navLinks = [
     { name: t("nav.home"), path: "/" },
-    { name: t("nav.services"), path: "/services" },
-    { name: t("nav.howItWorks"), path: "/how-it-works" },
-    { name: t("nav.useCases"), path: "/use-cases" },
+    { name: t("nav.whatWeBuild"), path: "/what-we-build" },
+    { name: t("nav.caseStudy"), path: "/case-study" },
     { name: t("nav.about"), path: "/about" },
-    { name: t("nav.team"), path: "/team" },
   ];
 
   const toggleLanguage = () => {
@@ -69,9 +67,6 @@ export function Navbar() {
               <Globe className="w-4 h-4" />
               <span className="uppercase">{i18n.language}</span>
             </button>
-            <Button variant="ghost" size="sm" asChild>
-              <Link to="/contact">{t("nav.contact")}</Link>
-            </Button>
             <Button variant="accent" size="default" asChild>
                     <a
                       href="https://calendly.com/amoyavalls/30min"
@@ -79,7 +74,7 @@ export function Navbar() {
                       rel="noopener noreferrer"
                       onClick={() => setIsOpen(false)}
                     >
-                      {t("nav.bookDemo")}
+                      {t("nav.bookCall")}
                     </a>
             </Button>
           </div>
@@ -135,11 +130,6 @@ export function Navbar() {
                 </button>
 
                 <div className="pt-4 px-4 space-y-2">
-                  <Button variant="outline" className="w-full" asChild>
-                    <Link to="/contact" onClick={() => setIsOpen(false)}>
-                      {t("nav.contact")}
-                    </Link>
-                  </Button>
                   <Button variant="accent" className="w-full" asChild>
                     <a
                       href="https://calendly.com/amoyavalls/30min"
@@ -147,7 +137,7 @@ export function Navbar() {
                       rel="noopener noreferrer"
                       onClick={() => setIsOpen(false)}
                     >
-                      {t("nav.bookDemo")}
+                      {t("nav.bookCall")}
                     </a>
                   </Button>
                 </div>

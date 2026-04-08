@@ -8,14 +8,11 @@ export function Footer() {
   const footerLinks = {
     company: [
       { name: t("footer.aboutUs"), path: "/about" },
-      { name: t("nav.team"), path: "/team" },
-      { name: t("nav.services"), path: "/services" },
-      { name: t("nav.useCases"), path: "/use-cases" },
-      { name: t("nav.contact"), path: "/contact" },
+      { name: t("footer.caseStudy"), path: "/#case-study" },
+      { name: t("footer.blog"), path: "/blog" },
     ],
-    resources: [
-      { name: t("nav.howItWorks"), path: "/how-it-works" },
-      { name: "Blog", path: "/blog" },
+    product: [
+      { name: t("footer.customPortals"), path: "/#what-we-build" },
     ],
     legal: [
       { name: t("footer.privacyPolicy"), path: "/privacy" },
@@ -85,13 +82,13 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Resources Links */}
+          {/* Product Links */}
           <div>
             <h4 className="font-display font-semibold text-lg mb-4">
-              {t("footer.resources")}
+              {t("footer.product")}
             </h4>
             <ul className="space-y-3">
-              {footerLinks.resources.map((link) => (
+              {footerLinks.product.map((link) => (
                 <li key={link.path}>
                   <Link
                     to={link.path}

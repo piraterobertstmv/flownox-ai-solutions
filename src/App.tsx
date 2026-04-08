@@ -5,12 +5,9 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import Index from "./pages/Index";
-import Services from "./pages/Services";
-import HowItWorks from "./pages/HowItWorks";
-import UseCases from "./pages/UseCases";
+import WhatWeBuild from "./pages/WhatWeBuild";
+import CaseStudy from "./pages/CaseStudy";
 import About from "./pages/About";
-import Team from "./pages/Team";
-import Contact from "./pages/Contact";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import Blog from "./pages/Blog";
@@ -27,12 +24,9 @@ const App = () => (
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/how-it-works" element={<HowItWorks />} />
-          <Route path="/use-cases" element={<UseCases />} />
+          <Route path="/what-we-build" element={<WhatWeBuild />} />
+          <Route path="/case-study" element={<CaseStudy />} />
           <Route path="/about" element={<About />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/blog" element={<Blog />} />

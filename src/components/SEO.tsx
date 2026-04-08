@@ -14,9 +14,9 @@ export const SEO = ({ title, description, image }: SEOProps) => {
   const location = useLocation();
   const canonicalUrl = `${BASE_URL}${location.pathname === "/" ? "" : location.pathname}`;
 
-  const defaultTitle = "Flownox — AI Automation Agency | Automate. Scale. Save Time.";
+  const defaultTitle = "Flownox — Custom Operations Portals for Physio & Sports Clinics";
   const defaultDescription =
-    "Flownox builds custom AI automation systems that turn your daily workflows into a smooth, 24/7-running engine. Save 10-25 hours per week with intelligent automation.";
+    "Flownox builds custom operations portals for physiotherapy and sports clinics. Patient intake, appointment tracking, reminders and staff tools — live in 2 weeks. Based in Ireland.";
 
   const pageTitle = title ? `${title} | Flownox` : defaultTitle;
   const pageDescription = description || defaultDescription;

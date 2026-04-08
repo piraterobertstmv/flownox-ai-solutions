@@ -1,75 +1,15 @@
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import {
-  MessageSquare,
-  Calendar,
-  Users,
-  Receipt,
-  Bot,
-  Workflow,
-  ArrowRight,
-} from "lucide-react";
+import { CheckCircle, ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
-
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.08,
-      delayChildren: 0.1,
-    },
-  },
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.4, ease: "easeOut" },
-  },
-};
 
 export function ServicesPreview() {
   const { t } = useTranslation();
 
-  const services = [
-    {
-      icon: MessageSquare,
-      title: t("servicesPreview.services.support.title"),
-      description: t("servicesPreview.services.support.description"),
-    },
-    {
-      icon: Calendar,
-      title: t("servicesPreview.services.booking.title"),
-      description: t("servicesPreview.services.booking.description"),
-    },
-    {
-      icon: Users,
-      title: t("servicesPreview.services.crm.title"),
-      description: t("servicesPreview.services.crm.description"),
-    },
-    {
-      icon: Receipt,
-      title: t("servicesPreview.services.invoicing.title"),
-      description: t("servicesPreview.services.invoicing.description"),
-    },
-    {
-      icon: Bot,
-      title: t("servicesPreview.services.widgets.title"),
-      description: t("servicesPreview.services.widgets.description"),
-    },
-    {
-      icon: Workflow,
-      title: t("servicesPreview.services.custom.title"),
-      description: t("servicesPreview.services.custom.description"),
-    },
-  ];
+  const features = t("offer.features", { returnObjects: true }) as Array<{ name: string; description: string }>;
 
   return (
-    <section className="py-20 lg:py-28 bg-secondary/50">
+    <section id="what-we-build" className="py-20 lg:py-28 bg-secondary/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -77,57 +17,86 @@ export function ServicesPreview() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.4, ease: "easeOut" }}
-          className="text-center max-w-2xl mx-auto mb-16"
+          className="text-center max-w-3xl mx-auto mb-16"
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">
-            {t("servicesPreview.title")} <span className="text-gradient">{t("servicesPreview.titleHighlight")}</span>
+            {t("offer.title")}
           </h2>
           <p className="text-lg text-muted-foreground">
-            {t("servicesPreview.subtitle")}
+            {t("offer.subtitle")}
           </p>
         </motion.div>
 
-        {/* Services Grid */}
+        {/* Feature Card */}
         <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12"
-        >
-          {services.map((service, index) => (
-            <motion.div
-              key={index}
-              variants={itemVariants}
-              className="group p-6 rounded-2xl bg-card border border-border hover:border-cyan/30 hover:shadow-lg transition-all duration-300"
-            >
-              <div className="w-12 h-12 rounded-xl bg-cyan/10 flex items-center justify-center mb-4 group-hover:bg-cyan/20 transition-colors">
-                <service.icon className="w-6 h-6 text-cyan" />
-              </div>
-              <h3 className="text-lg font-display font-semibold text-foreground mb-2">
-                {service.title}
-              </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                {service.description}
-              </p>
-            </motion.div>
-          ))}
-        </motion.div>
-
-        {/* CTA */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.4, delay: 0.2 }}
-          className="text-center"
+          transition={{ duration: 0.5 }}
+          className="max-w-4xl mx-auto"
         >
-          <Button variant="default" size="lg" asChild>
-            <Link to="/services">
-              {t("servicesPreview.viewAll")}
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </Button>
+          <div className="bg-card rounded-3xl border-2 border-border shadow-2xl overflow-hidden hover:border-cyan/50 transition-colors duration-500">
+            {/* Screenshot Header */}
+            <div className="relative aspect-video lg:aspect-[21/9] overflow-hidden border-b border-border">
+              <img 
+                src="/portal-screenshot.png" 
+                alt="Clinic Operations Portal Interface"
+                className="w-full h-full object-cover object-top"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60" />
+            </div>
+            
+            <div className="p-8 lg:p-12">
+              <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-12">
+                <div>
+                  <h3 className="text-2xl sm:text-3xl font-display font-bold text-foreground mb-4">
+                    {t("offer.cardTitle")}
+                  </h3>
+                  <p className="text-muted-foreground text-sm">
+                    {t("offer.portalCaption")}
+                  </p>
+                </div>
+                <div className="bg-cyan/10 px-6 py-3 rounded-2xl border border-cyan/20">
+                  <div className="text-cyan font-bold text-lg">€1,500 setup</div>
+                  <div className="text-cyan/60 text-xs font-medium">Built in 2 weeks</div>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                {features.map((feature, index) => (
+                  <div key={index} className="flex gap-4 group">
+                    <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-cyan/10 flex items-center justify-center text-cyan group-hover:bg-cyan group-hover:text-white transition-colors duration-300">
+                      <CheckCircle className="w-5 h-5" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-foreground mb-1">
+                        {feature.name}
+                      </h4>
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        {feature.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-8">
+                <p className="text-sm font-medium text-muted-foreground italic">
+                  {t("offer.pricing")}
+                </p>
+                <Button variant="accent" size="lg" className="w-full sm:w-auto" asChild>
+                  <a
+                    href="https://calendly.com/amoyavalls/30min"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {t("offer.bookCall")}
+                    <ArrowRight className="ml-2 w-5 h-5" />
+                  </a>
+                </Button>
+              </div>
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>

@@ -51,31 +51,18 @@ export function Hero() {
           animate="visible"
           className="max-w-4xl mx-auto text-center"
         >
-          {/* Badge */}
-          <motion.div
-            variants={itemVariants as any}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-cyan/20 mb-8"
-          >
-            <Sparkles className="w-4 h-4 text-cyan" />
-            <span className="text-sm text-primary-foreground/80">
-              {t("hero.badge")}
-            </span>
-          </motion.div>
-
           {/* Headline */}
           <motion.h1
             variants={itemVariants as any}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold text-primary-foreground leading-tight mb-6"
           >
-            <span className="text-gradient">{t("hero.headline1")}</span> {t("hero.headline2")}{" "}
-            <br className="hidden sm:block" />
-            {t("hero.headline3")}
+            {t("hero.headline")}
           </motion.h1>
 
           {/* Sub-headline */}
           <motion.p
             variants={itemVariants as any}
-            className="text-lg sm:text-xl text-primary-foreground/70 max-w-2xl mx-auto mb-10 leading-relaxed"
+            className="text-lg sm:text-xl text-primary-foreground/70 max-w-3xl mx-auto mb-10 leading-relaxed"
           >
             {t("hero.subheadline")}
           </motion.p>
@@ -83,45 +70,31 @@ export function Hero() {
           {/* CTA Buttons */}
           <motion.div
             variants={itemVariants as any}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+            className="flex flex-col items-center gap-6"
           >
-            <Button variant="hero" size="xl" asChild>
-              <a
-                href="https://calendly.com/amoyavalls/30min"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {t("hero.bookDemo")}
-                <ArrowRight className="w-5 h-5" />
-              </a>
-            </Button>
-            <Button variant="heroOutline" size="xl" asChild>
-              <Link to="/services">{t("hero.exploreServices")}</Link>
-            </Button>
-          </motion.div>
-
-          {/* Stats */}
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
-            variants={itemVariants as any}
-            className="mt-16 grid grid-cols-3 gap-8 max-w-xl mx-auto"
-          >
-            {[
-              { value: "10-25", label: t("hero.stats.hoursSaved") },
-              { value: "24/7", label: t("hero.stats.uptime") },
-              { value: "90%", label: t("hero.stats.errorReduction") },
-            ].map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-2xl sm:text-3xl font-display font-bold text-cyan mb-1">
-                  {stat.value}
-                </div>
-                <div className="text-xs sm:text-sm text-primary-foreground/60">
-                  {stat.label}
-                </div>
-              </div>
-            ))}
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
+              <Button variant="hero" size="xl" className="w-full sm:w-auto" asChild>
+                <a
+                  href="https://calendly.com/amoyavalls/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t("hero.bookCall")}
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </a>
+              </Button>
+              <Button variant="heroOutline" size="xl" className="w-full sm:w-auto" asChild>
+                <Link to="/what-we-build">{t("hero.whatWeBuild")}</Link>
+              </Button>
+            </div>
+            
+            <Link 
+              to="/case-study" 
+              className="group flex items-center gap-2 text-cyan font-semibold hover:text-cyan/80 transition-colors"
+            >
+              {t("hero.readCaseStudy")}
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Link>
           </motion.div>
         </motion.div>
 

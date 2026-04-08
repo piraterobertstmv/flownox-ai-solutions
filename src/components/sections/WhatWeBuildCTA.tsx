@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 
-export function CTA() {
+export function WhatWeBuildCTA() {
   const { t } = useTranslation();
 
   return (
@@ -23,14 +23,14 @@ export function CTA() {
           className="max-w-4xl mx-auto text-center"
         >
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-white mb-8">
-            {t("cta.title")}
+            {t("whatWeBuildPage.finalCta.title")}
           </h2>
 
-          <p className="text-xl sm:text-2xl text-white/90 mb-12 max-w-3xl mx-auto font-medium">
-            {t("cta.subtitle")}
+          <p className="text-xl sm:text-2xl text-white/90 mb-12 max-w-3xl mx-auto font-medium leading-relaxed">
+            {t("whatWeBuildPage.finalCta.subtitle")}
           </p>
 
-          <div className="flex flex-col items-center justify-center gap-6">
+          <div className="flex flex-col items-center gap-6">
             <Button 
               size="xl" 
               className="bg-navy hover:bg-navy/90 text-white border-transparent text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 w-full sm:w-auto"
@@ -41,10 +41,14 @@ export function CTA() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {t("cta.bookCall")}
+                {t("whatWeBuildPage.finalCta.button")}
                 <ArrowRight className="ml-2 w-5 h-5" />
               </a>
             </Button>
+            
+            <p className="text-sm text-white/60 font-medium italic">
+              {t("whatWeBuildPage.finalCta.muted")}
+            </p>
           </div>
         </motion.div>
       </div>
