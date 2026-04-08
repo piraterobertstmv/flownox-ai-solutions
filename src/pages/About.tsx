@@ -162,7 +162,7 @@ const About = () => {
               asChild
             >
               <a 
-                href="https://calendly.com/amoyavalls/30min" 
+                href="https://calendly.com/amoyavalls/15-min-discovery-call" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >

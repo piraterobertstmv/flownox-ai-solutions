@@ -70,7 +70,7 @@ export function WhatWeBuildPricing() {
 
             <Button variant="accent" size="xl" className="w-full mb-6" asChild>
               <a
-                href="https://calendly.com/amoyavalls/30min"
+                href="https://calendly.com/amoyavalls/15-min-discovery-call"
                 target="_blank"
                 rel="noopener noreferrer"
               >

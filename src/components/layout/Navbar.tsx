@@ -69,7 +69,7 @@ export function Navbar() {
             </button>
             <Button variant="accent" size="default" asChild>
                     <a
-                      href="https://calendly.com/amoyavalls/30min"
+                      href="https://calendly.com/amoyavalls/15-min-discovery-call"
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={() => setIsOpen(false)}
@@ -132,7 +132,7 @@ export function Navbar() {
                 <div className="pt-4 px-4 space-y-2">
                   <Button variant="accent" className="w-full" asChild>
                     <a
-                      href="https://calendly.com/amoyavalls/30min"
+                      href="https://calendly.com/amoyavalls/15-min-discovery-call"
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={() => setIsOpen(false)}

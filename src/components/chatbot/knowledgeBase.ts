@@ -151,7 +151,7 @@ We offer customized solutions based on your specific needs. To get started:
 ## Booking a Demo
 To book a free demo or consultation, users can:
 1. Visit the contact page and fill out the form
-2. Book directly at: https://calendly.com/amoyavalls/30min
+2. Book directly at: https://calendly.com/amoyavalls/15-min-discovery-call
 3. Email: info@flownox.com
 4. Call: +353 89 656 4733
 
@@ -176,7 +176,7 @@ A: Our ongoing support includes regular optimization cycles. Additional changes 
 Flownox offers services in both English and Spanish, serving clients in Ireland, Spain, Latin America, and throughout Europe.
 `;
 
-export const BOOKING_URL = "https://calendly.com/amoyavalls/30min";
+export const BOOKING_URL = "https://calendly.com/amoyavalls/15-min-discovery-call";
 
 export const BOOKING_TRIGGERS = [
   "book",

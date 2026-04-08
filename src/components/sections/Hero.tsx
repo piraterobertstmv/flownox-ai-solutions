@@ -75,7 +75,7 @@ export function Hero() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
               <Button variant="hero" size="xl" className="w-full sm:w-auto" asChild>
                 <a
-                  href="https://calendly.com/amoyavalls/30min"
+                  href="https://calendly.com/amoyavalls/15-min-discovery-call"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
