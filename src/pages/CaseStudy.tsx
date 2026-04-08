@@ -151,18 +151,18 @@ export default function CaseStudy() {
               {t("caseStudy.solution.intro")}
             </p>
             
-            <div className="space-y-16">
-              <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-8">
-                <h3 className="text-2xl font-display font-bold text-navy">{t("caseStudy.solution.intake.title")}</h3>
-                <p className="text-lg text-slate-600">{t("caseStudy.solution.intake.desc")}</p>
+            <div className="space-y-12">
+              <div className="border-t border-slate-100 pt-12">
+                <h3 className="text-2xl font-display font-bold text-navy mb-4">{t("caseStudy.solution.intake.title")}</h3>
+                <p className="text-lg text-slate-600 leading-relaxed">{t("caseStudy.solution.intake.desc")}</p>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-8 border-t border-slate-100 pt-16">
-                <h3 className="text-2xl font-display font-bold text-navy">{t("caseStudy.solution.reminders.title")}</h3>
-                <p className="text-lg text-slate-600">{t("caseStudy.solution.reminders.desc")}</p>
+              <div className="border-t border-slate-100 pt-12">
+                <h3 className="text-2xl font-display font-bold text-navy mb-4">{t("caseStudy.solution.reminders.title")}</h3>
+                <p className="text-lg text-slate-600 leading-relaxed">{t("caseStudy.solution.reminders.desc")}</p>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-8 border-t border-slate-100 pt-16">
-                <h3 className="text-2xl font-display font-bold text-navy">{t("caseStudy.solution.tasks.title")}</h3>
-                <p className="text-lg text-slate-600">{t("caseStudy.solution.tasks.desc")}</p>
+              <div className="border-t border-slate-100 pt-12">
+                <h3 className="text-2xl font-display font-bold text-navy mb-4">{t("caseStudy.solution.tasks.title")}</h3>
+                <p className="text-lg text-slate-600 leading-relaxed">{t("caseStudy.solution.tasks.desc")}</p>
               </div>
             </div>
           </div>
@@ -209,7 +209,7 @@ export default function CaseStudy() {
             <p className="text-2xl sm:text-3xl lg:text-4xl text-white font-light italic leading-snug mb-8">
               {t("caseStudy.result.quote")}
             </p>
-            <p className="text-white/80 font-bold uppercase tracking-wider">
+            <p className="text-white/80 font-bold tracking-wider">
               {t("caseStudy.result.author")}
             </p>
           </div>
@@ -226,16 +226,23 @@ export default function CaseStudy() {
             <p className="text-xl sm:text-2xl text-white/80 mb-12 max-w-2xl mx-auto">
               {t("caseStudy.final.subtitle")}
             </p>
-            <Button variant="accent" size="xl" asChild>
-              <a
-                href="https://calendly.com/amoyavalls/15-min-discovery-call"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {t("caseStudy.final.cta")}
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </a>
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button variant="accent" size="xl" asChild>
+                <a
+                  href="https://calendly.com/amoyavalls/15-min-discovery-call"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t("caseStudy.final.cta")}
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </a>
+              </Button>
+              <Button variant="ghost" size="xl" className="border-white/20 text-white hover:bg-white/10" asChild>
+                <a href="mailto:info@flownox.com">
+                  Email us directly
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
