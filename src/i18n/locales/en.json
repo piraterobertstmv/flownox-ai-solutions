@@ -9,7 +9,7 @@
   "hero": {
     "headline": "We build custom operations portals for physio & sports clinics — so you spend less time on admin and more time with patients.",
     "subheadline": "A done-for-you web portal: patient intake forms, appointment tracking, staff task board, and automated reminders. Built in 2 weeks. €1,500 setup + €200/month.",
-    "bookCall": "Book a 20-min call",
+    "bookCall": "Book a 15-min call",
     "whatWeBuild": "What we build",
     "readCaseStudy": "Read the case study"
   },
@@ -34,7 +34,7 @@
     "title": "From first call to live portal in 2 weeks",
     "steps": [
       {
-        "title": "Step 1 — Week 0: Discovery call (20 minutes)",
+        "title": "Step 1 — Week 0: Discovery call (15 minutes)",
         "description": "We learn your clinic's workflow, your pain points, and exactly what you need. You get a clear scope document the same day."
       },
       {
@@ -71,7 +71,7 @@
       }
     ],
     "pricing": "€1,500 setup  ·  €200/month  ·  Live in 2 weeks  ·  30-day money-back guarantee",
-    "bookCall": "Book a 20-min call"
+    "bookCall": "Book a 15-min call"
   },
   "socialProof": {
     "title": "Real results from a Dublin physio clinic",
@@ -93,8 +93,8 @@
   },
   "cta": {
     "title": "Running a physio clinic?",
-    "subtitle": "Book a free 20-min call. We'll tell you honestly whether a portal would help — and what it would cost.",
-    "bookCall": "Book a 20-min call"
+    "subtitle": "Book a free 15-min call. We'll tell you honestly whether a portal would help — and what it would cost.",
+    "bookCall": "Book a 15-min call"
   },
   "caseStudy": {
     "badge": "Case study",
@@ -161,8 +161,8 @@
     },
     "final": {
       "title": "Running a physio clinic?",
-      "subtitle": "We can build you the same thing — customised to your workflow. Book a 20-minute call and we'll walk you through exactly what it would look like for your clinic.",
-      "cta": "Book a 20-min call"
+      "subtitle": "We can build you the same thing — customised to your workflow. Book a 15-minute call and we'll walk you through exactly what it would look like for your clinic.",
+      "cta": "Book a 15-min call"
     }
   },
   "footer": {
@@ -204,8 +204,8 @@
     },
     "finalCta": {
       "title": "Want to work together?",
-      "subtitle": "Book a 20-minute call with Antonio. No sales process, no proposal deck. Just a conversation about whether we can help.",
-      "button": "Book a 20-min call"
+      "subtitle": "Book a 15-minute call with Antonio. No sales process, no proposal deck. Just a conversation about whether we can help.",
+      "button": "Book a 15-min call"
     }
   },
   "whatWeBuildPage": {
@@ -214,7 +214,7 @@
       "subtitle": "A custom web portal built specifically for your clinic. Replaces spreadsheets, paper forms, phone reminders, and scattered tools — with one system your whole team actually uses.",
       "pricing": "€1,500 setup + €200/month",
       "timeline": "Live in 2 weeks",
-      "cta": "Book a 20-min call"
+      "cta": "Book a 15-min call"
     },
     "included": {
       "title": "Everything your clinic needs. Nothing it doesn't.",
@@ -257,7 +257,7 @@
         },
         "timeline": "live in 2 weeks from first call",
         "guarantee": "30-day money-back if you're not satisfied",
-        "bookCall": "Book a 20-min call",
+        "bookCall": "Book a 15-min call",
         "scopeLine": "We'll scope your clinic specifically on the call. Price is fixed — no surprise invoices."
       }
     },
@@ -271,8 +271,8 @@
     },
     "finalCta": {
       "title": "Want to see if this fits your clinic?",
-      "subtitle": "Book a free 20-minute call. We'll look at your current setup and tell you exactly what we'd build — and whether it's worth it for you.",
-      "button": "Book a 20-min call",
+      "subtitle": "Book a free 15-minute call. We'll look at your current setup and tell you exactly what we'd build — and whether it's worth it for you.",
+      "button": "Book a 15-min call",
       "muted": "No commitment. We'll give you honest advice even if you decide not to proceed."
     }
   },
