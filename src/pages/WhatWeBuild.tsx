@@ -11,7 +11,7 @@ const WhatWeBuild = () => {
     <Layout>
       <SEO 
         title="The Clinic Operations Portal | What We Build"
-        description="The Clinic Operations Portal by Flownox. Digital intake forms, appointment dashboard, staff task board, automated reminders. €1,500 setup + €200/month."
+        description="The Clinic Operations Portal by Flownox. Digital intake forms, appointment dashboard, staff task board, automated reminders. Starting from €1,500 setup + €200/month — scoped to your clinic on the call."
       />
       <WhatWeBuildHero />
       <WhatWeBuildIncluded />

@@ -8,7 +8,7 @@
   },
   "hero": {
     "headline": "We build custom operations portals for physio & sports clinics — so you spend less time on admin and more time with patients.",
-    "subheadline": "A done-for-you web portal: patient intake forms, appointment tracking, staff task board, and automated reminders. Built in 2 weeks. €1,500 setup + €200/month.",
+    "subheadline": "A done-for-you web portal: patient intake forms, appointment tracking, staff task board, and automated reminders. Built in 2 weeks. Starting from €1,500 setup + €200/month — scoped to your clinic on the call.",
     "bookCall": "Book a 15-min call",
     "whatWeBuild": "What we build",
     "readCaseStudy": "Read the case study"
@@ -43,7 +43,7 @@
       },
       {
         "title": "Step 3 — Go live",
-        "description": "Your staff get a 30-minute walkthrough. The portal is live. We stay on for support at €200/month — updates, tweaks, hosting included."
+        "description": "Your staff get a 30-minute walkthrough. The portal is live. We stay on for support starting from €200/month — updates, tweaks, hosting included."
       }
     ]
   },
@@ -70,7 +70,7 @@
         "description": "SMS and email reminders sent automatically 24h and 2h before each appointment. No-show rates drop immediately."
       }
     ],
-    "pricing": "€1,500 setup  ·  €200/month  ·  Live in 2 weeks  ·  30-day money-back guarantee",
+    "pricing": "Starting from €1,500 setup + €200/month — scoped to your clinic on the call.",
     "bookCall": "Book a 15-min call"
   },
   "socialProof": {
@@ -212,7 +212,7 @@
     "hero": {
       "title": "The Clinic Operations Portal",
       "subtitle": "A custom web portal built specifically for your clinic. Replaces spreadsheets, paper forms, phone reminders, and scattered tools — with one system your whole team actually uses.",
-      "pricing": "€1,500 setup + €200/month",
+      "pricing": "Starting from €1,500 setup + €200/month — scoped to your clinic on the call.",
       "timeline": "Live in 2 weeks",
       "cta": "Book a 15-min call"
     },
@@ -246,19 +246,19 @@
       "card": {
         "setup": {
           "label": "Setup fee",
-          "price": "€1,500",
+          "price": "Starting from €1,500",
           "frequency": "one-time",
           "includes": "discovery call, full build, testing, team walkthrough"
         },
         "monthly": {
           "label": "Monthly",
-          "price": "€200/month",
+          "price": "Starting from €200/month",
           "includes": "hosting, maintenance, small updates, ongoing support"
         },
         "timeline": "live in 2 weeks from first call",
         "guarantee": "30-day money-back if you're not satisfied",
         "bookCall": "Book a 15-min call",
-        "scopeLine": "We'll scope your clinic specifically on the call. Price is fixed — no surprise invoices."
+        "scopeLine": "Starting from prices listed above. We'll scope your clinic specifically on the call."
       }
     },
     "whatNot": {

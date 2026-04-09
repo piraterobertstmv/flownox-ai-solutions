@@ -57,7 +57,7 @@ export function ServicesPreview() {
                   </p>
                 </div>
                 <div className="bg-cyan/10 px-6 py-3 rounded-2xl border border-cyan/20">
-                  <div className="text-cyan font-bold text-lg">€1,500 setup</div>
+                  <div className="text-cyan font-bold text-lg text-center md:text-left">Starting from €1,500 setup</div>
                   <div className="text-cyan/60 text-xs font-medium">Built in 2 weeks</div>
                 </div>
               </div>
