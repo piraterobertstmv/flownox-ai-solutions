@@ -246,13 +246,13 @@
       "card": {
         "setup": {
           "label": "Setup fee",
-          "price": "Starting from €1,500",
+          "price": "€1,500",
           "frequency": "one-time",
           "includes": "discovery call, full build, testing, team walkthrough"
         },
         "monthly": {
           "label": "Monthly",
-          "price": "Starting from €200/month",
+          "price": "€200/month",
           "includes": "hosting, maintenance, small updates, ongoing support"
         },
         "timeline": "live in 2 weeks from first call",
