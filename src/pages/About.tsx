@@ -75,7 +75,7 @@ const About = () => {
                 <img 
                   src="/antonio.jpg" 
                   alt="Antonio Moya — Founder of Flownox" 
-                  className="relative w-full aspect-[4/5] object-cover rounded-2xl shadow-2xl"
+                  className="relative w-full aspect-[4/5] object-cover object-top rounded-2xl shadow-2xl"
                 />
               </motion.div>
 
