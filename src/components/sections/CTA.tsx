@@ -7,45 +7,55 @@ export function CTA() {
   const { t } = useTranslation();
 
   return (
-    <section className="py-24 lg:py-32 bg-cyan relative overflow-hidden">
-      {/* Background patterns */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 left-0 w-64 h-64 border-t-2 border-l-2 border-white -translate-x-1/2 -translate-y-1/2 rounded-full" />
-        <div className="absolute bottom-0 right-0 w-96 h-96 border-b-2 border-r-2 border-white translate-x-1/4 translate-y-1/4 rounded-full" />
-      </div>
+    <section className="py-24 lg:py-32 bg-gradient-dark relative overflow-hidden">
+
+      {/* Emerald glow accent */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[300px] bg-accent/8 rounded-full blur-3xl pointer-events-none" />
+
+      {/* Subtle grid */}
+      <div
+        className="absolute inset-0 opacity-[0.03]"
+        style={{
+          backgroundImage: `linear-gradient(hsl(160,84%,34%,0.6) 1px, transparent 1px),
+                            linear-gradient(90deg, hsl(160,84%,34%,0.6) 1px, transparent 1px)`,
+          backgroundSize: "60px 60px",
+        }}
+      />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="max-w-4xl mx-auto text-center"
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          className="max-w-3xl"
         >
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-white mb-8">
+          <p className="text-xs font-semibold uppercase tracking-widest text-accent mb-6">
+            {t("cta.label")}
+          </p>
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-display font-black text-white mb-6 leading-tight">
             {t("cta.title")}
           </h2>
-
-          <p className="text-xl sm:text-2xl text-white/90 mb-12 max-w-3xl mx-auto font-medium">
+          <p className="text-lg sm:text-xl text-white/60 mb-10 max-w-2xl leading-relaxed">
             {t("cta.subtitle")}
           </p>
 
-          <div className="flex flex-col items-center justify-center gap-6">
-            <Button 
-              size="xl" 
-              className="bg-navy hover:bg-navy/90 text-white border-transparent text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 w-full sm:w-auto"
-              asChild
-            >
+          <div className="flex flex-col sm:flex-row items-start gap-4">
+            <Button variant="darkHero" size="lg" asChild>
               <a
                 href="https://calendly.com/amoyavalls/15-min-discovery-call"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 {t("cta.bookCall")}
-                <ArrowRight className="ml-2 w-5 h-5" />
+                <ArrowRight className="w-5 h-5" />
               </a>
             </Button>
           </div>
+
+          <p className="mt-6 text-sm text-white/35 font-medium">
+            {t("cta.footnote")}
+          </p>
         </motion.div>
       </div>
     </section>

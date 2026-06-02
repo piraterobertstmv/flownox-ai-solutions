@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { Quote, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export function SocialProof() {
@@ -13,61 +13,64 @@ export function SocialProof() {
   ];
 
   return (
-    <section id="case-study" className="py-24 lg:py-32 bg-white relative overflow-hidden">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+    <section className="py-16 lg:py-20 bg-background hairline">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+
+        {/* Label */}
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          transition={{ duration: 0.4 }}
+          className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-10"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-navy max-w-3xl mx-auto">
-            {t("socialProof.title")}
-          </h2>
+          {t("socialProof.label")}
+        </motion.p>
+
+        {/* Metrics row */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 mb-12">
+          {metrics.map((m, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+              className="flex items-start gap-5"
+            >
+              <div className="w-px h-12 bg-accent shrink-0 mt-1" />
+              <div>
+                <div className="text-4xl sm:text-5xl font-display font-black text-foreground leading-none mb-2">
+                  {m.value}
+                </div>
+                <div className="text-sm font-medium text-muted-foreground">
+                  {m.description}
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Sub line + CTA */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: 0.3 }}
+          className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8 pt-8 border-t border-border"
+        >
+          <p className="text-sm text-muted-foreground italic">
+            {t("socialProof.subtext")}
+          </p>
+          <Link
+            to="/case-study"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-foreground hover:text-accent transition-colors shrink-0 group"
+          >
+            {t("socialProof.readMore")}
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </Link>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="max-w-5xl mx-auto"
-        >
-          <div className="bg-navy rounded-3xl p-8 lg:p-12 shadow-2xl relative overflow-hidden">
-            {/* Background Accent */}
-            <div className="absolute top-0 right-0 w-64 h-64 bg-cyan/10 rounded-full -mr-32 -mt-32 blur-3xl" />
-            
-            <div className="flex flex-col gap-12">
-              {/* Metrics */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
-                {metrics.map((metric, index) => (
-                  <div key={index} className="border-l-4 border-cyan pl-6">
-                    <div className="text-3xl sm:text-4xl font-display font-bold text-white mb-1">
-                      {metric.value}
-                    </div>
-                    <div className="text-sm sm:text-base text-cyan/80 font-medium">
-                      {metric.description}
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              {/* Subtext & CTA */}
-              <div className="pt-8 border-t border-white/10 flex flex-col items-center gap-6">
-                <p className="text-sm text-cyan/60 font-medium">
-                  {t("socialProof.subtext")}
-                </p>
-                <Link 
-                  to="/case-study"
-                  className="inline-flex items-center gap-2 text-white font-semibold hover:text-cyan transition-colors group"
-                >
-                  {t("hero.readCaseStudy")}
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </div>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

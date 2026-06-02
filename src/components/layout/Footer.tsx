@@ -7,111 +7,98 @@ export function Footer() {
 
   const footerLinks = {
     company: [
-      { name: t("footer.aboutUs"), path: "/about" },
-      { name: t("footer.caseStudy"), path: "/#case-study" },
-      { name: t("footer.blog"), path: "/blog" },
+      { name: t("footer.aboutUs"),   path: "/about" },
+      { name: t("footer.caseStudy"), path: "/case-study" },
+      { name: t("footer.blog"),      path: "/blog" },
     ],
     product: [
-      { name: t("footer.customPortals"), path: "/#what-we-build" },
+      { name: t("footer.customPortals"), path: "/what-we-build" },
     ],
     legal: [
-      { name: t("footer.privacyPolicy"), path: "/privacy" },
+      { name: t("footer.privacyPolicy"),  path: "/privacy" },
       { name: t("footer.termsOfService"), path: "/terms" },
     ],
   };
 
   return (
-    <footer className="bg-navy text-primary-foreground">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <footer className="bg-navy text-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link to="/" className="flex items-center gap-2 mb-4">
+            <Link to="/" className="inline-block mb-6">
               <img
                 src="/logo-flownox.jpg"
-                alt="Flownox Logo"
-                className="h-10 w-auto object-contain"
+                alt="Flownox"
+                className="h-9 w-auto object-contain"
               />
             </Link>
-            <p className="text-primary-foreground/70 text-sm leading-relaxed mb-6">
+            <p className="text-white/55 text-sm leading-relaxed mb-8 max-w-xs">
               {t("footer.description")}
             </p>
             <div className="flex items-center gap-3">
-              <a
-                href="https://www.linkedin.com/company/automia-cloud/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a
-                href="https://www.instagram.com/flownoxsolutions/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a
-                href="mailto:info@flownox.com"
-                className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors"
-                aria-label="Email"
-              >
-                <Mail className="w-5 h-5" />
-              </a>
+              {[
+                { href: "https://www.linkedin.com/company/automia-cloud/", Icon: Linkedin, label: "LinkedIn" },
+                { href: "https://www.instagram.com/flownoxsolutions/",    Icon: Instagram, label: "Instagram" },
+                { href: "mailto:info@flownox.com",                         Icon: Mail,      label: "Email" },
+              ].map(({ href, Icon, label }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target={href.startsWith("mailto") ? undefined : "_blank"}
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="w-9 h-9 rounded-lg bg-white/6 border border-white/10 flex items-center justify-center text-white/55 hover:text-white hover:bg-white/12 hover:border-white/20 transition-all duration-200"
+                >
+                  <Icon className="w-4 h-4" />
+                </a>
+              ))}
             </div>
           </div>
 
-          {/* Company Links */}
+          {/* Company */}
           <div>
-            <h4 className="font-display font-semibold text-lg mb-4">{t("footer.company")}</h4>
+            <h4 className="text-xs font-semibold uppercase tracking-widest text-white/40 mb-5">
+              {t("footer.company")}
+            </h4>
             <ul className="space-y-3">
-              {footerLinks.company.map((link) => (
-                <li key={link.path}>
-                  <Link
-                    to={link.path}
-                    className="text-primary-foreground/70 hover:text-cyan transition-colors text-sm"
-                  >
-                    {link.name}
+              {footerLinks.company.map((l) => (
+                <li key={l.path}>
+                  <Link to={l.path} className="text-sm text-white/60 hover:text-white transition-colors duration-150">
+                    {l.name}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Product Links */}
+          {/* Product */}
           <div>
-            <h4 className="font-display font-semibold text-lg mb-4">
+            <h4 className="text-xs font-semibold uppercase tracking-widest text-white/40 mb-5">
               {t("footer.product")}
             </h4>
             <ul className="space-y-3">
-              {footerLinks.product.map((link) => (
-                <li key={link.path}>
-                  <Link
-                    to={link.path}
-                    className="text-primary-foreground/70 hover:text-cyan transition-colors text-sm"
-                  >
-                    {link.name}
+              {footerLinks.product.map((l) => (
+                <li key={l.path}>
+                  <Link to={l.path} className="text-sm text-white/60 hover:text-white transition-colors duration-150">
+                    {l.name}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Legal Links */}
+          {/* Legal */}
           <div>
-            <h4 className="font-display font-semibold text-lg mb-4">{t("footer.legal")}</h4>
+            <h4 className="text-xs font-semibold uppercase tracking-widest text-white/40 mb-5">
+              {t("footer.legal")}
+            </h4>
             <ul className="space-y-3">
-              {footerLinks.legal.map((link) => (
-                <li key={link.path}>
-                  <Link
-                    to={link.path}
-                    className="text-primary-foreground/70 hover:text-cyan transition-colors text-sm"
-                  >
-                    {link.name}
+              {footerLinks.legal.map((l) => (
+                <li key={l.path}>
+                  <Link to={l.path} className="text-sm text-white/60 hover:text-white transition-colors duration-150">
+                    {l.name}
                   </Link>
                 </li>
               ))}
@@ -119,16 +106,14 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-white/10">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-primary-foreground/50 text-sm">
-              © {new Date().getFullYear()} Flownox. {t("footer.copyright")}
-            </p>
-            <p className="text-primary-foreground/50 text-sm">
-              {t("footer.tagline")}
-            </p>
-          </div>
+        {/* Bottom bar */}
+        <div className="mt-14 pt-8 border-t border-white/8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-xs text-white/30">
+            © {new Date().getFullYear()} Flownox. {t("footer.copyright")}
+          </p>
+          <p className="text-xs text-white/30">
+            {t("footer.tagline")}
+          </p>
         </div>
       </div>
     </footer>

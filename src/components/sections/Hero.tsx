@@ -1,129 +1,111 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Sparkles, Bot, Workflow } from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.08,
-      delayChildren: 0.1,
-    },
-  },
+const container = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.1, delayChildren: 0.05 } },
 };
-
-const itemVariants = {
-  hidden: { opacity: 0, y: 15 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.4, ease: "easeOut" },
-  },
+const item = {
+  hidden:  { opacity: 0, y: 18 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] } },
 };
 
 export function Hero() {
   const { t } = useTranslation();
 
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-gradient-hero">
-      {/* Background Elements */}
-      <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan/10 rounded-full blur-3xl animate-pulse-glow" />
-        <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-cyan/5 rounded-full blur-3xl animate-float" />
-        {/* Grid Pattern */}
-        <div
-          className="absolute inset-0 opacity-[0.02]"
-          style={{
-            backgroundImage: `linear-gradient(hsla(187, 90%, 45%, 0.3) 1px, transparent 1px),
-                            linear-gradient(90deg, hsla(187, 90%, 45%, 0.3) 1px, transparent 1px)`,
-            backgroundSize: "60px 60px",
-          }}
-        />
-      </div>
+    <section className="relative min-h-[92vh] flex items-center overflow-hidden bg-gradient-hero">
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      {/* Subtle emerald tint blob — low opacity, no movement */}
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-accent/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-1/4 w-[400px] h-[400px] bg-accent/4 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-24 pb-16">
         <motion.div
-          variants={containerVariants}
+          variants={container}
           initial="hidden"
           animate="visible"
-          className="max-w-4xl mx-auto text-center"
+          className="max-w-3xl"
         >
+
+          {/* Badge */}
+          <motion.div variants={item} className="mb-8">
+            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-accent/10 border border-accent/20 text-accent text-xs font-semibold uppercase tracking-wider">
+              <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
+              Physio &amp; Sports Clinics
+            </span>
+          </motion.div>
+
           {/* Headline */}
           <motion.h1
-            variants={itemVariants as any}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold text-primary-foreground leading-tight mb-6"
+            variants={item}
+            className="text-5xl sm:text-6xl lg:text-7xl font-display font-black text-foreground leading-[1.04] mb-6"
           >
             {t("hero.headline")}
           </motion.h1>
 
           {/* Sub-headline */}
           <motion.p
-            variants={itemVariants as any}
-            className="text-lg sm:text-xl text-primary-foreground/70 max-w-3xl mx-auto mb-10 leading-relaxed"
+            variants={item}
+            className="text-lg sm:text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed"
           >
             {t("hero.subheadline")}
           </motion.p>
 
-          {/* CTA Buttons */}
-          <motion.div
-            variants={itemVariants as any}
-            className="flex flex-col items-center gap-6"
-          >
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
-              <Button variant="hero" size="xl" className="w-full sm:w-auto" asChild>
-                <a
-                  href="https://calendly.com/amoyavalls/15-min-discovery-call"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {t("hero.bookCall")}
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </a>
-              </Button>
-              <Button variant="heroOutline" size="xl" className="w-full sm:w-auto" asChild>
-                <Link to="/what-we-build">{t("hero.whatWeBuild")}</Link>
-              </Button>
-            </div>
-            
-            <Link 
-              to="/case-study" 
-              className="group flex items-center gap-2 text-cyan font-semibold hover:text-cyan/80 transition-colors"
+          {/* CTAs */}
+          <motion.div variants={item} className="flex flex-col sm:flex-row items-start gap-4 mb-10">
+            <Button variant="hero" size="lg" asChild>
+              <a
+                href="https://calendly.com/amoyavalls/15-min-discovery-call"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t("hero.bookCall")}
+                <ArrowUpRight className="w-5 h-5" />
+              </a>
+            </Button>
+            <Button variant="heroOutline" size="lg" asChild>
+              <Link to="/what-we-build">
+                {t("hero.whatWeBuild")}
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </Button>
+          </motion.div>
+
+          {/* Trust line */}
+          <motion.div variants={item} className="flex flex-wrap items-center gap-x-6 gap-y-2">
+            {[
+              t("hero.trust1"),
+              t("hero.trust2"),
+              t("hero.trust3"),
+            ].map((item, i) => (
+              <span key={i} className="flex items-center gap-2 text-sm text-muted-foreground font-medium">
+                <svg className="w-4 h-4 text-accent shrink-0" fill="none" viewBox="0 0 16 16">
+                  <path d="M3 8l3.5 3.5L13 4.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                {item}
+              </span>
+            ))}
+          </motion.div>
+
+          {/* Case study link */}
+          <motion.div variants={item} className="mt-8">
+            <Link
+              to="/case-study"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-muted-foreground hover:text-accent transition-colors group"
             >
               {t("hero.readCaseStudy")}
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </motion.div>
         </motion.div>
-
-        {/* Floating Icons - Only on Desktop */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="absolute top-1/3 left-8 hidden lg:block"
-        >
-          <div className="w-16 h-16 rounded-2xl bg-white/5 border border-cyan/20 flex items-center justify-center animate-float">
-            <Bot className="w-8 h-8 text-cyan" />
-          </div>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          className="absolute top-1/2 right-8 hidden lg:block"
-        >
-          <div
-            className="w-14 h-14 rounded-2xl bg-white/5 border border-cyan/20 flex items-center justify-center animate-float"
-            style={{ animationDelay: "1s" }}
-          >
-            <Workflow className="w-7 h-7 text-cyan" />
-          </div>
-        </motion.div>
       </div>
+
+      {/* Bottom border */}
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-border" />
     </section>
   );
 }
