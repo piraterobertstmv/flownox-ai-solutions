@@ -13,7 +13,7 @@ export function SocialProof() {
   ];
 
   return (
-    <section id="case-study" className="py-24 lg:py-32 bg-white relative overflow-hidden">
+    <section id="case-study" className="py-24 lg:py-32 bg-background relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -21,7 +21,7 @@ export function SocialProof() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-navy max-w-3xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-foreground max-w-3xl mx-auto">
             {t("socialProof.title")}
           </h2>
         </motion.div>
@@ -33,7 +33,7 @@ export function SocialProof() {
           transition={{ duration: 0.5 }}
           className="max-w-5xl mx-auto"
         >
-          <div className="bg-navy rounded-3xl p-8 lg:p-12 shadow-2xl relative overflow-hidden">
+          <div className="bg-card/40 border border-white/10 rounded-3xl p-8 lg:p-12 shadow-2xl relative overflow-hidden backdrop-blur-md hover:border-cyan/30 transition-colors duration-500">
             {/* Background Accent */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-cyan/10 rounded-full -mr-32 -mt-32 blur-3xl" />
             
@@ -53,7 +53,7 @@ export function SocialProof() {
               </div>
 
               {/* Subtext & CTA */}
-              <div className="pt-8 border-t border-white/10 flex flex-col items-center gap-6">
+              <div className="pt-8 border-t border-white/5 flex flex-col items-center gap-6">
                 <p className="text-sm text-cyan/60 font-medium">
                   {t("socialProof.subtext")}
                 </p>

@@ -21,19 +21,19 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-navy text-primary-foreground">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <footer className="bg-background border-t border-white/5 text-foreground relative overflow-hidden">
+      {/* Subtle Background Glow */}
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-32 bg-cyan/5 blur-[100px] pointer-events-none" />
+      
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link to="/" className="flex items-center gap-2 mb-4">
-              <img
-                src="/logo-flownox.jpg"
-                alt="Flownox Logo"
-                className="h-10 w-auto object-contain"
-              />
+            <Link to="/" className="flex items-center mb-4 group">
+              <span className="font-display font-bold text-2xl tracking-tight text-foreground transition-colors">Flow</span>
+              <span className="font-display font-bold text-2xl tracking-tight text-cyan">nox</span>
             </Link>
-            <p className="text-primary-foreground/70 text-sm leading-relaxed mb-6">
+            <p className="text-muted-foreground text-sm leading-relaxed mb-6">
               {t("footer.description")}
             </p>
             <div className="flex items-center gap-3">
@@ -73,8 +73,9 @@ export function Footer() {
                 <li key={link.path}>
                   <Link
                     to={link.path}
-                    className="text-primary-foreground/70 hover:text-cyan transition-colors text-sm"
+                    className="text-muted-foreground hover:text-foreground transition-colors text-sm flex items-center group"
                   >
+                    <span className="w-0 h-[1px] bg-cyan mr-0 group-hover:w-2 group-hover:mr-2 transition-all duration-300"></span>
                     {link.name}
                   </Link>
                 </li>
@@ -92,8 +93,9 @@ export function Footer() {
                 <li key={link.path}>
                   <Link
                     to={link.path}
-                    className="text-primary-foreground/70 hover:text-cyan transition-colors text-sm"
+                    className="text-muted-foreground hover:text-foreground transition-colors text-sm flex items-center group"
                   >
+                    <span className="w-0 h-[1px] bg-cyan mr-0 group-hover:w-2 group-hover:mr-2 transition-all duration-300"></span>
                     {link.name}
                   </Link>
                 </li>
@@ -109,8 +111,9 @@ export function Footer() {
                 <li key={link.path}>
                   <Link
                     to={link.path}
-                    className="text-primary-foreground/70 hover:text-cyan transition-colors text-sm"
+                    className="text-muted-foreground hover:text-foreground transition-colors text-sm flex items-center group"
                   >
+                    <span className="w-0 h-[1px] bg-cyan mr-0 group-hover:w-2 group-hover:mr-2 transition-all duration-300"></span>
                     {link.name}
                   </Link>
                 </li>
@@ -120,12 +123,12 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-white/10">
+        <div className="mt-12 pt-8 border-t border-white/5">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-primary-foreground/50 text-sm">
+            <p className="text-muted-foreground text-sm">
               © {new Date().getFullYear()} Flownox. {t("footer.copyright")}
             </p>
-            <p className="text-primary-foreground/50 text-sm">
+            <p className="text-muted-foreground text-sm">
               {t("footer.tagline")}
             </p>
           </div>

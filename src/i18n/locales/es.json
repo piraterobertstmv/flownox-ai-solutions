@@ -1,475 +1,302 @@
 {
   "nav": {
     "home": "Inicio",
-    "services": "Servicios",
-    "howItWorks": "Cómo Funciona",
-    "useCases": "Casos de Éxito",
-    "about": "Nosotros",
-    "team": "Equipo",
-    "contact": "Contacto",
-    "bookDemo": "Agendar Demo"
+    "whatWeBuild": "Qué Construimos",
+    "caseStudy": "Caso de Estudio",
+    "about": "Sobre Nosotros",
+    "bookCall": "Agendar Llamada"
   },
   "hero": {
-    "badge": "Agencia de Automatización con IA",
-    "headline1": "Automatiza.",
-    "headline2": "Escala.",
-    "headline3": "Ahorra Tiempo.",
-    "subheadline": "Desarrollamos sistemas de automatización con inteligencia artificial que transforman tus procesos diarios en un motor eficiente que trabaja 24/7. Deja de perder horas en tareas repetitivas.",
-    "bookDemo": "Agenda tu Demo Gratis",
-    "exploreServices": "Ver Servicios",
+    "headline": "Portales de Operaciones Nivel Enterprise para Clínicas de Alto Rendimiento.",
+    "subheadline": "Transforma tu clínica con nuestros sistemas propietarios de flujo de trabajo. Elimina el 100% de la entrada manual de datos, recupera más de 40 horas por semana y eleva la experiencia del paciente. Implementado en solo 2 semanas.",
+    "bookCall": "Reserva una llamada",
+    "whatWeBuild": "Qué construimos",
+    "readCaseStudy": "Lee el caso de estudio",
     "stats": {
-      "hoursSaved": "Horas Ahorradas/Semana",
-      "uptime": "Disponibilidad",
-      "errorReduction": "Menos Errores"
+      "workflows": "150+",
+      "workflowsLabel": "Flujos Automatizados",
+      "hours": "40+",
+      "hoursLabel": "Horas Ahorradas/Semana",
+      "retention": "98%",
+      "retentionLabel": "Retención de Clientes"
     }
   },
-  "valueProps": {
-    "title": "¿Por Qué Elegir",
-    "titleHighlight": "Flownox",
-    "subtitle": "No solo automatizamos tareas — transformamos la operación de tu negocio, ahorrándote tiempo y dinero mientras escalas tus capacidades.",
-    "items": {
-      "time": {
-        "title": "Ahorra 10-25 Horas/Semana",
-        "description": "Recupera tiempo valioso automatizando tareas repetitivas. Enfócate en lo que realmente importa: hacer crecer tu negocio."
+  "painPoints": {
+    "title": "¿Te resulta familiar?",
+    "cards": [
+      {
+        "bold": "Tu recepción pasa horas al día haciendo llamadas, enviando recordatorios y persiguiendo ausencias.",
+        "detail": "Eso es tiempo y dinero invertido en tareas administrativas que no tratan a ningún paciente."
       },
-      "reliability": {
-        "title": "Disponibilidad 24/7",
-        "description": "Tu automatización trabaja las 24 horas del día, los 7 días de la semana, sin descansos y con calidad consistente siempre."
+      {
+        "bold": "Los formularios de admisión todavía son en papel, o están dispersos en emails y WhatsApp.",
+        "detail": "Cada nuevo paciente genera trabajo manual antes de que haya cruzado la puerta de la clínica."
       },
-      "growth": {
-        "title": "Escala Sin Límites",
-        "description": "Maneja 10 veces más trabajo sin necesidad de contratar 10 veces más personal. Crece de forma eficiente con automatización inteligente."
-      },
-      "speed": {
-        "title": "Implementación Ágil",
-        "description": "Del concepto a la automatización funcionando en semanas, no en meses. Empieza a ver resultados más rápido que nunca."
+      {
+        "bold": "No tienes una visión clara de qué pacientes tienen pendiente un seguimiento.",
+        "detail": "La información está en la cabeza de alguien — y cuando esa persona está ocupada, los pacientes se pierden."
       }
-    }
+    ]
   },
   "howItWorks": {
-    "title": "Cómo",
-    "titleHighlight": "Funciona",
-    "subtitle": "Un proceso simple y probado para transformar tus operaciones con automatización inteligente.",
-    "steps": {
-      "discover": {
-        "title": "Análisis y Diagnóstico",
-        "description": "Mapeamos tus flujos de trabajo actuales, identificamos cuellos de botella y descubrimos oportunidades de automatización."
+    "title": "De la primera llamada a tu portal activo en 2 semanas",
+    "steps": [
+      {
+        "title": "Paso 1 — Semana 0: Llamada de descubrimiento (15 minutos)",
+        "description": "Entendemos el flujo de trabajo de tu clínica, tus puntos de fricción y lo que necesitas exactamente. Obtienes un documento de alcance claro el mismo día."
       },
-      "build": {
-        "title": "Desarrollo a Medida",
-        "description": "Nuestro equipo diseña y construye soluciones de automatización personalizadas según tus necesidades específicas."
+      {
+        "title": "Paso 2 — Semanas 1 y 2: Lo construimos",
+        "description": "Sin idas y venidas ni procesos lentos de agencia. Recibes actualizaciones de progreso cada 2 días. Nos encargamos de toda la parte técnica."
       },
-      "deploy": {
-        "title": "Implementación e Integración",
-        "description": "Integración perfecta con tus herramientas y sistemas actuales. Lanzamiento con total confianza."
-      },
-      "monitor": {
-        "title": "Seguimiento y Mejora Continua",
-        "description": "Optimización constante y soporte dedicado para asegurar el máximo rendimiento y retorno de inversión."
+      {
+        "title": "Paso 3 — Lanzamiento",
+        "description": "Tu personal recibe una capacitación de 30 minutos. El portal está activo. Brindamos soporte continuo desde €200/mes — actualizaciones, ajustes y hosting incluidos."
       }
-    }
+    ]
   },
-  "servicesPreview": {
-    "title": "Nuestros",
-    "titleHighlight": "Servicios",
-    "subtitle": "Soluciones integrales de automatización con IA diseñadas para optimizar cada aspecto de las operaciones de tu negocio.",
-    "viewAll": "Ver Todos los Servicios",
-    "services": {
-      "support": {
-        "title": "Atención al Cliente con IA",
-        "description": "Chatbots inteligentes disponibles 24/7 que gestionan consultas, resuelven problemas y escalan cuando es necesario."
+  "offer": {
+    "title": "Un solo producto. Diseñado para tu clínica.",
+    "subtitle": "No ofrecemos un menú infinito de servicios. Construimos una sola cosa — un portal de operaciones personalizado — y lo hacemos extremadamente bien.",
+    "portalCaption": "Portal operativo desarrollado para una clínica de fisioterapia en Dublín — la interfaz se personaliza para cada cliente.",
+    "cardTitle": "El Portal de Operaciones de la Clínica",
+    "features": [
+      {
+        "name": "Formularios de admisión digital",
+        "description": "Admisión digital enviada automáticamente antes de la primera cita. Sin papel ni entrada de datos manual."
       },
-      "booking": {
-        "title": "Sistemas de Reservas Inteligentes",
-        "description": "Programación automatizada, recordatorios y seguimientos que eliminan las ausencias y las reservas duplicadas."
+      {
+        "name": "Seguimiento de citas",
+        "description": "Un panel en vivo que muestra las reservas de hoy, próximas sesiones e historial del paciente de un vistazo."
       },
-      "crm": {
-        "title": "Automatización de CRM",
-        "description": "Gestión optimizada de leads, seguimientos automáticos y automatización del recorrido del cliente."
+      {
+        "name": "Tablero de tareas del personal",
+        "description": "Gestión de tareas internas para que nada se olvide entre sesiones, administración y seguimientos."
       },
-      "invoicing": {
-        "title": "Facturación y Cobros",
-        "description": "Facturación automatizada, recordatorios de pago y flujos de conciliación sin intervención manual."
-      },
-      "widgets": {
-        "title": "Asistentes Web con IA",
-        "description": "Asistentes inteligentes integrados en tu sitio web para captar y convertir visitantes."
-      },
-      "custom": {
-        "title": "Automatizaciones Personalizadas",
-        "description": "Soluciones de automatización a medida diseñadas para tus procesos únicos."
+      {
+        "name": "Recordatorios automatizados",
+        "description": "Recordatorios por SMS y email enviados automáticamente 24 horas y 2 horas antes de cada cita. Las ausencias disminuyen de inmediato."
       }
-    }
-  },
-  "useCasesPreview": {
-    "title": "Sectores que",
-    "titleHighlight": "Atendemos",
-    "subtitle": "Soluciones de automatización adaptadas para empresas de múltiples industrias.",
-    "viewAll": "Ver Todos los Casos",
-    "industries": {
-      "agencies": {
-        "title": "Agencias",
-        "description": "Automatiza el onboarding de clientes, reportes y flujos de gestión de proyectos."
-      },
-      "retail": {
-        "title": "Retail y E-commerce",
-        "description": "Optimiza inventario, pedidos y atención al cliente a escala."
-      },
-      "professional": {
-        "title": "Servicios Profesionales",
-        "description": "Gestiona agendas, facturación y comunicación con clientes sin esfuerzo."
-      },
-      "smbs": {
-        "title": "PYMEs",
-        "description": "Automatización de nivel empresarial accesible para negocios en crecimiento."
-      }
-    }
-  },
-  "testimonials": {
-    "title": "Lo Que Dicen",
-    "titleHighlight": "Nuestros Clientes",
-    "subtitle": "Resultados reales de empresas que transformaron sus operaciones con Flownox.",
-    "items": {
-      "t1": {
-        "quote": "Flownox transformó nuestra atención al cliente. Ahora gestionamos 3 veces más consultas con el mismo equipo.",
-        "author": "Sara García",
-        "role": "Directora de Operaciones",
-        "company": "TechScale España"
-      },
-      "t2": {
-        "quote": "El retorno fue inmediato. Ahorramos más de 20 horas semanales solo en entrada de datos manual.",
-        "author": "Miguel Fernández",
-        "role": "Director General",
-        "company": "Agencia GrowthPath"
-      },
-      "t3": {
-        "quote": "Profesionales, eficientes y realmente entendieron nuestros retos operativos. Muy recomendables.",
-        "author": "Elena Martínez",
-        "role": "Fundadora",
-        "company": "Bloom Retail"
-      },
-      "t4": {
-        "quote": "Nuestro sistema de reservas pasó del caos a funcionar perfectamente. Nunca más reservas duplicadas.",
-        "author": "David López",
-        "role": "Director de Clínica",
-        "company": "Centro Wellness Madrid"
-      },
-      "t5": {
-        "quote": "Automatizamos todo nuestro proceso de facturación. Ahora los pagos llegan más rápido que nunca.",
-        "author": "Laura Sánchez",
-        "role": "Directora Financiera",
-        "company": "Soluciones Creativas SL"
-      },
-      "t6": {
-        "quote": "El chatbot gestiona el 80% de nuestras consultas. El equipo puede enfocarse en casos complejos.",
-        "author": "Javier Ruiz",
-        "role": "Responsable de Éxito del Cliente",
-        "company": "SaaSify"
-      },
-      "t7": {
-        "quote": "Desde el lead hasta el cierre, todo está automatizado. Nuestro ciclo de ventas bajó un 40%.",
-        "author": "María Santos",
-        "role": "Directora Comercial",
-        "company": "PropTech Innovaciones"
-      },
-      "t8": {
-        "quote": "La mejor inversión del año. La automatización se paga sola cada mes.",
-        "author": "Tomás Moreno",
-        "role": "Director General",
-        "company": "EuroConsult SL"
-      },
-      "t9": {
-        "quote": "Entregaron exactamente lo que prometieron. Nuestras operaciones funcionan como un reloj.",
-        "author": "Ana Navarro",
-        "role": "COO",
-        "company": "LogiFlow Express"
-      }
-    }
+    ],
+    "pricing": "Desde €1,500 configuración + €200/mes — adaptado a las necesidades de tu clínica durante la llamada.",
+    "bookCall": "Reservar llamada de 15 min"
   },
   "socialProof": {
-    "title": "Confían en",
-    "titleHighlight": "Nosotros",
-    "subtitle": "Únete a las empresas que han transformado sus operaciones con Flownox.",
-    "stats": {
-      "hoursSaved": "Horas Ahorradas Semanalmente",
-      "satisfaction": "Satisfacción del Cliente",
-      "uptime": "Disponibilidad del Sistema",
-      "roi": "Retorno Promedio"
-    }
+    "title": "Resultados reales de una clínica de fisioterapia en Dublín",
+    "metrics": [
+      {
+        "value": "15+ horas",
+        "description": "ahorradas en administración por semana"
+      },
+      {
+        "value": "~30%",
+        "description": "menos ausencias después del lanzamiento"
+      },
+      {
+        "value": "11 día",
+        "description": "desde la primera llamada hasta estar activos"
+      }
+    ],
+    "subtext": "Resultados de una clínica de fisioterapia con 3 terapeutas en Dublín. Diseñado y lanzado en 11 días."
   },
   "cta": {
-    "badge": "¿Listo para Transformar tu Negocio?",
-    "title": "Empieza a Automatizar Hoy",
-    "subtitle": "Agenda una demo gratuita y descubre cómo Flownox puede ahorrarte horas cada semana mientras escalas tus operaciones sin complicaciones.",
-    "bookDemo": "Agenda tu Demo Gratis",
-    "learnMore": "Prueba Nuestro Chatbot"
+    "title": "¿Diriges una clínica de fisioterapia?",
+    "subtitle": "Reserva una llamada gratuita de 15 minutos. Te diremos con total honestidad si un portal te ayudaría — y lo que costaría.",
+    "bookCall": "Reservar llamada de 15 min"
+  },
+  "caseStudy": {
+    "badge": "Caso de Estudio Enterprise",
+    "hero": {
+      "title": "Cómo una Clínica en Dublín Eliminó el 100% de la Entrada Manual de Datos y Ahorró €45,000 Anuales",
+      "subtitle": "Peak Physio Ballsbridge perdía ingresos por inasistencias y se ahogaba en gastos administrativos. Desplegamos un sistema operativo a medida en 11 días que transformó completamente su negocio."
+    },
+    "stats": {
+      "admin": "€45,000 ahorrados al año en gastos operativos",
+      "noShows": "0% de entrada manual de datos",
+      "timeline": "11 días para el despliegue completo"
+    },
+    "client": {
+      "title": "Peak Physio Ballsbridge",
+      "description": "Peak Physio Ballsbridge es una clínica con 3 terapeutas en Dublín que trata lesiones deportivas complejas y rehabilitación posquirúrgica. Antes del lanzamiento, la clínica gestionaba la admisión con carpetas físicas de papel y los recordatorios mediante mensajes manuales de WhatsApp — un proceso que consumía unas 15 horas semanales del director de la clínica.",
+      "snapshot": {
+        "location": "Ballsbridge, Dublín 4",
+        "team": "3 Fisioterapeutas Colegiados",
+        "patients": "150+ pacientes por semana",
+        "tools": "Papel, Excel y WhatsApp"
+      }
+    },
+    "problem": {
+      "title": "El problema",
+      "p1": "El personal de recepción de Peak Physio Ballsbridge pasaba casi 3 horas cada mañana con recordatorios de citas: llamando a pacientes uno por uno, dejando mensajes de voz y enviando mensajes de texto manuales. En días ocupados, algunos pacientes no recibían el recordatorio, lo que causaba costosos huecos vacíos en la agenda.",
+      "p2": "La admisión se realizaba mediante formularios en papel que los pacientes rellenaban al llegar. El terapeuta introducía manualmente los detalles en su sistema. Si la letra era ilegible, tenían que pedirle al paciente que repitiera información que ya había escrito, perdiendo valioso tiempo de tratamiento.",
+      "p3": "No había visibilidad compartida en el equipo. Si un terapeuta anotaba que un paciente necesitaba una llamada de seguimiento en dos semanas, se quedaba en un Post-it. El equipo de administración no tenía forma de rastrear estas tareas, por lo que seguimientos importantes a menudo se olvidaban."
+    },
+    "solution": {
+      "title": "Lo que construimos",
+      "intro": "Desarrollamos un portal de operaciones web adaptado al flujo de trabajo de Peak Performance. Llevó 11 días desde la reunión inicial hasta que el equipo empezó a usarlo. No usamos software genérico — todo se diseñó en torno al funcionamiento real de la clínica.",
+      "intake": {
+        "title": "Admisión digital",
+        "desc": "Los pacientes ahora reciben un enlace al formulario de admisión automáticamente al reservar la cita. Para cuando llegan, sus datos ya están en el sistema. El terapeuta revisa la ficha en una tablet antes de iniciar la sesión."
+      },
+      "reminders": {
+        "title": "Automatización de recordatorios",
+        "desc": "Cada cita activa un recordatorio automático por SMS y email 24 horas y 2 horas antes. Los pacientes pueden confirmar o cancelar con un toque. Las cancelaciones liberan el hueco de inmediato y notifican a recepción."
+      },
+      "tasks": {
+        "title": "Tablero de tareas del personal",
+        "desc": "Los terapeutas pueden crear tareas de seguimiento directamente desde el registro del paciente ('llamar en 2 semanas', 'revisar evolución tras cirugía', 'enviar tabla de ejercicios'). Aparecen en la lista de tareas de administración con fecha límite y contexto del paciente."
+      }
+    },
+    "result": {
+      "title": "El Retorno de Inversión",
+      "card1": {
+        "value": "€45,000",
+        "label": "Ahorro anual",
+        "sub": "En gastos operativos y pérdida de ingresos."
+      },
+      "card2": {
+        "value": "0%",
+        "label": "Entrada manual de datos",
+        "sub": "Formularios y seguimiento 100% digitalizados."
+      },
+      "card3": {
+        "value": "11 días",
+        "label": "Tiempo de lanzamiento",
+        "sub": "Desde la llamada inicial hasta el despliegue."
+      },
+      "quote": "\"Pensábamos que el software a medida tomaría 6 meses y costaría una fortuna. Flownox entregó un sistema operativo completo en 11 días. Se pagó solo el primer mes.\"",
+      "author": "Sarah, Propietaria — Peak Physio Ballsbridge"
+    },
+    "final": {
+      "title": "¿Diriges una clínica de fisioterapia?",
+      "subtitle": "Podemos construir el mismo sistema para ti, adaptado a tu flujo de trabajo. Reserva una llamada de 15 minutos y te mostraremos exactamente cómo funcionaría para tu clínica.",
+      "cta": "Reservar llamada de 15 min"
+    }
   },
   "footer": {
-    "description": "Desarrollamos sistemas de automatización con IA que transforman tus procesos diarios en un motor eficiente que trabaja 24/7.",
+    "description": "Portales de operaciones personalizados para clínicas de fisioterapia y deporte. Desarrollado en Irlanda, sirviendo a clínicas en toda Europa.",
     "company": "Empresa",
+    "product": "Producto",
     "resources": "Recursos",
     "legal": "Legal",
     "aboutUs": "Sobre Nosotros",
+    "caseStudy": "Caso de Estudio",
+    "blog": "Blog",
+    "customPortals": "Portales Personalizados",
     "privacyPolicy": "Política de Privacidad",
     "termsOfService": "Términos de Servicio",
     "copyright": "Todos los derechos reservados.",
-    "tagline": "Desarrollado con IA. Impulsado por automatización."
-  },
-  "contact": {
-    "title": "Agenda una",
-    "titleHighlight": "Demo",
-    "subtitle": "¿Listo para transformar tus procesos? Hablemos de cómo Flownox puede ayudar a tu negocio a automatizar, escalar y ahorrar tiempo.",
-    "getInTouch": "Contáctanos",
-    "getInTouchDescription": "Completa el formulario y nuestro equipo te responderá en menos de 24 horas. Estamos deseando conocer tus necesidades de automatización.",
-    "email": "Correo Electrónico",
-    "phone": "Teléfono",
-    "location": "Ubicación",
-    "locationValue": "Empresa remota, atendemos clientes en todo el mundo",
-    "whatToExpect": "Qué Puedes Esperar",
-    "expectations": {
-      "call": "Llamada de descubrimiento gratuita de 30 minutos",
-      "analysis": "Análisis de procesos y recomendaciones",
-      "proposal": "Propuesta personalizada en 48 horas",
-      "noPressure": "Sin compromiso, sin presión"
-    },
-    "form": {
-      "title": "Agenda tu Demo Gratis",
-      "name": "Nombre",
-      "namePlaceholder": "Tu nombre",
-      "company": "Empresa",
-      "companyPlaceholder": "Tu empresa",
-      "email": "Correo Electrónico",
-      "emailPlaceholder": "tu@email.com",
-      "serviceInterest": "Servicio de Interés",
-      "selectService": "Selecciona un servicio...",
-      "services": {
-        "aiSupport": "Atención al Cliente con IA",
-        "booking": "Sistema de Reservas",
-        "crm": "Automatización de CRM",
-        "invoicing": "Facturación y Cobros",
-        "chatbot": "Chat Web y Asistentes IA",
-        "custom": "Automatización Personalizada",
-        "other": "Otro / No estoy seguro"
-      },
-      "message": "Mensaje",
-      "messagePlaceholder": "Cuéntanos sobre tus necesidades de automatización...",
-      "submit": "Enviar Mensaje",
-      "sending": "Enviando...",
-      "privacyNote": "Al enviar este formulario, aceptas nuestra",
-      "privacyLink": "Política de Privacidad"
-    },
-    "toast": {
-      "title": "¡Mensaje enviado!",
-      "description": "Te responderemos en menos de 24 horas."
-    }
+    "tagline": "Desarrollado con precisión en Dublín."
   },
   "about": {
-    "title": "Sobre",
-    "titleHighlight": "Flownox",
-    "subtitle": "Nuestra misión es ayudar a pequeñas y medianas empresas a trabajar de forma más inteligente, no más duro, a través de la automatización con IA.",
+    "hero": {
+      "title": "Creado por un ingeniero de software que vio a una clínica ahogarse en tareas administrativas.",
+      "subtitle": "Flownox comenzó con una observación: las clínicas que son excelentes tratando pacientes a menudo tienen dificultades con la administración — no por desorganización, sino porque nadie les construyó las herramientas adecuadas."
+    },
     "story": {
-      "title": "Nuestra Historia",
-      "p1": "Flownox nació de una observación simple: los propietarios de pequeños negocios dedican demasiado tiempo a tareas repetitivas que podrían automatizarse.",
-      "p2": "Vimos emprendedores saturados de correos electrónicos, luchando por responder a las consultas de clientes, y perdiendo horas cada semana en trabajo administrativo. Sabíamos que tenía que haber una forma mejor.",
-      "p3": "Hoy ayudamos a empresas de todos los tamaños a implementar automatización con IA que ahorra tiempo, reduce errores y permite que los equipos se enfoquen en lo que mejor saben hacer: hacer crecer su negocio."
+      "title": "Cómo empezó todo",
+      "p1": "La primera clínica con la que trabajamos fue una consulta de fisioterapia en Dublín. Llevaban las reservas en un sistema, la admisión en papel, los recordatorios por teléfono y los seguimientos en Post-its. La recepcionista pasaba la primera hora de la mañana haciendo llamadas que podían automatizarse en 5 minutos.",
+      "p2": "Les construimos un portal. Llevó unas dos semanas. Las llamadas matutinas de recordatorio cesaron. Los formularios de admisión pasaron a ser digitales. Los terapeutas dejaron de perder de vista las tareas de seguimiento. No fue tecnología revolucionaria; simplemente fue el sistema correcto, diseñado para su forma de trabajar.",
+      "p3": "Eso es lo que hace Flownox hoy. Desarrollamos portales de operaciones para clínicas de fisioterapia y deporte que quieren dejar de gestionar su administración con parches y soluciones temporales."
     },
-    "mission": {
-      "title": "Nuestra Misión",
-      "description": "Democratizar la automatización con IA, haciendo que la eficiencia empresarial esté al alcance de negocios de cualquier tamaño, para que los equipos puedan enfocarse en la creatividad, la estrategia y las relaciones humanas."
+    "founder": {
+      "title": "Con quién vas a trabajar",
+      "name": "Antonio Moya — Fundador e Ingeniero de Software",
+      "bio": "Antonio es un ingeniero de software afincado en Irlanda. Creó Flownox al ver de primera mano cuánto tiempo dedicaba el personal de las clínicas a tareas que deberían automatizarse. Se encarga de todo personalmente: la llamada de descubrimiento, el desarrollo, la entrega y el soporte continuo. Cuando trabajas con Flownox, hablas directamente con Antonio — sin intermediarios ni gestores de cuentas.",
+      "line1": "Ubicado en Irlanda. Sirviendo a clínicas en Irlanda y Europa.",
+      "line2": "Todos los desarrollos son personalizados. Sin plantillas ni herramientas genéricas."
     },
-    "values": {
-      "title": "Nuestros Valores",
-      "simplicity": {
-        "title": "Simplicidad Ante Todo",
-        "description": "Creemos que la tecnología potente debe ser fácil de usar. Nuestras soluciones priorizan la simplicidad sin sacrificar funcionalidad."
-      },
-      "results": {
-        "title": "Orientados a Resultados",
-        "description": "Medimos nuestro éxito por tu éxito. Cada automatización que desarrollamos está diseñada para generar un retorno de inversión medible."
-      },
-      "partnership": {
-        "title": "Verdadera Colaboración",
-        "description": "No somos solo proveedores — somos socios comprometidos con tu éxito y crecimiento a largo plazo."
-      },
-      "innovation": {
-        "title": "Innovación Constante",
-        "description": "Nos mantenemos a la vanguardia de la tecnología de IA para ofrecerte las soluciones de automatización más efectivas."
-      }
+    "honest": {
+      "title": "Algunas cosas que conviene saber antes de contactar",
+      "paragraph": "Flownox es una operación pequeña y muy enfocada. Trabajamos con un número limitado de clínicas a la vez, no por falta de capacidad, sino porque no aceptamos proyectos a los que no podamos dedicar la atención que merecen. Si nos contactas, hablarás directamente con Antonio. Si consideramos que el portal no es adecuado para tu clínica, te lo diremos con total honestidad. Si quieres hablar de un desarrollo distinto, podemos evaluarlo — pero nuestra oferta principal es el portal descrito en este sitio."
     },
-    "location": {
-      "title": "Con Sede en Irlanda",
-      "subtitle": "Atendiendo Clientes Globalmente",
-      "description": "Somos una empresa remota que atiende clientes en todo el mundo, con especial enfoque en ayudar a empresas de España, Latinoamérica y Europa a adoptar la automatización."
-    },
-    "readyToWork": "¿Listo para Colaborar?",
-    "readyToWorkDescription": "Hablemos de cómo Flownox puede transformar las operaciones de tu negocio."
-  },
-  "services": {
-    "title": "Nuestros",
-    "titleHighlight": "Servicios",
-    "subtitle": "Soluciones integrales de automatización con IA diseñadas para transformar cada aspecto de las operaciones de tu negocio.",
-    "features": "Características Principales",
-    "getStarted": "Comenzar",
-    "items": {
-      "support": {
-        "title": "Atención al Cliente con IA",
-        "description": "Implementa chatbots inteligentes que gestionan consultas de clientes 24/7, proporcionando respuestas instantáneas y escalado fluido cuando es necesario.",
-        "features": ["Disponibilidad 24/7", "Soporte multiidioma", "Escalado inteligente", "Integración con CRM"]
-      },
-      "booking": {
-        "title": "Sistemas de Reservas Inteligentes",
-        "description": "Elimina los dolores de cabeza de la programación con reservas automatizadas, recordatorios y seguimientos que mantienen tu agenda llena y organizada.",
-        "features": ["Reservas online", "Recordatorios automáticos", "Sincronización de calendario", "Reducción de ausencias"]
-      },
-      "crm": {
-        "title": "Automatización de CRM",
-        "description": "Optimiza tu embudo de ventas con calificación automática de leads, seguimientos y gestión del ciclo de vida del cliente.",
-        "features": ["Automatización de leads", "Gestión del pipeline", "Secuencias de email", "Automatización de tareas"]
-      },
-      "invoicing": {
-        "title": "Facturación y Cobros",
-        "description": "Automatiza tu ciclo de facturación desde la generación de facturas hasta el cobro y la conciliación.",
-        "features": ["Facturación automática", "Recordatorios de pago", "Generación de recibos", "Reportes financieros"]
-      },
-      "chatbot": {
-        "title": "Chat Web y Asistentes IA",
-        "description": "Interactúa con visitantes mediante widgets de chat inteligentes que califican leads, responden preguntas y agendan citas.",
-        "features": ["Calificación de leads", "Automatización de FAQ", "Agendamiento de citas", "Panel de analíticas"]
-      },
-      "custom": {
-        "title": "Automatización Personalizada",
-        "description": "Soluciones de automatización a medida adaptadas a tus procesos y requisitos de negocio únicos.",
-        "features": ["Flujos personalizados", "Integraciones API", "Automatización de procesos", "Soporte dedicado"]
-      }
+    "finalCta": {
+      "title": "¿Quieres que trabajemos juntos?",
+      "subtitle": "Reserva una llamada de 15 minutos con Antonio. Sin procesos de venta agresivos ni presentaciones comerciales. Solo una conversación para ver si podemos ayudarte.",
+      "button": "Reservar llamada de 15 min"
     }
   },
-  "howItWorksPage": {
-    "title": "Cómo",
-    "titleHighlight": "Funciona",
-    "subtitle": "Un proceso estructurado y probado que te lleva del caos operativo a la eficiencia automatizada en semanas, no en meses.",
-    "steps": {
-      "discover": {
-        "number": "01",
-        "title": "Análisis y Diagnóstico",
-        "subtitle": "Entendiendo tu Negocio",
-        "description": "Comenzamos profundizando en tus flujos de trabajo actuales, sistemas y puntos de fricción. A través de llamadas de descubrimiento y auditorías de procesos, identificamos las oportunidades de automatización de mayor impacto.",
-        "duration": "Semana 0",
-        "details": ["Auditoría completa de procesos", "Entrevistas con stakeholders", "Identificación de cuellos de botella", "Análisis de oportunidades de ROI"]
-      },
-      "build": {
-        "number": "02",
-        "title": "Desarrollo a Medida",
-        "subtitle": "Soluciones Personalizadas",
-        "description": "Nuestro equipo diseña y construye soluciones de automatización con IA específicamente para tus necesidades. Sin plantillas genéricas — cada sistema se adapta a tus procesos únicos.",
-        "duration": "Semana 1",
-        "details": ["Arquitectura de solución personalizada", "Entrenamiento de modelos de IA", "Desarrollo de integraciones", "Pruebas de calidad"]
-      },
-      "deploy": {
-        "number": "03",
-        "title": "Implementación e Integración",
-        "subtitle": "Lanzamiento Sin Fricciones",
-        "description": "Nos encargamos de todo el proceso de implementación, asegurando una integración perfecta con tus herramientas actuales y mínima interrupción en tus operaciones.",
-        "duration": "Semana 2",
-        "details": ["Estrategia de despliegue por fases", "Sesiones de capacitación", "Entrega de documentación", "Soporte de lanzamiento"]
-      },
-      "monitor": {
-        "number": "04",
-        "title": "Seguimiento y Optimización",
-        "subtitle": "Mejora Continua",
-        "description": "Nuestra relación no termina en la implementación. Monitoreamos continuamente el rendimiento, recopilamos feedback y optimizamos tu automatización para maximizar el ROI.",
-        "duration": "Continuo",
-        "details": ["Monitoreo de rendimiento", "Ciclos de optimización regulares", "Acceso a soporte prioritario", "Revisiones trimestrales de negocio"]
-      }
+  "whatWeBuildPage": {
+    "hero": {
+      "title": "El Portal de Operaciones de la Clínica",
+      "subtitle": "Un portal web a medida desarrollado específicamente para tu clínica. Reemplaza hojas de cálculo, formularios de papel, recordatorios telefónicos y herramientas dispersas — con un único sistema que todo tu equipo usará de verdad.",
+      "pricing": "Desde €1,500 configuración + €200/mes — adaptado a las necesidades de tu clínica durante la llamada.",
+      "timeline": "Activo en 2 semanas",
+      "cta": "Reservar llamada de 15 min"
     },
-    "whatHappens": "Qué sucede en esta fase:",
-    "faq": {
-      "title": "Preguntas Frecuentes",
-      "questions": {
-        "duration": {
-          "q": "¿Cuánto tiempo toma todo el proceso?",
-          "a": "La mayoría de los proyectos se completan en 4-8 semanas desde el inicio hasta el lanzamiento, dependiendo de la complejidad y el alcance."
+    "included": {
+      "title": "Todo lo que tu clínica necesita. Nada de lo que no.",
+      "features": [
+        {
+          "title": "Formularios de admisión digital",
+          "description": "Formularios digitales enviados a los pacientes automáticamente antes de su primera cita. Los rellenan desde su teléfono. Cuando llegan, ya tienes sus datos, historial médico y consentimiento.",
+          "whyItMatters": "Tus terapeutas inician cada sesión preparados. Sin carpetas, sin introducción de datos manual, sin perseguir papeleo."
         },
-        "technical": {
-          "q": "¿Necesito experiencia técnica en mi equipo?",
-          "a": "No. Nosotros nos encargamos de todos los aspectos técnicos y proporcionamos capacitación completa para que tu equipo use los nuevos sistemas."
+        {
+          "title": "Panel de citas en tiempo real",
+          "description": "Una vista limpia y en tiempo real de las reservas de hoy, las próximas sesiones y el historial de cada paciente. Filtra por terapeuta, por fecha o por tipo de tratamiento.",
+          "whyItMatters": "Todo el equipo ve la misma información. Se acabaron las dudas sobre quién atiende a un paciente."
         },
-        "changes": {
-          "q": "¿Qué pasa si necesito cambios después del lanzamiento?",
-          "a": "Nuestro soporte continuo incluye ciclos de optimización regulares. Los cambios adicionales pueden realizarse como parte de nuestro plan de mantenimiento."
+        {
+          "title": "Tablero de tareas interno",
+          "description": "Un sistema ligero de tareas internas para que nada se pierda. Notas de las sesiones, recordatorios de seguimiento y tareas administrativas — todo visible para las personas indicadas.",
+          "whyItMatters": "Cuando un terapeuta escribe 'llamar al paciente en 2 semanas', aparece como una tarea pendiente, no como una nota que desaparece."
+        },
+        {
+          "title": "Recordatorios de citas automatizados",
+          "description": "Recordatorios por SMS y correo electrónico enviados de forma automática 24 horas y 2 horas antes de cada cita. Los pacientes pueden confirmar o cancelar con un solo toque.",
+          "whyItMatters": "Las ausencias caen de inmediato. Tu recepción deja de perder tiempo cada mañana haciendo llamadas de recordatorio."
         }
-      }
+      ]
     },
-    "moreQuestions": "¿Tienes Más Preguntas?"
-  },
-  "useCases": {
-    "title": "Casos de",
-    "titleHighlight": "Éxito",
-    "subtitle": "Descubre cómo empresas de distintos sectores han transformado sus operaciones con las soluciones de automatización de Flownox.",
-    "results": "Resultados",
-    "challenge": "El Desafío",
-    "solution": "Nuestra Solución",
-    "impact": "El Impacto",
-    "learnMore": "Prueba Nuestro Chatbot",
-    "cases": {
-      "healthcare": {
-        "title": "Salud y Clínicas",
-        "description": "Programación automatizada de pacientes, recordatorios y coordinación de seguimiento para consultorios médicos.",
-        "challenge": "Gestionar las citas de pacientes, reducir las ausencias y coordinar el seguimiento consumía tiempo valioso del personal.",
-        "solution": "Implementamos un sistema de programación con IA con recordatorios automatizados, formularios de admisión y seguimientos post-consulta.",
-        "results": ["60% menos ausencias", "15+ horas ahorradas semanalmente", "95% de satisfacción del paciente"]
+    "pricing": {
+      "title": "Planes de Precios Enterprise",
+      "subtitle": "Precios transparentes adaptados a tus necesidades operativas.",
+      "tiers": {
+        "essential": {
+          "name": "Esencial",
+          "price": "€1,500",
+          "frequency": "+ €200/mes",
+          "description": "Portal operativo central para clínicas independientes.",
+          "features": ["Formularios de Ingreso Digital", "Panel de Citas", "Tablero de Tareas", "Recordatorios Básicos", "Soporte Estándar"]
+        },
+        "professional": {
+          "name": "Profesional",
+          "price": "€3,000",
+          "frequency": "+ €400/mes",
+          "badge": "Popular",
+          "description": "Flujos avanzados e integraciones para clínicas en crecimiento.",
+          "features": ["Todo lo de Esencial", "Integraciones a Medida", "Analítica Avanzada", "Seguimiento Automático", "Soporte Prioritario"]
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "price": "A medida",
+          "frequency": "Cotización",
+          "description": "Transformación digital completa para clínicas con múltiples sedes.",
+          "features": ["Todo lo de Profesional", "Soporte Multi-sede", "Agentes de IA Personalizados", "Garantía SLA", "Arquitecto Dedicado"]
+        }
       },
-      "ecommerce": {
-        "title": "E-commerce y Retail",
-        "description": "Procesamiento de pedidos optimizado, gestión de inventario y comunicación con clientes para tiendas online.",
-        "challenge": "El procesamiento manual de pedidos y las actualizaciones de inventario causaban retrasos y errores, generando quejas de clientes.",
-        "solution": "Flujos de trabajo de pedidos automatizados, sincronización de inventario en tiempo real y chatbot de soporte con IA.",
-        "results": ["90% más rápido en procesamiento", "Cero errores de inventario", "Atención al cliente 24/7"]
-      },
-      "agencies": {
-        "title": "Agencias de Marketing",
-        "description": "Onboarding de clientes automatizado, reportes y flujos de gestión de proyectos para agencias creativas.",
-        "challenge": "El onboarding de clientes tomaba semanas, y los reportes manuales consumían horas facturables.",
-        "solution": "Automatización del onboarding, dashboards de reportes automatizados y actualizaciones de estado de proyectos.",
-        "results": ["75% más rápido en onboarding", "10+ horas ahorradas en reportes", "Mayor retención de clientes"]
-      },
-      "realestate": {
-        "title": "Inmobiliario",
-        "description": "Gestión de leads, matching de propiedades y automatización de comunicación para profesionales inmobiliarios.",
-        "challenge": "Los leads se perdían y los agentes dedicaban demasiado tiempo a tareas administrativas.",
-        "solution": "Calificación de leads con IA, matching automatizado de propiedades y secuencias de seguimiento.",
-        "results": ["2x tasa de conversión", "20+ horas ahorradas semanalmente", "Cierres más rápidos"]
-      },
-      "consulting": {
-        "title": "Firmas de Consultoría",
-        "description": "Generación de propuestas, registro de tiempo y automatización de gestión de clientes para servicios profesionales.",
-        "challenge": "Crear propuestas y registrar horas facturables era un proceso manual propenso a errores.",
-        "solution": "Generación automatizada de propuestas, registro de tiempo integrado y portal de cliente para comunicación fluida.",
-        "results": ["50% más rápido en propuestas", "Registro de tiempo preciso", "Mejor flujo de caja"]
-      },
-      "hospitality": {
-        "title": "Hostelería y Eventos",
-        "description": "Gestión de reservas, comunicación con huéspedes y automatización de coordinación de eventos.",
-        "challenge": "Gestionar reservas en múltiples plataformas y coordinar eventos era abrumador.",
-        "solution": "Sistema de reservas centralizado, comunicaciones automatizadas con huéspedes y automatización de flujos de eventos.",
-        "results": ["Cero reservas duplicadas", "90% de tasa de respuesta", "Operaciones optimizadas"]
-      }
+      "cta": "Reserva una llamada de evaluación"
+    },
+    "whatNot": {
+      "title": "Lo que esto no es",
+      "items": [
+        "No es una suscripción SaaS genérica. Está desarrollado a medida para el flujo de trabajo real de tu clínica.",
+        "No es un proyecto de agencia de 6 meses. Estarás activo en 2 semanas o te devolvemos la tarifa de configuración.",
+        "No es una herramienta compleja que requiera semanas de formación. Lo diseñamos para personas no técnicas."
+      ]
+    },
+    "finalCta": {
+      "title": "¿Quieres ver si se adapta a tu clínica?",
+      "subtitle": "Reserva una llamada gratuita de 15 minutos. Analizaremos tu configuración actual y te diremos exactamente qué construiríamos — y si vale la pena para ti.",
+      "button": "Reservar llamada de 15 min",
+      "muted": "Sin compromisos. Te daremos un asesoramiento honesto incluso si decides no continuar."
     }
   },
-  "blog": {
-    "title": "Blog e",
-    "titleHighlight": "Insights",
-    "subtitle": "Mantente al día con lo último en automatización con IA, consejos de productividad y estrategias de crecimiento empresarial.",
-    "readMore": "Leer Más",
-    "newsletter": {
-      "title": "Mantente Informado",
-      "description": "Suscríbete a nuestro newsletter para recibir los últimos insights y consejos sobre automatización.",
-      "placeholder": "Tu correo electrónico",
-      "subscribe": "Suscribirse"
-    },
-    "comingSoon": {
-      "title": "Blog Próximamente",
-      "description": "Estamos preparando contenido de valor para ayudarte a dominar la automatización con IA. ¡Vuelve pronto!"
-    }
+  "notFound": {
+    "title": "Página No Encontrada",
+    "description": "Lo sentimos, no hemos podido encontrar la página que estás buscando.",
+    "backHome": "Volver al Inicio"
   },
   "privacy": {
     "title": "Política de",
@@ -478,12 +305,18 @@
     "sections": {
       "intro": {
         "title": "Introducción",
-        "content": "En Flownox nos tomamos muy en serio tu privacidad. Esta Política de Privacidad explica cómo recopilamos, utilizamos, divulgamos y protegemos tu información cuando visitas nuestro sitio web o utilizas nuestros servicios."
+        "content": "En Flownox nos tomamos muy en serio tu privacidad. Esta Política de Privacidad explica cómo recopilamos, utilizamos, divulgamos y protegemos tu información cuando visitas nuestro sitio web o utilizas nuestros servicios de portal personalizado."
       },
       "collection": {
         "title": "Información que Recopilamos",
         "content": "Podemos recopilar información sobre ti de diversas formas, incluyendo:",
-        "items": ["Nombre e información de contacto", "Correo electrónico y número de teléfono", "Empresa y cargo", "Datos de uso y analíticas", "Preferencias de comunicación"]
+        "items": [
+          "Nombre e información de contacto",
+          "Correo electrónico y número de teléfono",
+          "Nombre de la clínica y cargo",
+          "Datos de uso y analíticas",
+          "Preferencias de comunicación"
+        ]
       },
       "use": {
         "title": "Cómo Utilizamos tu Información",
@@ -518,15 +351,15 @@
       },
       "services": {
         "title": "Nuestros Servicios",
-        "content": "Flownox proporciona servicios de consultoría e implementación de automatización con IA. Nos reservamos el derecho de modificar o discontinuar nuestros servicios en cualquier momento."
+        "content": "Flownox proporciona servicios de desarrollo de software personalizado e implementación de portales de operaciones. Nos reservamos el derecho de modificar o discontinuar nuestros servicios en cualquier momento."
       },
       "obligations": {
         "title": "Tus Obligaciones",
-        "content": "Te comprometes a utilizar nuestros servicios únicamente con fines legales y de acuerdo con estos Términos. Eres responsable de mantener la confidencialidad de tu cuenta."
+        "content": "Te comprometes a utilizar nuestros servicios únicamente con fines legales y de acuerdo con estos Términos. Eres responsable de mantener la confidencialidad de tu cuenta de clínica."
       },
       "intellectual": {
         "title": "Propiedad Intelectual",
-        "content": "Todo el contenido, características y funcionalidades de nuestros servicios son propiedad de Flownox y están protegidos por las leyes de propiedad intelectual."
+        "content": "Todo el contenido, características y funcionalidades de nuestros servicios son propiedad de Flownox y están protegidos por las leyes de propiedad intelectual internacionales."
       },
       "liability": {
         "title": "Limitación de Responsabilidad",
@@ -538,19 +371,42 @@
       }
     }
   },
-  "notFound": {
-    "title": "Página No Encontrada",
-    "description": "Lo sentimos, no pudimos encontrar la página que buscas.",
-    "backHome": "Volver al Inicio"
-  },
-  "team": {
-    "title": "Nuestro",
-    "titleHighlight": "Equipo",
-    "subtitle": "Conoce al visionario detrás de FlowNox, dedicado a transformar las operaciones empresariales con IA.",
-    "member": {
-      "name": "Antonio Moya",
-      "role": "Fundador e Ingeniero de Software",
-      "bio": "Ingeniero de Software y Fundador de FlowNox. Apasionado por aprovechar la IA y la automatización para ayudar a las empresas a escalar y ahorrar tiempo."
-    }
+  "blog": {
+    "title": "Blog e",
+    "titleHighlight": "Insights",
+    "subtitle": "Información y estrategias para optimizar las operaciones de tu clínica, reducir la administración y mejorar la retención de pacientes.",
+    "readMore": "Leer Artículo",
+    "newsletter": {
+      "title": "Mantente Informado",
+      "description": "Suscríbete a nuestro boletín para recibir los últimos consejos sobre automatización de clínicas y optimización de flujos de trabajo.",
+      "placeholder": "Tu correo electrónico",
+      "subscribe": "Suscribirse"
+    },
+    "posts": [
+      {
+        "id": "dublin-physio-save-time",
+        "title": "Cómo una clínica de fisioterapia en Dublín ahorró 15 horas de administración semanales",
+        "excerpt": "Un análisis detallado de los sistemas de automatización, admisión digital y paneles de tareas que transformaron Peak Physio.",
+        "category": "Caso de éxito",
+        "date": "12 de mayo, 2026",
+        "readTime": "Lectura: 5 min"
+      },
+      {
+        "id": "cost-of-paper-intake",
+        "title": "El costo del papel: por qué la admisión manual está perjudicando a tu clínica",
+        "excerpt": "Cómo las carpetas físicas y la entrada manual de datos hacen perder tiempo al terapeuta, aumentan errores y provocan olvidos en seguimientos.",
+        "category": "Operaciones clínicas",
+        "date": "18 de mayo, 2026",
+        "readTime": "Lectura: 4 min"
+      },
+      {
+        "id": "reduce-no-shows-30-percent",
+        "title": "Cómo reducir las ausencias de pacientes en un 30% sin hacer llamadas",
+        "excerpt": "Por qué los recordatorios automáticos por SMS y email son más efectivos que las llamadas manuales de recepción y cómo configurarlos.",
+        "category": "Automatización",
+        "date": "24 de mayo, 2026",
+        "readTime": "Lectura: 6 min"
+      }
+    ]
   }
 }

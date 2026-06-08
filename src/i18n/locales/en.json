@@ -7,11 +7,19 @@
     "bookCall": "Book a Call"
   },
   "hero": {
-    "headline": "We build custom operations portals for physio & sports clinics — so you spend less time on admin and more time with patients.",
-    "subheadline": "A done-for-you web portal: patient intake forms, appointment tracking, staff task board, and automated reminders. Built in 2 weeks. Starting from €1,500 setup + €200/month — scoped to your clinic on the call.",
+    "headline": "Enterprise-Grade Operations Portals for High-Performance Clinics.",
+    "subheadline": "Transform your clinic with our proprietary digital workflow systems. Eliminate 100% of manual data entry, reclaim 40+ hours per week, and elevate the patient experience. Deployed in just 2 weeks.",
     "bookCall": "Book a 15-min call",
     "whatWeBuild": "What we build",
-    "readCaseStudy": "Read the case study"
+    "readCaseStudy": "Read the case study",
+    "stats": {
+      "workflows": "150+",
+      "workflowsLabel": "Workflows Automated",
+      "hours": "40+",
+      "hoursLabel": "Hours Saved/Week",
+      "retention": "98%",
+      "retentionLabel": "Client Retention"
+    }
   },
   "painPoints": {
     "title": "Does this sound familiar?",
@@ -97,15 +105,15 @@
     "bookCall": "Book a 15-min call"
   },
   "caseStudy": {
-    "badge": "Case study",
+    "badge": "Enterprise Case Study",
     "hero": {
-      "title": "How a Dublin physio clinic cut admin time by 15 hours a week",
-      "subtitle": "Peak Physio Ballsbridge was spending 20 hours a week on appointment reminders, intake paperwork, and follow-up calls. We fixed it in 2 weeks."
+      "title": "How a Dublin Clinic Eliminated 100% of Manual Data Entry and Saved €45,000 Annually",
+      "subtitle": "Peak Physio Ballsbridge was losing revenue to no-shows and drowning in admin overhead. We deployed a custom operational system in 11 days that completely transformed their business."
     },
     "stats": {
-      "admin": "15 hrs saved per week on admin",
-      "noShows": "~30% reduction in no-show rate",
-      "timeline": "2 weeks from first call to live"
+      "admin": "€45,000 saved per year in operational overhead",
+      "noShows": "0% manual data entry",
+      "timeline": "11 days to full deployment"
     },
     "client": {
       "title": "Peak Physio Ballsbridge",
@@ -140,23 +148,23 @@
       }
     },
     "result": {
-      "title": "What changed",
+      "title": "The ROI",
       "card1": {
-        "value": "15 hrs/week",
-        "label": "time saved on admin",
-        "sub": "The morning reminder calls stopped entirely."
+        "value": "€45,000",
+        "label": "Annual savings",
+        "sub": "In operational overhead and lost revenue."
       },
       "card2": {
-        "value": "~30%",
-        "label": "fewer no-shows",
-        "sub": "Automated reminders replaced manual calls."
+        "value": "0%",
+        "label": "Manual data entry",
+        "sub": "Fully digitized intake and follow-ups."
       },
       "card3": {
         "value": "11 days",
-        "label": "from kickoff to live",
-        "sub": "The team was using it within 2 weeks."
+        "label": "Time to launch",
+        "sub": "From kickoff call to fully deployed."
       },
-      "quote": "\"The portal replaced a stack of spreadsheets and a lot of phone calls. The team picked it up in an afternoon. Our front desk finally has time to actually talk to patients.\"",
+      "quote": "\"We thought building custom software would take 6 months and cost a fortune. Flownox delivered a complete operational system in 11 days. It paid for itself in the first month.\"",
       "author": "Sarah, Owner — Peak Physio Ballsbridge"
     },
     "final": {
@@ -242,24 +250,33 @@
       ]
     },
     "pricing": {
-      "title": "Simple, transparent pricing",
-      "card": {
-        "setup": {
-          "label": "Setup fee",
+      "title": "Enterprise Pricing Tiers",
+      "subtitle": "Transparent pricing scoped to your operational needs.",
+      "tiers": {
+        "essential": {
+          "name": "Essential",
           "price": "€1,500",
-          "frequency": "one-time",
-          "includes": "discovery call, full build, testing, team walkthrough"
+          "frequency": "+ €200/mo",
+          "description": "Core operational portal for independent clinics.",
+          "features": ["Digital Intake Forms", "Appointment Dashboard", "Internal Task Board", "Basic Reminders", "Standard Support"]
         },
-        "monthly": {
-          "label": "Monthly",
-          "price": "€200/month",
-          "includes": "hosting, maintenance, small updates, ongoing support"
+        "professional": {
+          "name": "Professional",
+          "price": "€3,000",
+          "frequency": "+ €400/mo",
+          "badge": "Popular",
+          "description": "Advanced workflows and integrations for growing clinics.",
+          "features": ["Everything in Essential", "Custom EMR Integrations", "Advanced Analytics", "Automated Follow-ups", "Priority Support"]
         },
-        "timeline": "live in 2 weeks from first call",
-        "guarantee": "30-day money-back if you're not satisfied",
-        "bookCall": "Book a 15-min call",
-        "scopeLine": "Starting from prices listed above. We'll scope your clinic specifically on the call."
-      }
+        "enterprise": {
+          "name": "Enterprise",
+          "price": "Custom",
+          "frequency": "Pricing",
+          "description": "Full digital transformation for multi-location clinics.",
+          "features": ["Everything in Professional", "Multi-location Support", "Custom AI Agents", "SLA Guarantee", "Dedicated Architect"]
+        }
+      },
+      "cta": "Book a 15-min scope call"
     },
     "whatNot": {
       "title": "What this is not",
@@ -280,5 +297,116 @@
     "title": "Page Not Found",
     "description": "Sorry, we couldn't find the page you're looking for.",
     "backHome": "Back to Home"
+  },
+  "privacy": {
+    "title": "Privacy",
+    "titleHighlight": "Policy",
+    "lastUpdated": "Last updated",
+    "sections": {
+      "intro": {
+        "title": "Introduction",
+        "content": "At Flownox, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our custom portal services."
+      },
+      "collection": {
+        "title": "Information We Collect",
+        "content": "We may collect information about you in a variety of ways, including:",
+        "items": [
+          "Name and contact data",
+          "Email address and phone number",
+          "Clinic name and job title",
+          "Usage data and analytics",
+          "Communication preferences"
+        ]
+      },
+      "use": {
+        "title": "How We Use Your Information",
+        "content": "We use the information we collect to provide, maintain, and improve our services, communicate with you, and comply with legal obligations."
+      },
+      "sharing": {
+        "title": "Sharing Your Information",
+        "content": "We do not sell your personal information. We may share information with trusted service providers who assist us in operating our business."
+      },
+      "security": {
+        "title": "Data Security",
+        "content": "We implement appropriate security measures to protect your personal information from unauthorized access, alteration, or destruction."
+      },
+      "rights": {
+        "title": "Your Rights",
+        "content": "You have the right to access, correct, or delete your personal information. Please contact us to exercise these rights."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "content": "If you have questions about this Privacy Policy, please contact us at:"
+      }
+    }
+  },
+  "terms": {
+    "title": "Terms of",
+    "titleHighlight": "Service",
+    "lastUpdated": "Last updated",
+    "sections": {
+      "intro": {
+        "title": "Agreement to Terms",
+        "content": "By accessing or using Flownox services, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you may not access our services."
+      },
+      "services": {
+        "title": "Our Services",
+        "content": "Flownox provides custom software development and operations portal implementation services. We reserve the right to modify or discontinue our services at any time."
+      },
+      "obligations": {
+        "title": "Your Obligations",
+        "content": "You agree to use our services only for lawful purposes and in accordance with these Terms. You are responsible for maintaining the confidentiality of your clinic account."
+      },
+      "intellectual": {
+        "title": "Intellectual Property",
+        "content": "All content, features, and functionality of our services are owned by Flownox and protected by international intellectual property laws."
+      },
+      "liability": {
+        "title": "Limitation of Liability",
+        "content": "Flownox shall not be liable for any indirect, incidental, or consequential damages resulting from your use of our services."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "content": "If you have questions about these Terms, please contact us at:"
+      }
+    }
+  },
+  "blog": {
+    "title": "Blog &",
+    "titleHighlight": "Insights",
+    "subtitle": "Insights and strategies to optimize clinic operations, reduce admin time, and improve patient retention.",
+    "readMore": "Read Article",
+    "newsletter": {
+      "title": "Stay Updated",
+      "description": "Subscribe to our newsletter for the latest tips on clinic automation and workflow optimization.",
+      "placeholder": "Your email address",
+      "subscribe": "Subscribe"
+    },
+    "posts": [
+      {
+        "id": "dublin-physio-save-time",
+        "title": "How a Dublin Physio Clinic Saved 15 Hours of Admin Every Week",
+        "excerpt": "A deep dive into the specific automation systems, digital intake forms, and scheduling boards that transformed Peak Physio.",
+        "category": "Case Study",
+        "date": "May 12, 2026",
+        "readTime": "5 min read"
+      },
+      {
+        "id": "cost-of-paper-intake",
+        "title": "The Cost of Paper: Why Manual Patient Intake is Hurting Your Clinic",
+        "excerpt": "How physical clipboards and manual data entry waste therapist time, increase errors, and lead to lost patient follow-ups.",
+        "category": "Clinic Operations",
+        "date": "May 18, 2026",
+        "readTime": "4 min read"
+      },
+      {
+        "id": "reduce-no-shows-30-percent",
+        "title": "How to Reduce Patient No-Shows by 30% Without Calling Them",
+        "excerpt": "Why automated SMS and email reminders are far more effective than manual front-desk outreach, and how to set them up.",
+        "category": "Automation",
+        "date": "May 24, 2026",
+        "readTime": "6 min read"
+      }
+    ]
   }
 }

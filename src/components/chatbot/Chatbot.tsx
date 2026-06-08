@@ -102,7 +102,7 @@ export function Chatbot() {
   const generateResponse = async (userMessage: string): Promise<string> => {
     const hasBookingIntent = detectBookingIntent(userMessage);
 
-    const systemPrompt = `You are FlowNoxy, a helpful and friendly virtual assistant for Flownox, an AI automation agency. 
+    const systemPrompt = `You are FlowNoxy, a helpful and friendly virtual assistant for Flownox, a software studio that builds custom operations portals for physio and sports clinics. 
 
 LANGUAGE DETECTION - CRITICAL:
 - Detect the language the user is writing in.
@@ -111,7 +111,7 @@ LANGUAGE DETECTION - CRITICAL:
 - Always match the user's language exactly.
 - If unsure, default to ${isSpanish ? "Spanish" : "English"}.
 
-${hasBookingIntent ? `The user wants to book. Tell them to click the "Book Demo" button below (or "Agendar Demo Gratis" in Spanish).` : ""}
+${hasBookingIntent ? `The user wants to book. Tell them to click the "Book Free Demo" button below (or "Agendar Demo Gratis" in Spanish).` : ""}
 
 Knowledge Base:
 ${FLOWNOX_KNOWLEDGE_BASE}
@@ -129,22 +129,22 @@ CRITICAL FORMATTING RULES - YOU MUST FOLLOW THESE:
 10. Keep total response under 100 words.
 
 Example good response in English:
-"We help businesses save time with AI tools.
+"We build custom operations portals for physio and sports clinics.
 
-Our bots can answer customer questions 24/7.
+Our portals automate intake forms, reminder texts, and staff task boards.
 
-This means you can focus on growing your business.
+This helps you save 15+ hours of front-desk admin time every week.
 
-Want to learn more? Click the Book Demo button below!"
+Want to see how? Click the Book Free Demo button below!"
 
 Example good response in Spanish:
-"Ayudamos a empresas a ahorrar tiempo con herramientas de IA.
+"Creamos portales de operaciones a medida para clínicas de fisioterapia y deporte.
 
-Nuestros bots pueden responder preguntas de clientes las 24 horas.
+Nuestros portales automatizan admisiones, recordatorios por SMS y tareas del equipo.
 
-Así puedes enfocarte en hacer crecer tu negocio.
+Esto te permite ahorrar más de 15 horas de tareas administrativas cada semana.
 
-¿Quieres saber más? Haz clic en el botón Agendar Demo Gratis."
+¿Quieres ver cómo funciona? ¡Haz clic en el botón de abajo!"
 
 Now answer the user's question following ALL the rules above. Remember to respond in the SAME language the user used.`;
 
@@ -250,14 +250,14 @@ Now answer the user's question following ALL the rules above. Remember to respon
             className="fixed inset-4 sm:inset-auto sm:bottom-6 sm:right-6 z-50 sm:w-[360px] sm:h-[500px] md:w-[380px] md:h-[550px] bg-card border border-border rounded-2xl shadow-2xl flex flex-col overflow-hidden"
           >
             {/* Header */}
-            <div className="flex items-center justify-between p-3 sm:p-4 bg-navy text-primary-foreground border-b border-border shrink-0">
-              <div className="flex items-center gap-2 sm:gap-3">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-primary flex items-center justify-center">
-                  <Bot className="w-4 h-4 sm:w-5 sm:h-5 text-navy" />
+            <div className="flex items-center justify-between p-3 sm:p-4 bg-background border-b border-white/5 shrink-0">
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-cyan/10 flex items-center justify-center shadow-glow-cyan border border-cyan/20">
+                  <Bot className="w-5 h-5 sm:w-6 sm:h-6 text-cyan" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-sm">FlowNoxy</h3>
-                  <p className="text-xs text-primary-foreground/70">
+                  <h3 className="font-semibold text-foreground text-sm sm:text-base">Flownox AI Assistant</h3>
+                  <p className="text-xs text-muted-foreground">
                     {isSpanish ? "Tu asistente virtual" : "Your AI assistant"}
                   </p>
                 </div>

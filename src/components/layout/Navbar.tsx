@@ -30,12 +30,9 @@ export function Navbar() {
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
-            <img
-              src="/logo-flownox.jpg"
-              alt="Flownox Logo"
-              className="h-10 w-auto object-contain"
-            />
+          <Link to="/" className="flex items-center group">
+            <span className="font-display font-bold text-2xl tracking-tight text-foreground transition-colors">Flow</span>
+            <span className="font-display font-bold text-2xl tracking-tight text-cyan">nox</span>
           </Link>
 
           {/* Desktop Navigation */}

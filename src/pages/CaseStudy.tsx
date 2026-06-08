@@ -75,24 +75,24 @@ export default function CaseStudy() {
       </section>
 
       {/* SECTION 3 — The client */}
-      <section className="py-24 lg:py-32 bg-white">
+      <section className="py-24 lg:py-32 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl lg:text-4xl font-display font-bold text-navy mb-12">
+            <h2 className="text-3xl lg:text-4xl font-display font-bold text-foreground mb-12">
               {t("caseStudy.client.title")}
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-              <div className="prose prose-lg text-slate-600 max-w-none">
+              <div className="prose prose-lg text-muted-foreground max-w-none">
                 <p>{t("caseStudy.client.description")}</p>
               </div>
-              <div className="bg-slate-50 border-l-4 border-cyan p-8 rounded-r-2xl shadow-sm">
-                <h3 className="text-navy font-bold text-lg mb-6 flex items-center gap-2">
+              <div className="bg-card border border-border border-l-4 border-l-cyan p-8 rounded-r-2xl shadow-md">
+                <h3 className="text-foreground font-bold text-lg mb-6 flex items-center gap-2">
                   <CheckCircle2 className="w-5 h-5 text-cyan" />
                   Clinic Snapshot
                 </h3>
                 
                 {/* Portal Preview */}
-                <div className="mb-8 rounded-xl overflow-hidden shadow-lg border border-slate-200">
+                <div className="mb-8 rounded-xl overflow-hidden shadow-lg border border-border">
                   <img 
                     src="/portal-screenshot.png" 
                     alt="Clinic Operations Portal" 
@@ -100,7 +100,7 @@ export default function CaseStudy() {
                   />
                 </div>
 
-                <ul className="space-y-4 text-slate-600">
+                <ul className="space-y-4 text-muted-foreground">
                   <li className="flex items-center gap-3">
                     <MapPin className="w-5 h-5 text-cyan" />
                     {t("caseStudy.client.snapshot.location")}
@@ -125,13 +125,13 @@ export default function CaseStudy() {
       </section>
 
       {/* SECTION 4 — The problem */}
-      <section className="py-24 lg:py-32 bg-slate-50">
+      <section className="py-24 lg:py-32 bg-secondary/20 border-y border-border/50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl lg:text-4xl font-display font-bold text-navy mb-12">
+            <h2 className="text-3xl lg:text-4xl font-display font-bold text-foreground mb-12">
               {t("caseStudy.problem.title")}
             </h2>
-            <div className="space-y-8 text-xl text-slate-700 leading-relaxed font-light italic">
+            <div className="space-y-8 text-xl text-muted-foreground leading-relaxed font-light italic">
               <p>{t("caseStudy.problem.p1")}</p>
               <p>{t("caseStudy.problem.p2")}</p>
               <p>{t("caseStudy.problem.p3")}</p>
@@ -141,28 +141,28 @@ export default function CaseStudy() {
       </section>
 
       {/* SECTION 5 — What we built */}
-      <section className="py-24 lg:py-32 bg-white">
+      <section className="py-24 lg:py-32 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl lg:text-4xl font-display font-bold text-navy mb-12">
+            <h2 className="text-3xl lg:text-4xl font-display font-bold text-foreground mb-12">
               {t("caseStudy.solution.title")}
             </h2>
-            <p className="text-xl text-slate-600 mb-16 leading-relaxed">
+            <p className="text-xl text-muted-foreground mb-16 leading-relaxed">
               {t("caseStudy.solution.intro")}
             </p>
             
             <div className="space-y-12">
-              <div className="border-t border-slate-100 pt-12">
-                <h3 className="text-2xl font-display font-bold text-navy mb-4">{t("caseStudy.solution.intake.title")}</h3>
-                <p className="text-lg text-slate-600 leading-relaxed">{t("caseStudy.solution.intake.desc")}</p>
+              <div className="border-t border-border/50 pt-12">
+                <h3 className="text-2xl font-display font-bold text-foreground mb-4">{t("caseStudy.solution.intake.title")}</h3>
+                <p className="text-lg text-muted-foreground leading-relaxed">{t("caseStudy.solution.intake.desc")}</p>
               </div>
-              <div className="border-t border-slate-100 pt-12">
-                <h3 className="text-2xl font-display font-bold text-navy mb-4">{t("caseStudy.solution.reminders.title")}</h3>
-                <p className="text-lg text-slate-600 leading-relaxed">{t("caseStudy.solution.reminders.desc")}</p>
+              <div className="border-t border-border/50 pt-12">
+                <h3 className="text-2xl font-display font-bold text-foreground mb-4">{t("caseStudy.solution.reminders.title")}</h3>
+                <p className="text-lg text-muted-foreground leading-relaxed">{t("caseStudy.solution.reminders.desc")}</p>
               </div>
-              <div className="border-t border-slate-100 pt-12">
-                <h3 className="text-2xl font-display font-bold text-navy mb-4">{t("caseStudy.solution.tasks.title")}</h3>
-                <p className="text-lg text-slate-600 leading-relaxed">{t("caseStudy.solution.tasks.desc")}</p>
+              <div className="border-t border-border/50 pt-12">
+                <h3 className="text-2xl font-display font-bold text-foreground mb-4">{t("caseStudy.solution.tasks.title")}</h3>
+                <p className="text-lg text-muted-foreground leading-relaxed">{t("caseStudy.solution.tasks.desc")}</p>
               </div>
             </div>
           </div>
@@ -182,7 +182,7 @@ export default function CaseStudy() {
               className="bg-white p-10 rounded-3xl shadow-2xl text-center"
             >
               <div className="text-cyan font-display font-bold text-4xl mb-2">{t("caseStudy.result.card1.value")}</div>
-              <div className="text-navy font-bold text-lg mb-4">{t("caseStudy.result.card1.label")}</div>
+              <div className="text-slate-900 font-bold text-lg mb-4">{t("caseStudy.result.card1.label")}</div>
               <div className="text-slate-500">{t("caseStudy.result.card1.sub")}</div>
             </motion.div>
             
@@ -191,7 +191,7 @@ export default function CaseStudy() {
               className="bg-white p-10 rounded-3xl shadow-2xl text-center"
             >
               <div className="text-cyan font-display font-bold text-4xl mb-2">{t("caseStudy.result.card2.value")}</div>
-              <div className="text-navy font-bold text-lg mb-4">{t("caseStudy.result.card2.label")}</div>
+              <div className="text-slate-900 font-bold text-lg mb-4">{t("caseStudy.result.card2.label")}</div>
               <div className="text-slate-500">{t("caseStudy.result.card2.sub")}</div>
             </motion.div>
             
@@ -200,7 +200,7 @@ export default function CaseStudy() {
               className="bg-white p-10 rounded-3xl shadow-2xl text-center"
             >
               <div className="text-cyan font-display font-bold text-4xl mb-2">{t("caseStudy.result.card3.value")}</div>
-              <div className="text-navy font-bold text-lg mb-4">{t("caseStudy.result.card3.label")}</div>
+              <div className="text-slate-900 font-bold text-lg mb-4">{t("caseStudy.result.card3.label")}</div>
               <div className="text-slate-500">{t("caseStudy.result.card3.sub")}</div>
             </motion.div>
           </div>

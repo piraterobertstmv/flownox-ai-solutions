@@ -42,13 +42,13 @@ const About = () => {
       </section>
 
       {/* SECTION 2 — The story */}
-      <section className="py-24 lg:py-32 bg-white">
+      <section className="py-24 lg:py-32 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <h2 className="text-3xl lg:text-4xl font-display font-bold text-navy mb-12">
+            <h2 className="text-3xl lg:text-4xl font-display font-bold text-foreground mb-12">
               {t("about.story.title")}
             </h2>
-            <div className="prose prose-lg text-slate-600 space-y-8 max-w-none">
+            <div className="prose prose-lg text-muted-foreground space-y-8 max-w-none">
               <p>{t("about.story.p1")}</p>
               <p>{t("about.story.p2")}</p>
               <p>{t("about.story.p3")}</p>
@@ -58,10 +58,10 @@ const About = () => {
       </section>
 
       {/* SECTION 3 — The founder */}
-      <section className="py-24 lg:py-32 bg-slate-50">
+      <section className="py-24 lg:py-32 bg-secondary/20 border-y border-border/50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl lg:text-4xl font-display font-bold text-navy mb-16">
+            <h2 className="text-3xl lg:text-4xl font-display font-bold text-foreground mb-16">
               {t("about.founder.title")}
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
@@ -75,24 +75,24 @@ const About = () => {
                 <img 
                   src="/antonio.jpg" 
                   alt="Antonio Moya — Founder of Flownox" 
-                  className="relative w-full aspect-[4/5] object-cover object-top rounded-2xl shadow-2xl"
+                  className="relative w-full aspect-[4/5] object-cover object-top rounded-2xl shadow-2xl border border-border/50"
                 />
               </motion.div>
 
               <div className="flex flex-col h-full">
-                <h3 className="text-2xl font-display font-bold text-navy mb-6">
+                <h3 className="text-2xl font-display font-bold text-foreground mb-6">
                   {t("about.founder.name")}
                 </h3>
-                <p className="text-lg text-slate-600 leading-relaxed mb-8">
+                <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                   {t("about.founder.bio")}
                 </p>
                 
                 <div className="space-y-4 mb-10">
-                  <div className="flex items-center gap-3 text-slate-600">
+                  <div className="flex items-center gap-3 text-muted-foreground">
                     <MapPin className="w-5 h-5 text-cyan" />
                     <span>{t("about.founder.line1")}</span>
                   </div>
-                  <div className="flex items-center gap-3 text-slate-600">
+                  <div className="flex items-center gap-3 text-muted-foreground">
                     <Hammer className="w-5 h-5 text-cyan" />
                     <span>{t("about.founder.line2")}</span>
                   </div>
@@ -103,7 +103,7 @@ const About = () => {
                     href="https://linkedin.com/in/amoyavalls" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="p-3 rounded-xl bg-white border border-slate-200 text-slate-400 hover:text-cyan hover:border-cyan hover:shadow-md transition-all"
+                    className="p-3 rounded-xl bg-card border border-border text-muted-foreground hover:text-cyan hover:border-cyan/50 hover:shadow-glow transition-all duration-300"
                     aria-label="LinkedIn"
                   >
                     <Linkedin className="w-5 h-5" />
@@ -112,14 +112,14 @@ const About = () => {
                     href="https://github.com/amoyavalls" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="p-3 rounded-xl bg-white border border-slate-200 text-slate-400 hover:text-cyan hover:border-cyan hover:shadow-md transition-all"
+                    className="p-3 rounded-xl bg-card border border-border text-muted-foreground hover:text-cyan hover:border-cyan/50 hover:shadow-glow transition-all duration-300"
                     aria-label="GitHub"
                   >
                     <Github className="w-5 h-5" />
                   </a>
                   <a 
                     href="mailto:antonio@flownox.com" 
-                    className="p-3 rounded-xl bg-white border border-slate-200 text-slate-400 hover:text-cyan hover:border-cyan hover:shadow-md transition-all"
+                    className="p-3 rounded-xl bg-card border border-border text-muted-foreground hover:text-cyan hover:border-cyan/50 hover:shadow-glow transition-all duration-300"
                     aria-label="Email"
                   >
                     <Mail className="w-5 h-5" />
@@ -132,13 +132,13 @@ const About = () => {
       </section>
 
       {/* SECTION 4 — Honest paragraph */}
-      <section className="py-24 lg:py-32 bg-white">
+      <section className="py-24 lg:py-32 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <h2 className="text-2xl lg:text-3xl font-display font-bold text-navy mb-8">
+            <h2 className="text-2xl lg:text-3xl font-display font-bold text-foreground mb-8">
               {t("about.honest.title")}
             </h2>
-            <p className="text-lg text-slate-600 leading-relaxed italic border-l-4 border-slate-100 pl-8">
+            <p className="text-lg text-muted-foreground leading-relaxed italic border-l-4 border-cyan/30 pl-8">
               {t("about.honest.paragraph")}
             </p>
           </div>
@@ -158,7 +158,7 @@ const About = () => {
             <Button 
               variant="secondary" 
               size="xl" 
-              className="bg-white text-cyan hover:bg-slate-50 border-none shadow-xl"
+              className="bg-navy hover:bg-navy/90 text-white hover:scale-105 transition-all duration-300 border-none shadow-xl"
               asChild
             >
               <a 

@@ -7,7 +7,7 @@ export function WhatWeBuildWhatNot() {
   const items = t("whatWeBuildPage.whatNot.items", { returnObjects: true }) as string[];
 
   return (
-    <section className="py-24 lg:py-32 bg-white">
+    <section className="py-24 lg:py-32 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
           <motion.div
@@ -16,7 +16,7 @@ export function WhatWeBuildWhatNot() {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="text-3xl sm:text-4xl font-display font-bold text-navy mb-4">
+            <h2 className="text-3xl sm:text-4xl font-display font-bold text-foreground mb-4">
               {t("whatWeBuildPage.whatNot.title")}
             </h2>
           </motion.div>
@@ -32,9 +32,9 @@ export function WhatWeBuildWhatNot() {
                 className="flex gap-4 items-start"
               >
                 <div className="mt-1 flex-shrink-0">
-                  <XCircle className="w-6 h-6 text-slate-300" />
+                  <XCircle className="w-6 h-6 text-muted-foreground/30" />
                 </div>
-                <p className="text-xl text-slate-600 font-medium">
+                <p className="text-xl text-muted-foreground font-medium">
                   {item}
                 </p>
               </motion.div>

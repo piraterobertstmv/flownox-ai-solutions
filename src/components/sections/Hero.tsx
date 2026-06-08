@@ -31,14 +31,14 @@ export function Hero() {
     <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-gradient-hero">
       {/* Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan/10 rounded-full blur-3xl animate-pulse-glow" />
-        <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-cyan/5 rounded-full blur-3xl animate-float" />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan/10 rounded-full blur-[120px] animate-pulse-glow" />
+        <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-cyan/5 rounded-full blur-[100px] animate-float" />
         {/* Grid Pattern */}
         <div
-          className="absolute inset-0 opacity-[0.02]"
+          className="absolute inset-0 opacity-[0.03]"
           style={{
-            backgroundImage: `linear-gradient(hsla(187, 90%, 45%, 0.3) 1px, transparent 1px),
-                            linear-gradient(90deg, hsla(187, 90%, 45%, 0.3) 1px, transparent 1px)`,
+            backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+                            linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px)`,
             backgroundSize: "60px 60px",
           }}
         />
@@ -54,7 +54,7 @@ export function Hero() {
           {/* Headline */}
           <motion.h1
             variants={itemVariants as any}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold text-primary-foreground leading-tight mb-6"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold text-foreground leading-tight mb-6 tracking-tight"
           >
             {t("hero.headline")}
           </motion.h1>
@@ -62,7 +62,7 @@ export function Hero() {
           {/* Sub-headline */}
           <motion.p
             variants={itemVariants as any}
-            className="text-lg sm:text-xl text-primary-foreground/70 max-w-3xl mx-auto mb-10 leading-relaxed"
+            className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto mb-10 leading-relaxed font-light"
           >
             {t("hero.subheadline")}
           </motion.p>
@@ -98,6 +98,29 @@ export function Hero() {
           </motion.div>
         </motion.div>
 
+        {/* Global Authority Metrics */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="mt-20 pt-10 border-t border-white/5 relative z-10"
+        >
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center max-w-4xl mx-auto">
+            <div className="flex flex-col items-center justify-center p-6 rounded-2xl glass-card">
+              <div className="text-4xl font-display font-bold text-cyan mb-2">{t("hero.stats.workflows")}</div>
+              <div className="text-sm text-muted-foreground uppercase tracking-wider">{t("hero.stats.workflowsLabel")}</div>
+            </div>
+            <div className="flex flex-col items-center justify-center p-6 rounded-2xl glass-card">
+              <div className="text-4xl font-display font-bold text-cyan mb-2">{t("hero.stats.hours")}</div>
+              <div className="text-sm text-muted-foreground uppercase tracking-wider">{t("hero.stats.hoursLabel")}</div>
+            </div>
+            <div className="flex flex-col items-center justify-center p-6 rounded-2xl glass-card">
+              <div className="text-4xl font-display font-bold text-cyan mb-2">{t("hero.stats.retention")}</div>
+              <div className="text-sm text-muted-foreground uppercase tracking-wider">{t("hero.stats.retentionLabel")}</div>
+            </div>
+          </div>
+        </motion.div>
+
         {/* Floating Icons - Only on Desktop */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -105,7 +128,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="absolute top-1/3 left-8 hidden lg:block"
         >
-          <div className="w-16 h-16 rounded-2xl bg-white/5 border border-cyan/20 flex items-center justify-center animate-float">
+          <div className="w-16 h-16 rounded-2xl glass-card flex items-center justify-center animate-float shadow-glow-cyan">
             <Bot className="w-8 h-8 text-cyan" />
           </div>
         </motion.div>
@@ -117,7 +140,7 @@ export function Hero() {
           className="absolute top-1/2 right-8 hidden lg:block"
         >
           <div
-            className="w-14 h-14 rounded-2xl bg-white/5 border border-cyan/20 flex items-center justify-center animate-float"
+            className="w-14 h-14 rounded-2xl glass-card flex items-center justify-center animate-float shadow-glow-cyan"
             style={{ animationDelay: "1s" }}
           >
             <Workflow className="w-7 h-7 text-cyan" />
