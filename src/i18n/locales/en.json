@@ -13,12 +13,9 @@
     "whatWeBuild": "What we build",
     "readCaseStudy": "Read the case study",
     "stats": {
-      "workflows": "150+",
-      "workflowsLabel": "Workflows Automated",
-      "hours": "40+",
-      "hoursLabel": "Hours Saved/Week",
-      "retention": "98%",
-      "retentionLabel": "Client Retention"
+      "stat1": "Built for appointment-based clinics",
+      "stat2": "Custom built — you own it forever",
+      "stat3": "Live in 2 weeks"
     }
   },
   "painPoints": {

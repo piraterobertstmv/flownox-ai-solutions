@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Sparkles, Bot, Workflow } from "lucide-react";
+import { ArrowRight, Sparkles, Bot, Workflow, Check } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -105,18 +105,18 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-20 pt-10 border-t border-white/5 relative z-10"
         >
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center max-w-4xl mx-auto">
-            <div className="flex flex-col items-center justify-center p-6 rounded-2xl glass-card">
-              <div className="text-4xl font-display font-bold text-cyan mb-2">{t("hero.stats.workflows")}</div>
-              <div className="text-sm text-muted-foreground uppercase tracking-wider">{t("hero.stats.workflowsLabel")}</div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center max-w-4xl mx-auto">
+            <div className="flex items-center justify-center gap-3 p-5 rounded-2xl glass-card border border-border/50">
+              <Check className="w-5 h-5 text-cyan shrink-0" />
+              <span className="font-medium text-foreground/90">{t("hero.stats.stat1")}</span>
             </div>
-            <div className="flex flex-col items-center justify-center p-6 rounded-2xl glass-card">
-              <div className="text-4xl font-display font-bold text-cyan mb-2">{t("hero.stats.hours")}</div>
-              <div className="text-sm text-muted-foreground uppercase tracking-wider">{t("hero.stats.hoursLabel")}</div>
+            <div className="flex items-center justify-center gap-3 p-5 rounded-2xl glass-card border border-border/50">
+              <Check className="w-5 h-5 text-cyan shrink-0" />
+              <span className="font-medium text-foreground/90">{t("hero.stats.stat2")}</span>
             </div>
-            <div className="flex flex-col items-center justify-center p-6 rounded-2xl glass-card">
-              <div className="text-4xl font-display font-bold text-cyan mb-2">{t("hero.stats.retention")}</div>
-              <div className="text-sm text-muted-foreground uppercase tracking-wider">{t("hero.stats.retentionLabel")}</div>
+            <div className="flex items-center justify-center gap-3 p-5 rounded-2xl glass-card border border-border/50">
+              <Check className="w-5 h-5 text-cyan shrink-0" />
+              <span className="font-medium text-foreground/90">{t("hero.stats.stat3")}</span>
             </div>
           </div>
         </motion.div>

@@ -13,12 +13,9 @@
     "whatWeBuild": "Qué construimos",
     "readCaseStudy": "Lee el caso de estudio",
     "stats": {
-      "workflows": "150+",
-      "workflowsLabel": "Flujos Automatizados",
-      "hours": "40+",
-      "hoursLabel": "Horas Ahorradas/Semana",
-      "retention": "98%",
-      "retentionLabel": "Retención de Clientes"
+      "stat1": "Diseñado para clínicas con citas",
+      "stat2": "A medida — es tuyo para siempre",
+      "stat3": "Activo en 2 semanas"
     }
   },
   "painPoints": {
